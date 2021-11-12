@@ -18,7 +18,7 @@ else
         echo "Exiting"
         exit 3
     else
-    echo "skipping"
+        echo "skipping"
     fi
 fi
 echo "Data folder created"
@@ -31,10 +31,9 @@ fi
 echo "Attempting to write location to text file for later use"
 echo "$script_dir" > $script_dir/data/location.txt
 echo "Writen directory location to text file"
-echo "Attempting to download index.html form GitHub"
-wget -P $script_dir/Pages https://github.com/DNAmaster10/SAMSI/blob/b94b52fd9da5e0f2a112275f672450235a9e1a9b/index.html
-fi
-if [ ! -f $script_dir/Pages/index.html ]; then
+echo "Attempting to download index.php form GitHub"
+wget -P $script_dir https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/index.php
+if [ ! -f $script_dir/index.php ]; then
     echo "Could not establish a connection with github"
     exit 3
 fi
