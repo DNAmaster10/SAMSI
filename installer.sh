@@ -38,4 +38,5 @@ if [ ! -f $script_dir/index.php ]; then
     exit 3
 fi
 wget -P $script_dir/Pages https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/register.php
+wget -P $script_dir/Pages https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/schoolRegComplete.php
 echo "Found index page"
