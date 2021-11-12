@@ -37,4 +37,5 @@ if [ ! -f $script_dir/index.php ]; then
     echo "Could not establish a connection with github"
     exit 3
 fi
+wget -P $script_dir/Pages https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/register.php
 echo "Found index page"
