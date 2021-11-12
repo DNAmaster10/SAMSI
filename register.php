@@ -6,6 +6,6 @@
       Admin Account Name: <input type="text" name="adminName"><br>
       Admin Account Password: <input type="text" name="adminPassword"><br>
       <input type="submit">
-    </form
+    </form>
   </body>
 </html>
