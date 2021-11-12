@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <form action="schoolRegComplete.php" method="post">
+    <form action="pages/schoolRegComplete.php" method="post">
       School Name: <input type="text" name="schoolName"><br>
       Admin Account Name: <input type="text" name="adminName"><br>
       Admin Account Password: <input type="text" name="adminPassword"><br>
