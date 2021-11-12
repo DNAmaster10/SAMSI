@@ -29,7 +29,13 @@ else
     echo "Pages directory already exists, skipping"
 fi
 echo "Attempting to write location to text file for later use"
+echo "$script_dir" > $script_dir/data/location.txt
 echo "Writen directory location to text file"
 echo "Attempting to download index.html form GitHub"
 wget -P $script_dir/Pages https://github.com/DNAmaster10/SAMSI/blob/b94b52fd9da5e0f2a112275f672450235a9e1a9b/index.html
 fi
+if [ ! -f $script_dir/Pages/index.html ]; then
+    echo "Could not establish a connection with github"
+    exit 3
+fi
+echo "Found index page"
