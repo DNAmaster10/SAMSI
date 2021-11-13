@@ -11,8 +11,8 @@
   $schoolNameLength = strlen($schoolName);
     
   if ($continue == (1)) {
-    if (!is_dir('/var/www/html/Data/'$schoolName)) {
-      mkdir('/var/www/html/Data/'$schoolName);
+    if (!is_dir('/var/www/html/Data/'.($schoolName))) {
+      mkdir('/var/www/html/Data/'.($schoolName));
       $textOutput = 'School successfully registered';
     }
     else {
