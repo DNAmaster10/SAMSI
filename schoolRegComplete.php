@@ -19,7 +19,7 @@
   $continue = (0);
   }
   if ($adminNameLength > 50) {
-  $continure = (1)
+  $continue = (1);
   }
   
   if ($continue == (1)) {
