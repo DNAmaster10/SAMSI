@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Welcome back, ADMIN_NAME_PLACEHOLDER</h1>
+  </body>
+</html>
