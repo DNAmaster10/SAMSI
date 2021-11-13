@@ -3,22 +3,15 @@
   <?php
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
-  $adminPassword = $_POST["adminPassword]
+  $adminPassword = $_POST["adminPassword];
   
-  $conn = new mysqli($schoolName, $adminName, $adminPassword);
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-  }
-  echo "Connected successfully";
+  $schoolName = str_replace(" ", "");
+  $schoolNameLength = strlen($schooName);
   
-  $sql = "CREATE DATABASE IF NOT EXISTS $schooName;
-  if ($conn->query($sql) == TRUE) {
-    echo "Database for $schooName successfully created";
-  } else {
-    echo "Error creating database: " . $conn->error;
+  if ($schoolNameLength > (50)) {
+    $textOutput = "Your school name is too long"
+    $continue = (0)
   }
-                          
-  $conn->close();
   ?>
   <body>
     <p><?php echo $textOutput; ?></p>
