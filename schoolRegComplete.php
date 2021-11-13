@@ -15,7 +15,7 @@
   $adminName = str_replace(" ","",$adminName);
   $adminName = strtolower($adminName);
   
-  if ($schoolNameLenght > 50) {
+  if ($schoolNameLength > 50) {
   $continue = (0);
   }
   if ($adminNameLength > 50) {
@@ -26,14 +26,12 @@
     if (!is_dir('/var/www/html/Data/'.$schoolName)) {
       
       mkdir('/var/www/html/Data/'.$schoolName);
+      mkdir("/var/www/html/Data/".$schoolName."/Accounts");
+      mkdir("/var/www/html/Data/".$schoolName."/Accounts/Admin");
       mkdir("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName);
-      
-      $admin_txt_file = fopen("/var/www/html/".$adminName, "w");
-      fwrite($admin_txt_file, $adminPassword."\n");
-      fclose($admin_txt_file);
         
       copy ("/var/www/html/Templates/adminPanelTemplate.txt","/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
-      $admin_panel_template = fopen("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
+      $admin_panel_template = fopen("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","w");
       $admin_panel_template_written = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$admin_panel_template);
       fwrite($admin_panel_template, $admin_panel_template_written);
       fclose($admin_panel_template);
