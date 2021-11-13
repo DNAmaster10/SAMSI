@@ -5,7 +5,7 @@
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
   $adminPassword = $_POST["adminPassword];
-  $textOutput = "null"
+  $textOutput = ("null");
   
   //need to finish string validation
   $schoolNameLength = strlen($schooName);
@@ -13,10 +13,10 @@
   if ($continue == (1)) {
     if ( !file_exists(/Data/$schoolName) && !is_dir(/Data/$schoolName)) {
       mkdir(/Data/$schoolName);
-      $textOutput = ["Schoolsuccessfullyregistered"];
+      $textOutput = ("Schoolsuccessfullyregistered");
     }
     else {
-    $textOutput = ["Yourschoolisalreadyregistered!"];
+    $textOutput = ("Yourschoolisalreadyregistered!");
   }
   }
   ?>
