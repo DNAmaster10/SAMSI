@@ -31,12 +31,17 @@
       mkdir("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName);
         
       copy ("/var/www/html/Templates/adminPanelTemplate.txt","/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
-      $admin_panel_template = fopen("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","w");
+      
+      
+      $admin_panel_template = fopen("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","r");
       $admin_panel_template_written = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$admin_panel_template);
-      fwrite($admin_panel_template, $admin_panel_template_written);
       fclose($admin_panel_template);
-        
-      rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/adminPanelTemplate.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword.".html");
+      
+      $admin_panel_write = fopen("/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","w");
+      fwrite($admin_panel_write, $admin_panel_template_written);
+      fclose($admin_panel_template);
+   
+      rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.html");
       $textOutput = 'School successfully registered';      
     }
     else {
