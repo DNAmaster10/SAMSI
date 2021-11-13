@@ -5,6 +5,7 @@
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
   $adminPassword = $_POST["adminPassword];
+  $textOutput = "null"
   
   //need to finish string validation
   $schoolNameLength = strlen($schooName);
