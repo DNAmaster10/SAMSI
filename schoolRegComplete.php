@@ -12,10 +12,10 @@
   if ($continue == (1)) {
     if ( !file_exists(/Data/$schoolName) && !is_dir(/Data/$schoolName)) {
       mkdir(/Data/$schoolName);
-      $textOutput = "Schoolsuccessfullyregistered";
+      $textOutput = ["Schoolsuccessfullyregistered"];
     }
     else {
-    $textOutput = "Yourschoolisalreadyregistered!";
+    $textOutput = ["Yourschoolisalreadyregistered!"];
   }
   }
   ?>
