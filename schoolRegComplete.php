@@ -23,6 +23,6 @@
   }
   ?>
   <body>
-    <p><?php echo $textOutput; ?></p>
+    <p><?php echo $textOutput; ?>.</p>
   </body>
 </html>
