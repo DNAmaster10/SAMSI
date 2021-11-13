@@ -4,22 +4,22 @@
   $continue = (1);
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
-  $adminPassword = $_POST["adminPassword];
+  $adminPassword = $_POST["adminPassword"];
   $textOutput = ('null');
   
   //need to finish string validation
   $schoolNameLength = strlen($schooName);
     
   if ($continue == (1)) {
-    if ( !file_exists(/Data/$schoolName) && !is_dir(/Data/$schoolName)) {
-      mkdir(/Data/$schoolName);
-      $textOutput = ('Schoolsuccessfullyregistered');
+    if ( !file_exists('/Data/$schoolName') && !is_dir('/Data/$schoolName')) {
+      mkdir('/Data/$schoolName');
+      $textOutput = 'Schoolsuccessfullyregistered';
     }
     else {
-    $textOutput = ('Yourschoolisalreadyregistered!');
+    $textOutput = 'Yourschoolisalreadyregistered!';
   }
   } ?>
   <body>
-    <p>< ?php echo $textOutput; ?> .</p>
+    <p> <?php echo $textOutput; ?> </p>
   </body>
 </html>
