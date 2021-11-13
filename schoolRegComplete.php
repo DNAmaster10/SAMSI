@@ -49,7 +49,7 @@
   <body>
     <p> <?php echo $textOutput; ?> </p>
     <form action="<?php echo $admin_panel_path; ?>">
-      <input type="button" onclick="location.href=<?php echo $admin_panel_path; ?>" value="Admin Panel" />
+      <input type="button" onclick="location.href='<?php echo $admin_panel_path; ?>';" value="Admin Panel" />
     </form>
   </body>
 </html>
