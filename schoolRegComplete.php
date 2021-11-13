@@ -11,12 +11,12 @@
   $schoolNameLength = strlen($schooName);
     
   if ($continue == (1)) {
-    if ( !file_exists('/Data/$schoolName') && !is_dir('/Data/$schoolName')) {
+    if (!is_dir('/Data/$schoolName')) {
       mkdir('/Data/$schoolName');
-      $textOutput = 'Schoolsuccessfullyregistered';
+      $textOutput = 'School successfully registered';
     }
     else {
-    $textOutput = 'Yourschoolisalreadyregistered!';
+    $textOutput = 'Your school is already registered!';
   }
   } ?>
   <body>
