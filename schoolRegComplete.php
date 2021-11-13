@@ -25,11 +25,13 @@
   if ($continue == (1)) {
     if (!is_dir('/var/www/html/Data/'.($schoolName))) {
       mkdir('/var/www/html/Data/'.($schoolName));
-      mkdir("/var/www/html/Data/".($schoolName)."/accounts/admin");
-      $admin_txt_file = fopen($adminName, "w")
+      mkdir("/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName);
+      $admin_txt_file = fopen("/var/www/html/".$adminName, "w");
       fwrite($admin_txt_file, $adminPassword."\n")
       fclose($admin_txt_file)
-      $textOutput = 'School successfully registered';
+      copy ("/var/www/html/Templates/adminPanelTemplate.txt","/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName)
+      rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/adminPanelTemplate.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword.".html")
+      $textOutput = 'School successfully registered';      
     }
     else {
     $textOutput = 'Your school is already registered!';
