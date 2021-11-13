@@ -8,10 +8,6 @@
   
   //need to finish string validation
   $schoolNameLength = strlen($schooName);
-  if ($schoolNameLength > (50)) {
-    $textOutput = "Your school name is too long";
-    $continue = (0);
-    }
     
   if ($continue == (1)) {
     if ( !file_exists(/Data/$schoolName) && !is_dir(/Data/$schoolName)) {
