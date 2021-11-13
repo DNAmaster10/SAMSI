@@ -15,8 +15,11 @@
   $adminName = str_replace(" ","",$adminName);
   $adminName = strtolower($adminName);
   
-  if ($schoolNameLenght > 50) or (adminNameLength > 50) {
+  if ($schoolNameLenght > 50) {
   $continue = (0);
+  }
+  if ($adminNameLength > 50) {
+  $continure = (1)
   }
   
   if ($continue == (1)) {
