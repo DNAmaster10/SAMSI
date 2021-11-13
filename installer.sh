@@ -28,6 +28,12 @@ if [ ! -d $script_dir/Pages ]; then
 else
     echo "Pages directory already exists, skipping"
 fi
+echo "Attempting to create templates directory"
+if [ ! -d $script_dir/Templates ]; then
+    mkdir $script_dir/Templates
+else
+    echo "Templates directory already exists, skipping"
+fi
 echo "Attempting to write location to text file for later use"
 echo "$script_dir" > $script_dir/data/location.txt
 echo "Writen directory location to text file"
