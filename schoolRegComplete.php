@@ -32,14 +32,11 @@
         
       copy ("/var/www/html/Templates/adminPanelTemplate.txt","/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
       
-      
-      $admin_panel_template = fopen("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","r");
-      $admin_panel_template_written = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$admin_panel_template);
-      fclose($admin_panel_template);
-      
-      $admin_panel_write = fopen("/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","w");
-      fwrite($admin_panel_write, $admin_panel_template_written);
-      fclose($admin_panel_template);
+      $path_to_file = "/var/www/html/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt";
+      $file_contents = file_get_contents($path_to_file);
+      $file_contents = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$file_contents);
+      file_put_contents($path_to_file,$file_contents);
+
    
       rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.html");
       $textOutput = 'School successfully registered';      
