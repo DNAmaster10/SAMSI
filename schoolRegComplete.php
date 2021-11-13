@@ -7,8 +7,6 @@
   $adminPassword = $_POST["adminPassword];
   
   //need to finish string validation
-  
-  $schoolName = str_replace(" ", "");
   $schoolNameLength = strlen($schooName);
   if ($schoolNameLength > (50)) {
     $textOutput = ("Your school name is too long");
