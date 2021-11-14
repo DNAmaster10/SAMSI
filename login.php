@@ -6,9 +6,8 @@
     <br>
     <input type="text" id="school_text" name="school_txt" onkeyup="check_school()">
     <p id="output_field">School does not exist</p>
-  </body>
-  
-  <script>
+    
+    <script>
     function check_school(){
     var user_input = document.getElementById("school_text").innerHTML
     var result = ("")
@@ -22,5 +21,6 @@
     xmlhttp.open("POST", "checkSchool.php?user_input=" + user_input)
     xmlhttp.send()
     }
-  </script>
+    </script>
+  </body>
 </html>
