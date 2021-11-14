@@ -1,7 +1,7 @@
 <?php
 $user_input = $_REQUEST["user_input"];
 $time = time();
-$file_state = (is_file('/var/www/html/Data/'.$user_input));
+$file_state = $user_input;
 if (is_file('/var/www/html/Data/'.$user_input)) {
 echo "School exists!";
 }
