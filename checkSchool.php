@@ -6,4 +6,4 @@ echo "School exists!";
 else {
 echo  "School does not exist!"; 
 }
-?>
+?>r
