@@ -46,4 +46,6 @@ fi
 curl --get https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/adminPanelTemplate.txt > /var/www/html/Templates/adminPanelTemplate.txt
 curl --get https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/register.php > /var/www/html/Pages/register.php
 curl --get https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/schoolRegComplete.php > /var/www/html/Pages/schoolRegComplete.php
+curl --get https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/login.php > /var/www/html/Pages/login.php
+curl --get https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/checkSchool.php > /var/html/Pages/checkSchool.php
 echo "Found index page"
