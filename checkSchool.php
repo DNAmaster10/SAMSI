@@ -1,7 +1,7 @@
 <?php
 $user_input = $_REQUEST["user_input"];
 $time = time();
-if (is_dir('/var/www/html/Data/'.$user_input)) {
+if (file_exists('/var/www/html/Data/'.$user_input)) {
 echo "School exists!";
 }
 else {
