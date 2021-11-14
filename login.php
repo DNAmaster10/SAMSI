@@ -18,7 +18,7 @@
       document.getElementById("output_field").innerHTML = result
     }
     }
-    xmlhttp.open("POST", "checkSchool.php?user_input=" + user_input, true)
+    xmlhttp.open("POST", "checkSchool.php?q=" + user_input, true)
     xmlhttp.send()
     }
     </script>
