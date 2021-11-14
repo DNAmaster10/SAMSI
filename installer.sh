@@ -38,12 +38,12 @@ echo "Attempting to write location to text file for later use"
 echo "$script_dir" > $script_dir/Data/location.txt
 echo "Writen directory location to text file"
 echo "Attempting to download index.php form GitHub"
-curl https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/index.php > ./
+curl https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/index.php > ./index.php
 if [ ! -f $script_dir/index.php ]; then
     echo "Could not establish a connection with github"
     exit 3
 fi
-curl https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/adminPanelTemplate.txt > ./Templates
-curl -P https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/register.php > ./Pages
-curl -P https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/schoolRegComplete.php > .r/Pages
+curl https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/adminPanelTemplate.txt > ./Templates/adminPanelTemplate.txt
+curl -P https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/register.php > ./Pages/register.php
+curl -P https://raw.githubusercontent.com/DNAmaster10/SAMSI/main/schoolRegComplete.php > .r/Pages/schoolRegComplete.php
 echo "Found index page"
