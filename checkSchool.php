@@ -9,6 +9,6 @@ else {
 echo  "School does not exist!";
 }
 echo $time;
-echo "<br>"
-echo $file_state
+echo "<br>";
+echo $file_state;
 ?>
