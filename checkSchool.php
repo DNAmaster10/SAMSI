@@ -1,5 +1,5 @@
 <?php
-$user_input = $_REQUEST["user_input"];
+$user_input = $_POST["user_input"];
 if (is_file('/var/www/html/Data/'.$user_input)) {
 echo "School exists!";
 echo $user_input;
