@@ -5,15 +5,19 @@
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
   $adminPassword = $_POST["adminPassword"];
-  $textOutput = ('null');
+  $textOutput = ("An Error has occured with the variable handling of the $schoolName variable");
 
   $schoolNameLength = strlen($schoolName);
   $schoolName = str_replace(" ","",$schoolName);
   $schoolName = strtolower($schoolName);
   
+  $textOutput = ("An Error has occured with the variable handling of the $adminName variable");
+  
   $adminNameLength = strlen($adminName);
   $adminName = str_replace(" ","",$adminName);
   $adminName = strtolower($adminName);
+  
+  $textOutput = ("An Error had occured");
   
   if ($schoolNameLength > 50) {
   $continue = (0);
@@ -24,6 +28,8 @@
   
   if ($continue == (1)) {
     if (!is_dir('/var/www/html/Data/'.$schoolName)) {
+      
+      $textOutput = ("An error occured setting up either your school, or your admin account. Contact a network administrator for more information on the matter");
       
       mkdir('/var/www/html/Data/'.$schoolName);
       mkdir("/var/www/html/Data/".$schoolName."/Accounts");
