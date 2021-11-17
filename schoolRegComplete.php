@@ -42,11 +42,14 @@
       $file_contents = file_get_contents($path_to_file);
       $file_contents = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$file_contents);
       file_put_contents($path_to_file,$file_contents);
-      fclose($file_contents)
+      fclose($file_contents);
 
-      copy ("/var/www/html/Templates/logged_in.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName.");
+      copy ("/var/www/html/Templates/logged_in.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
       
-      $file_contents = file_get_contents("/
+      $file_contents = file_get_contents("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
+      $file_contents = str_replace("false","true",$file_contents);
+      file_put_contents =("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt",$file_contents);
+      fclose($file_contents);
    
       rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php");
       $admin_panel_path = "../Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php";
