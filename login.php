@@ -9,6 +9,7 @@
     <p id="output_field">School does not exist</p>
     
     <script>
+    var result = ("");
     var schoolEntry = document.getElementById("school_text").innerHTML;
     function check_school(){
     console.log("Checking if school exists");
@@ -18,6 +19,7 @@
       data:{"schoolNamePostContainer":schoolEntry}
     }).done(function(returnValue) {
     console.log(returnValue);
+    var result = returnValue;
     });
     document.getElementById("output_field").innerHTML = (returnValue);
     }
