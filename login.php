@@ -15,15 +15,16 @@
     console.log("Checking if school exists");
     schoolEntry = document.getElementById("school_text").innerHTML;
     $.ajax({
-      url: "checkSchool.php",
-      type: "POST",
-      dataType:"json"
-      data:{"schoolNamePostContainer":schoolEntry}
-    }).done(function(returnValue) {
-    console.log(returnValue);
-    result = returnValue;
+      url: 'checkSchool.php',
+      type: 'POST',
+      dataType:'json',
+      data:({schoolNamePostContainer:schoolEntry}),
+             success: function(data) {
+      console.log(returnValue);
+      result = returnValue;
+    }
     });
-    document.getElementById("output_field").innerHTML = (returnValue);
+    document.getElementById("output_field").innerHTML = (result);
     }
     </script>
   </body>
