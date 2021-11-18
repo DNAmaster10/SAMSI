@@ -16,6 +16,7 @@
     $.ajax({
       url: "checkSchool.php",
       type: "POST",
+      dataType:"json"
       data:{"schoolNamePostContainer":schoolEntry}
     }).done(function(returnValue) {
     console.log(returnValue);
