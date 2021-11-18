@@ -13,6 +13,7 @@
     var schoolEntry = document.getElementById("school_text").innerHTML;
     function check_school(){
     console.log("Checking if school exists");
+    schoolEntry = document.getElementById("school_text").innerHTML;
     $.ajax({
       url: "checkSchool.php",
       type: "POST",
