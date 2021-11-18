@@ -11,7 +11,7 @@
     <script>
     var result = ("");
     var schoolEntry = document.getElementById("school_text").innerHTML;
-    function check_school(){
+    function check_school() {
     console.log("Checking if school exists");
     schoolEntry = document.getElementById("school_text").innerHTML;
     $.ajax({
