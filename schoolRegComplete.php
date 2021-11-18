@@ -48,7 +48,7 @@
       
       $file_contents = file_get_contents("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
       $file_contents = str_replace("false","true",$file_contents);
-      file_put_contents =("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt",$file_contents);
+      file_put_contents ("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt",$file_contents);
       fclose($file_contents);
    
       rename("/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","/var/www/html/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php");
