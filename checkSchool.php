@@ -1,12 +1,11 @@
 <?php
 $user_input = $_REQUEST["schoolNamePostContainer"];
-if (is_file('/var/www/html/Data/'.$user_input)) {
-  echo ("School exists");
+$file_name = ("/var/www/html/Data/".$user_input);
+if (file_exists($file_name)) {
+  echo ("School exists!");
   }
 else {
   echo ("School does not exist!");
 }
 echo $user_input;
-$t=time();
-echo($t . "<br>");
 ?>
