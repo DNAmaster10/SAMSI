@@ -7,4 +7,6 @@ else {
   echo ("School does not exist!");
 }
 echo $user_input;
+$t=time();
+echo($t . "<br>");
 ?>
