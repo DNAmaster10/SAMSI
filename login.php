@@ -20,7 +20,7 @@
       data:{"schoolNamePostContainer":schoolEntry}
     }).done(function(returnValue) {
     console.log(returnValue);
-    var result = returnValue;
+    result = returnValue;
     });
     document.getElementById("output_field").innerHTML = (returnValue);
     }
