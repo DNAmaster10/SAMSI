@@ -31,7 +31,8 @@
       
       $textOutput = ("An error occured setting up either your school, or your admin account. Contact a network administrator for more information on the matter");
       
-      mkdir("/app/Data");
+      echo ("$_SERVER['DOCUMENT_ROOT']./Data");
+      mkdir("$_SERVER['DOCUMENT_ROOT']./Data");
       mkdir('/app/Data/'.$schoolName);
       mkdir("app/Data/".$schoolName."/Accounts");
       mkdir("/app/Data/".$schoolName."/Accounts/Admin");
