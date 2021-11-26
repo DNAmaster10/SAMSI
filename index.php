@@ -10,7 +10,7 @@
             <input type="button" onclick="location.href='/Pages/register.php';" value="Register a school" />
         </form>
         <form action="/Pages/test.php">
-            <input type="button" onclick="location.href='/Pages/test.php';" value="Register a school" />
+            <input type="button" onclick="location.href='/Pages/test.php';" value="Test" />
         </form>
     </body>
 </html>
