@@ -12,9 +12,9 @@
         <form action="/Pages/test.php">
             <input type="button" onclick="location.href='/Pages/test.php';" value="Test" />
         </form>
-        <div style="position: relative;background-color: blue; width: 600px; height: 800px;">    
+        <div style="position: relative; width: 600px; height: 800px;">    
 
-         <div style="position: absolute; bottom: 5px; background-color: green">
+         <div style="position: absolute; bottom: 5px;">
             Pre-alpha v 0.0.1 - All rights reserved  THE SAMSI CORPORATION
          </div>
         </div>
