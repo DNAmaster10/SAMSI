@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <?php
+  $root = $_SERVER['DOCUMENT_ROOT'];
   $continue = (1);
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
@@ -27,31 +28,29 @@
   }
   
   if ($continue == (1)) {
-    if (!is_dir('/app/Data/'.$schoolName)) {
+    if (!is_dir($root.'/Data/'.$schoolName)) {
       
       $textOutput = ("An error occured setting up either your school, or your admin account. Contact a network administrator for more information on the matter");
-      
-      echo ("$_SERVER['DOCUMENT_ROOT']");
-      mkdir("$_SERVER['DOCUMENT_ROOT']./Data");
-      mkdir('/app/Data/'.$schoolName);
-      mkdir("app/Data/".$schoolName."/Accounts");
-      mkdir("/app/Data/".$schoolName."/Accounts/Admin");
-      mkdir("/app/Data/".$schoolName."/Accounts/Admin/".$adminName);
+      mkdir($root."/Data");
+      mkdir($root."/Data/".$schoolName);
+      mkdir($root."/Data/".$schoolName."/Accounts");
+      mkdir($root."/Data/".$schoolName."/Accounts/Admin");
+      mkdir($root."/Data/".$schoolName."/Accounts/Admin/".$adminName);
         
-      copy ("/app/Templates/adminPanelTemplate.txt","app/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
+      copy ($root."/Templates/adminPanelTemplate.txt",$root."Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt");
       
-      $path_to_file = "/app/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt";
+      $path_to_file = $root."/Data/".($schoolName)."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt";
       $file_contents = file_get_contents($path_to_file);
       $file_contents = str_replace("ADMIN_NAME_PLACEHOLDER",$adminName,$file_contents);
       file_put_contents($path_to_file,$file_contents);
 
-      copy ("/app/Templates/logged_in.txt","/app/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
+      copy ($root."/Templates/logged_in.txt",$root."/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
       
-      $file_contents_2 = file_get_contents("/app/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
+      $file_contents_2 = file_get_contents($root."/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt");
       $file_contents_2 = str_replace("false","true",$file_contents);
-      file_put_contents ("/app/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt",$file_contents_2);
+      file_put_contents ($root."/Data/".$schoolName."/Accounts/Admin/".$adminName."/logged_in.txt",$file_contents_2);
    
-      rename("/app/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt","/app/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php");
+      rename($root."/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.txt",$root."/Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php");
       $admin_panel_path = "../Data/".$schoolName."/Accounts/Admin/".$adminName."/".$adminPassword."Panel.php";
       $textOutput = 'School successfully registered';      
     }
