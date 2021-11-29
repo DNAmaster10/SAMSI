@@ -2,7 +2,7 @@
 <html>
     <title>Samsi</title>
     <body>
-        <p>Welcome to Samsi</p>
+        <p>Welcome to Samsi poo</p>
         <form action="/Pages/login.php">
             <input type="button" onclick="location.href='/Pages/login.php';" value="Go to login page" />
         </form>
