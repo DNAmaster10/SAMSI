@@ -18,7 +18,7 @@
       url: 'checkSchool.php',
       type: 'POST',
       dataType:'html',
-      data:({"post_var":schoolEntry}),
+      data:({"post_var":document.getElementById("school_text").innerHTML),
       success: function(data) {
       console.log(data);
       result = data;
