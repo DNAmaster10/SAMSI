@@ -17,7 +17,7 @@
     $.ajax({
       url: 'checkSchool.php',
       type: 'POST',
-      dataType:'json',
+      dataType:'html',
       data:({schoolNamePostContainer:schoolEntry}),
       success: function(data) {
       console.log(data);
