@@ -15,7 +15,7 @@
         <div style="position: relative; width: 600px; height: 800px;">    
 
          <div style="position: absolute; bottom: 5px;">
-            Pre-alpha v 0.0.1 - All rights reserved  THE SAMSI CORPORATION
+            Pre-alpha v 0.0.1 - All rights reserved  THE SAMSI CORPORATION - lily and louis
          </div>
         </div>
 
