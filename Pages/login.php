@@ -17,7 +17,7 @@
     $.ajax({
       url: 'checkSchool.php',
       type: 'POST',
-      dataType:'html',
+      dataType:'json',
       data: {'post_var':document.getElementById("school_text").innerHTML},
       success: function(data) {
       console.log(data);
