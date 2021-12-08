@@ -1,5 +1,5 @@
 <?php
-$user_input = $_REQUEST["schoolEntry"];
+$user_input = $_POST["schoolEntry"];
 echo $user_input;
 echo "poo";
 ?>
