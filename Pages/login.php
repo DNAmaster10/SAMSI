@@ -19,9 +19,9 @@
       type: 'POST',
       dataType:'json',
       data:({schoolNamePostContainer:schoolEntry}),
-             success: function(data) {
-      console.log(returnValue);
-      result = returnValue;
+      success: function(data) {
+      console.log(data);
+      result = data;
     }
     });
     document.getElementById("output_field").innerHTML = (result);
