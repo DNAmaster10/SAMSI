@@ -1,4 +1,4 @@
 <?php
-$user_input=$_POST['post_varo'];
-echo json_encode(intval($user_input) + 1);
+$user_input=$_POST['post_var'];
+echo json_encode($user_input."1");
 ?>
