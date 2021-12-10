@@ -33,7 +33,7 @@
     dataType:"json",
     success: function(recieved_message) {
     console.log("Message recieved successfully!");
-    document.getElementById("message_output_field").innerHTML = ("Current message: " + recieved_message;
+    document.getElementById("message_output_field").innerHTML = ("Current message: " + recieved_message);
     }
     });
     }
