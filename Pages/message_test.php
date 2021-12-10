@@ -11,7 +11,7 @@
       
       ?> </p>
   </body>
-  <script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
     var result = ("");
     function send_message() {
     console.log("Sending message to server");
