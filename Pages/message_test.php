@@ -27,7 +27,7 @@
     }
     
     function request_messages() {
-    4.ajax({
+    $.ajax({
     url: "request_message.php",
     type: "POST",
     dataType:"json",
