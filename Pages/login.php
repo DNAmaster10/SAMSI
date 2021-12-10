@@ -16,7 +16,7 @@
       url: 'checkSchool.php',
       type: 'POST',
       dataType:'json',
-      data: { 'post_var':document.getElementById("school_text").value; },
+      data: {'post_var':document.getElementById("school_text").value},
       success: function(data) {
       console.log(data);
       result = data;
