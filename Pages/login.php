@@ -21,9 +21,9 @@
       success: function(data) {
       console.log(data);
       result = data;
+      document.getElementById("output_field").innerHTML = (result);
     }
     });
-    document.getElementById("output_field").innerHTML = (result);
     }
     </script>
   </body>
