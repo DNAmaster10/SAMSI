@@ -10,14 +10,13 @@
     
     <script>
     var result = ("");
-    var schoolEntry = document.getElementById("school_text").value;
     function check_school() {
     console.log("Checking if school exists");
     $.ajax({
       url: 'checkSchool.php',
       type: 'POST',
       dataType:'json',
-      data: {'post_var':schoolEntry},
+      data: { 'post_var':document.getElementById("school_text").value; },
       success: function(data) {
       console.log(data);
       result = data;
