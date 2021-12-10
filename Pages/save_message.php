@@ -1,5 +1,5 @@
 <?php
 $user_input=$_POST['sent_message'];
-$message_file = fopen("testfile.txt", "w");
+$message_file = fopen("message_file.txt", "w");
 fwrite($message_file, $user_input);
 ?>
