@@ -27,14 +27,14 @@
     
     function request_messages() {
     $.ajax({
-    url: "request_message.php",
-    type: "POST",
-    dataType:"json",
-    success: function(recieved_message) {
-    console.log("Message recieved successfully!");
-    document.getElementById("message_output_field").innerHTML = ("Current message: " + recieved_message);
-    }
-    });
+      url: "request_message.php",
+      type: "POST",
+      dataType:"json",
+      success: function(recieved_message) {
+      console.log("Message recieved successfully!");
+      document.getElementById("message_output_field").innerHTML = ("Current message: " + recieved_message);
+      }
+      });
     }
     var i = 1;                  //  set your counter to 1
 
