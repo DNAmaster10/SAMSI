@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+    <style> 
+        body {
+         background-color: lightblue;
+            }
+    </style>
     <title>Samsi</title>
     <body>
         <p>Welcome to Samsi</p>
