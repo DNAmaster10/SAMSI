@@ -14,8 +14,7 @@
       ?> </p>
   </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-    var result = ("");
-    function send_message() {
+    var function send_message() {
     console.log("Sending message to server");
     $.ajax({
       url: 'save_message.php',
@@ -28,7 +27,7 @@
     });
     }
     
-    function request_messages() {
+    var function request_messages() {
     $.ajax({
       url: "request_message.php",
       type: "POST",
@@ -39,19 +38,19 @@
       }
       });
     }
-    var i = 1;                  //  set your counter to 1
+    var i = 1;                  
 
-    function myLoop() {         //  create a loop function
-      setTimeout(function() {   //  call a 3s setTimeout when the loop is called
-        console.log('Fetching messages');   //  your code here
+    function myLoop() {       
+      setTimeout(function() {  
+        console.log('Fetching messages');  
         request_messages()
-        i++;                    //  increment the counter
-        if (i > 0) {           //  if the counter < 10, call the loop function
-          myLoop();             //  ..  again which will trigger another 
-        }                       //  ..  setTimeout()
+        i++;                
+        if (i > 0) {         
+          myLoop();          
+        }                      
      }, 1000)
     }
 
-    myLoop();                   //  start the loop
+    myLoop();                
   </script>
 </html>
