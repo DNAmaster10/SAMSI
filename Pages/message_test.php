@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
+  <head>
   <title>Messenger</title>
+	</head>
   <body>
     <p>Enter your message in the box bellow</p>
     <input type="text" id="input_message" name="message_entry" onkeyup="send_message()">
