@@ -12,6 +12,9 @@
         <form action="/Pages/test.php">
             <input type="button" onclick="location.href='/Pages/test.php';" value="Test" />
         </form>
+        <form action="/Pages/message_test.php">
+            <input type="button" onclick="location.href='/Pages/message_text.php';" value"Test message site" />
+        </form>
         <div style="position: relative; width: 600px; height: 800px;">    
 
          <div style="position: absolute; bottom: 5px;">
