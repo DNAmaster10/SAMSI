@@ -15,7 +15,7 @@
       
       ?> </p>
   </body>
-  <script src="script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="script src="/Scripts/messengar"></script>
   <script>
        function send_message() {
    console.log("Sending message to server");
