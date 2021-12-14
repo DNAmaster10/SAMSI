@@ -15,7 +15,7 @@
       
       ?> </p>
   </body>
-  <script src="script src="/Scripts/messengar"></script>
+  <script src="script src="/Scripts/messenger.js"></script>
   <script>
        function send_message() {
    console.log("Sending message to server");
