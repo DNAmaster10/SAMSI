@@ -14,6 +14,6 @@
       fclose ($message_file);
       
       ?> </p>
+      <script type="text/javascript" src="/Scripts/messenger.js"></script>
   </body>
-  <script src="script src="/Scripts/messenger.js"></script>
 </html>
