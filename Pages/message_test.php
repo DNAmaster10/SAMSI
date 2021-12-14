@@ -4,18 +4,6 @@
   <title>Messenger</title>
   </head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-   function send_message() {
-   console.log("Sending message to server");
-    $.ajax({
-      url: 'save_message.php',
-      type: 'POST',
-      dataType:'json',
-      data: {'sent_message':document.getElementById("input_message").value},
-      success: function(data) {
-      console.log("Message successfully sent!");
-    }
-    });
-    } 
   </script>
   <body>
     <p>Enter your message in the box bellow</p>
@@ -27,7 +15,20 @@
       
       ?> </p>
   </body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+  <script src="script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+       function send_message() {
+   console.log("Sending message to server");
+    $.ajax({
+      url: 'save_message.php',
+      type: 'POST',
+      dataType:'json',
+      data: {'sent_message':document.getElementById("input_message").value},
+      success: function(data) {
+      console.log("Message successfully sent!");
+    }
+    });
+    } 
     var function request_messages() {
     $.ajax({
       url: "request_message.php",
