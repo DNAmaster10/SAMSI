@@ -2,7 +2,7 @@
 <html>
   <title>Login</title>
   <body>
-    <p>Enter the name of your school bellow in full</p>
+    <p>Enter the name of your school below in full</p>
     <br>
     <input type="text" id="school_text" name="school_txt" onkeyup="check_school()">
     <p id="output_field">School does not exist</p>
