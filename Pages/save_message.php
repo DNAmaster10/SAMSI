@@ -1,5 +1,6 @@
 <?php
 $user_input=$_POST['sent_message'];
-$message_file = fopen(getcwd()."/var/www/html/Pages/message_file.txt", "w");
-fwrite($message_file, $user_input);
+$messageFile = fopen("message_file.txt", "w") or die ("Unable to open the file!");
+fwrite($messageFile, $user_input);
+fclose($myfile);
 ?>
