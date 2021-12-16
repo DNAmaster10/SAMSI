@@ -1,6 +1,6 @@
 
-       function send_message() {
-   console.log("Sending message to server");
+    function send_message() {
+    console.log("Sending message to server");
     $.ajax({
       url: 'save_message.php',
       type: 'POST',
@@ -11,7 +11,7 @@
     }
     });
     } 
-    var function request_messages() {
+    function request_messages() {
     $.ajax({
       url: "request_message.php",
       type: "POST",
