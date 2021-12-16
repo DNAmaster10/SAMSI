@@ -3,8 +3,6 @@
   <head>
   <title>Messenger</title>
   </head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-  </script>
   <body>
     <p>Enter your message in the box bellow</p>
     <input type="text" id="input_message" name="message_entry" onkeyup="send_message()">
@@ -14,6 +12,7 @@
       fclose ($message_file);
       
       ?> </p>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script type="text/javascript" src="/Scripts/messenger.js"></script>
   </body>
 </html>
