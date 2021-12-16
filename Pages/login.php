@@ -8,7 +8,7 @@
     <p id="output_field">School does not exist</p>
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="/Pages/Pages/Scripts/messenger.js"></script>
+    <script type="text/javascript" src="/Pages/Scripts/messenger.js"></script>
   </body>
 </html>
 
