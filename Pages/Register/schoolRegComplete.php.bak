@@ -36,14 +36,11 @@
   try {
   if ($continue == 1) {
 	$sql = ("INSERT INTO admin_users (username, password) VALUES ('".$adminName."','".$adminPassword."');");
-	if (!(mysqli_query ($conn, $sql) or die(mysqli_error($mysqli)))) {
-		$textOutput = ("Username already in use. Please use a different one.");
-	}
-	else {
+	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli)) 	
 	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
 	}
   }
-  } catch (Exception $ex) {
+  catch (Exception $ex) {
 	  $textOutput = ("Username already in use. Please use a different one.");
   }
   ?>

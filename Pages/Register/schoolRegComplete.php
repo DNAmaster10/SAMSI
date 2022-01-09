@@ -36,7 +36,7 @@
   try {
   if ($continue == 1) {
 	$sql = ("INSERT INTO admin_users (username, password) VALUES ('".$adminName."','".$adminPassword."');");
-	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli)) 	
+	mysqli_query ($conn, $sql); 	
 	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
 	}
   }
