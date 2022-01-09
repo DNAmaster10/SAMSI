@@ -4,4 +4,4 @@ Currently 0 security meassures in place. This is just for testing purposes. Do N
 
 To use, (currently can only be installed on Linux) run the bash script. Make sure you have git module installed, and you run the bash script as sudo.
 
-You need to run re-install to install. Currently, running it delete all old files, user profiles e.t.c. This is temporary for testing purposes, and we will write both an installer and an updater later on.
+You need to run re-install to install. <strike>Currently, running it will delete all old files, user profiles e.t.c. This is temporary for testing purposes, and we will write both an installer and an updater later on. </script> No longer the case as we are migrating to SQL
