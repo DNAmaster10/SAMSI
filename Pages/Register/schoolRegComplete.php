@@ -46,7 +46,6 @@
   } catch (Exception $ex) {
 	  $textOutput = ("Username already in use. Please use a different one.");
   }
-  }
   ?>
   <body>
     <p> <?php echo $textOutput; ?></p>
