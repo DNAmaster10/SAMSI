@@ -29,7 +29,7 @@
   }
   
   if ($continue == 1) {
-	$sql = ("INSERT INTO admin_users (username, password) VALUES (".$adminName."','".$adminPassword."');");
+	$sql = ("INSERT INTO admin_users (username, password) VALUES ('".$adminName."','".$adminPassword."');");
 	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli));;
   }
   
@@ -38,9 +38,9 @@
   }
   ?>
   <body>
-    <p> <?php echo $textOutput; ?> </p>
-    <form action="<?php echo $admin_panel_path; ?>">
-      <input type="button" onclick="location.href='<?php echo $admin_panel_path; ?>';" value="Admin Panel" />
+    <p> Done! </p>
+    <form action="index.php">
+      <input type="button" onclick="location.href='index.php';" value="Admin Panel" />
     </form>
   </body>
 </html>
