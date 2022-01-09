@@ -1,0 +1,5 @@
+Include another file, in this case the code that connects to database
+include "/Includes/dbh.php";
+
+Get root directory for document
+$root = $_SERVER['DOCUMENT_ROOT'];
