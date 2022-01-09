@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <?php
-  include "/Includes/dbh.php";
+  include "/var/www/html/Includes/dbh.php";
+  
   
   $continue = (1);
   $schoolName = $_POST["schoolName"];
