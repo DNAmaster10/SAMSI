@@ -32,16 +32,15 @@
     $continue = (0);
 	$textOutput = ("The admin username length is too long! Maximum of 25 characters allowed.");
   }
-  #Check if username already exists
-  if ($continue == 1) {
-	  
-  }
-  
   #add username and password to sql database
   if ($continue == 1) {
 	$sql = ("INSERT INTO admin_users (username, password) VALUES ('".$adminName."','".$adminPassword."');");
-	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli));;
+	if (!(mysqli_query ($conn, $sql) or die(mysqli_error($mysqli)))) {
+		$textOutput = ("Username already in use. Please use a different one.");
+	}
+	else {
 	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
+	}
   }
   
   else {
