@@ -39,7 +39,7 @@
   if (mysqli_num_rows($res_u) > 0) {
 	  $continue == 0;
 	  $textOutput = ("That username is already in use!");
-  
+  }
   #add username and password to sql database
   try {
   if ($continue == 1) {

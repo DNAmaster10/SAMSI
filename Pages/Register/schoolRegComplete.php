@@ -34,7 +34,7 @@
   }
   #check if username already exists in database
   $sql_u = "SELECT * FROM admin_users WHERE username='".$adminName."'";
-  $res_u = mysql_query($conn, $sql_u);
+  $res_u = mysqli_query($conn, $sql_u);
   
   if (mysqli_num_rows($res_u) > 0) {
 	  $continue == 0;
