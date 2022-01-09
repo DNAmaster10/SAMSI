@@ -29,7 +29,7 @@
   }
   
   if ($continue == 1) {
-	$sql = ("INSERT INTO admin_users (username, password) VALUES ('$adminName.','$adminPassword');")
+	$sql = ("INSERT INTO admin_users (username, password) VALUES ('louisss','poopoo');")
 	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli));;
   }
   
