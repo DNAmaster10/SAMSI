@@ -2,6 +2,7 @@
 <html>
   <?php
   include "/Includes/dbh.php";
+  
   $continue = (1);
   $schoolName = $_POST["schoolName"];
   $adminName = $_POST["adminName"];
@@ -28,7 +29,7 @@
   }
   
   if ($continue == 1) {
-	$sql = ("INSERT INTO admin_users (username, password) VALUES ('".$adminName."','".$adminPassword."');")
+	$sql = ("INSERT INTO admin_users (username, password) VALUES ('$adminName.','$adminPassword');")
 	mysqli_query ($conn, $sql) or die(mysqli_error($mysqli));;
   }
   
