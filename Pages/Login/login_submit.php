@@ -33,6 +33,11 @@
 	$_SESSION["password"] = $password_t;
   }
   
+  else {
+	  $textOutput = "That username and password combination is not recognised";
+	  $error = (2);
+  }
+  
   if ($error == 0) {
 	  echo ("
 	  <html>

@@ -2,14 +2,14 @@
 	#connect to database
   include "/var/www/html/Includes/dbh.php";
   
-  $username = $_POST["username"];
-  $password = $_POST["password"];
+  $username_t = $_POST["username"];
+  $password_t = $_POST["password"];
   
   $error = 0;
   
   #check if username / password is too long
-  $usernameLength = strlen($username);
-  $passwordLength = strlen($password);
+  $usernameLength = strlen($username_t);
+  $passwordLength = strlen($password_t);
   
   if ($usernameLength > 25) {
     $error = (1);
@@ -24,13 +24,13 @@
   }
   
   #check if username exists in database
-  $sql_check_username = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."'";
+  $sql_check_username = "SELECT * FROM users WHERE username='".$username_t."' AND password='".$password_t."'";
   $result_check_username = mysqli_query($conn, $sql_check_username);
   
   if (mysqli_num_rows($result_check_username) > 0) {
 	$_SESSION["logged_in"] = "yes";
-	$_SESSION["username"] = $username;
-	$_SESSION["password"] = $password;
+	$_SESSION["username"] = $username_t;
+	$_SESSION["password"] = $password_t;
   }
   
   if ($error == 0) {
