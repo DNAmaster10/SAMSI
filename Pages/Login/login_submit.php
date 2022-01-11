@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	#connect to database
-  include "/var/www/html/Includes/dbh.php";
+  include "/Includes/Pgp/dbh.php";
   
   $username_t = $_GET["username"];
   $password_t = $_GET["password"];

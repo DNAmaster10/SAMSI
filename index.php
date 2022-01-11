@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <style> 
-        body {
-         background-color: lightblue;
-            }
-    </style>
-    <title>Samsi</title>
+	<head>
+		<link rel="stylesheet" href="/Includes/Css/main.css">
+		<title>Samsi</title>
+	</head>
     <body>
         <p>Welcome to Samsi</p>
         <form action="/Pages/Login/login.php">

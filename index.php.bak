@@ -9,16 +9,10 @@
     <body>
         <p>Welcome to Samsi</p>
         <form action="/Pages/Login/login.php">
-            <input type="button" onclick="location.href='/Pages/Login/login.php';" value="Go to login page" />
+            <input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
         </form>
         <form action="/Pages/register.php">
-            <input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register a school" />
-        </form>
-        <form action="/Pages/test.php">
-            <input type="button" onclick="location.href='/Pages/test.php';" value="Test" />
-        </form>
-        <form action="/Pages/message_test.php">
-            <input type="button" onclick="location.href='/Pages/message_test.php';" value="Test message site" />
+            <input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" />
         </form>
         <div style="position: relative; width: 600px; height: 800px;">    
 
