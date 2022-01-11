@@ -33,7 +33,7 @@
 	$textOutput = ("The admin username length is too long! Maximum of 25 characters allowed.");
   }
   #check if username already exists in database
-  $sql_u = "SELECT * FROM admin_users WHERE username='".$adminName."'";
+  $sql_u = "SELECT * FROM users WHERE username='".$adminName."'";
   $res_u = mysqli_query($conn, $sql_u);
   
   if (mysqli_num_rows($res_u) > 0) {
