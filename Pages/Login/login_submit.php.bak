@@ -60,7 +60,10 @@
 			<title>Samsi</title>
 		</head>
 		<body>
-			<p>".$textOutput."</p>
+			<p>".$textOutput."</p><br>
+			<form action='/Pages/Login/Login.php'>
+				<input type='submit' value='Go Back'>
+			</form>
 		</body>
 	  </html>");
   }

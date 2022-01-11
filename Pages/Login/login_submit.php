@@ -61,7 +61,7 @@
 		</head>
 		<body>
 			<p>".$textOutput."</p><br>
-			<form action='/Pages/Login/Login.php'>
+			<form action='/Pages/Login/login.php'>
 				<input type='submit' value='Go Back'>
 			</form>
 		</body>
