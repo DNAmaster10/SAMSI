@@ -1,4 +1,7 @@
 <?php
+	#connect to database
+  include "/var/www/html/Includes/dbh.php";
+  
   $username = $_POST["username"];
   $password = $_POST["password"];
   
@@ -21,12 +24,13 @@
   }
   
   #check if username exists in database
-  $sql_check_username_admin = "SELECT * FROM admin_users WHERE username='".$adminName."'";
-  $result_check_username_admin = mysqli_query($conn, $sql_u);
+  $sql_check_username = "SELECT * FROM users WHERE username='".$username."' AND password='".$password."'";
+  $result_check_username = mysqli_query($conn, $sql_check_username);
   
-  if (mysqli_num_rows($res_u) > 0) {
-	  $continue = 0;
-	  $textOutput = ("That username is already in use!");
+  if (mysqli_num_rows($result_check_username) > 0) {
+	$_SESSION["logged_in"] = "yes";
+	$_SESSION["username"] = $username;
+	$_SESSION["password"] = $password;
   }
   
   if $error == 0 {

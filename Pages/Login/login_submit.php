@@ -33,7 +33,7 @@
 	$_SESSION["password"] = $password;
   }
   
-  if $error == 0 {
+  if ($error == 0) {
 	  echo ("
 	  <html>
 		<head>
