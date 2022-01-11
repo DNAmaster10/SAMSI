@@ -7,7 +7,7 @@
     <form action="/Pages/Login/login_submit.php">
         <p>Username: </p><input type="text" id="username_text_box" name="username"><br>
         <p>Password: </p><input type="text" id="password_text_box" name="password"><br>
-        <input type="submit" text="Login">
+        <input type="submit" value="Login">
     </form>
   </body>
 </html>
