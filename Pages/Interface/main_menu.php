@@ -7,6 +7,6 @@ include "/Includes/check_user_pass.php";
 		<title>Samsi</title>
 	</head>
 	<body>
-		<h1>Welcome back, <?php echo ($_SESSION["username"]."."; ?> </h1>
+		<h1>Welcome back, <?php echo ($_SESSION["username"]."."); ?> </h1>
 	</body>
 </html>
