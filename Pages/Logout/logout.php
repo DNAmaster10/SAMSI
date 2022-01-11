@@ -10,7 +10,7 @@ session_unset();
 	<body>
 		<h1>Later, <?php echo($logout_name); ?>
 		<br>
-		<form action="index.php">
+		<form action="../../index.php">
 			<input type="submit" value="Home page">
 		</form>
 	</body>
