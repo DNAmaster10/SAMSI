@@ -48,7 +48,7 @@
 			<p>Logged in successfully. redirecting</p>
 		</body>
 			<script>
-			window.location.href = '/Interface/main_menu.php';
+			window.location.href = '/Pages/Interface/main_menu.php';
 			</script>
 	  </html>
 	  ");
