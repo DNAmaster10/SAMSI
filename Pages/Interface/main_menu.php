@@ -9,5 +9,9 @@ include "/Includes/check_user_pass.php";
 	</head>
 	<body>
 		<h1>Welcome back, <?php echo ($_SESSION["username"]."."); ?> </h1>
+		<br>
+		<form action="">
+			<input type="submit" value="logout">
+		</form>
 	</body>
 </html>
