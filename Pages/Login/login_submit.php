@@ -62,9 +62,6 @@
 		<body>
 			<p>".$textOutput."</p>
 		</body>
-			<script>
-			window.location.href = '/Interface/main_menu.php';
-			</script>
 	  </html>");
   }
   
