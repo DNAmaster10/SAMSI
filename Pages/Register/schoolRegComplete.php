@@ -2,7 +2,7 @@
 <html>
   <?php
   #connect to database
-  include "/Includes/Php/dbh.php";
+  include "/var/www/html/Includes/Php/dbh.php";
   
   #get inputs from browser
   $continue = (1);
