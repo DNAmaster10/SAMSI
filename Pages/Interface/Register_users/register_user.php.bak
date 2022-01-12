@@ -2,6 +2,12 @@
 session_start();
 include "/var/www/html/Includes/Php/dbh.php";
 include "/var/www/html/Includes/Php/check_user_pass.php";
+
+$table_name = "users";
+$column_name = "isAdmin";
+$where_column = "username";
+$where_value = ($_SESSION["username"]);
+
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
 
