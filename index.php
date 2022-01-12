@@ -5,7 +5,7 @@
 		<title>Samsi</title>
 	</head>
     	<body>
-        	<p>Welcome to Samsi</p>
+        	<h1>Welcome to Samsi</h1>
         	<form action="/Pages/Login/login.php">
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
         	</form>
