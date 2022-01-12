@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "/Includes/Php/check_user_pass.php";
+include "/var/www/html/Includes/Php/check_user_pass.php";
 ?>
 <!DOCTYPE html>
 <html>
