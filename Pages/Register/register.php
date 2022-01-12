@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>SAMSi</title>
+    <link rel="stylesheet" href="/Includes/Css/main.css">
+  </head>
   <body>
     <form action="/Pages/Register/schoolRegComplete.php" method="POST">
       <p>School Name:</p> <input type="text" name="schoolName"><br>
