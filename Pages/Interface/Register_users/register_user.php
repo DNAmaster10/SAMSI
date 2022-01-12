@@ -1,7 +1,7 @@
 <?php
 session_start();
-include "/Includes/Php/dbh.php";
-include "/Includes/Php/check_user_pass.php";
+include "/var/www/html/Includes/Php/dbh.php";
+include "/var/www/html/Includes/Php/check_user_pass.php";
 $sql = "SELECT isAdmin FROM users WHERE username='".$_SESSION['username']."';";
 $raw_result = mysqli_query($conn, $sql);
 error_log($raw_result);
