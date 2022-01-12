@@ -1,3 +1,4 @@
+#Do not run this! It's not up to date, and probably won't work as of now. We'll update the installer later on once the program is at a more finished state.
 echo "This is the installer for samsi. It will install the samsi webapp to this installers current location. Are you sure you wish to continue? y/n"
 read user_input
 if !["$user_input" == "y"]; then
