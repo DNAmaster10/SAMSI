@@ -4,9 +4,9 @@ include "/Includes/Php/check_user_pass.php";
 include "/Includes/Php/dbh.php";
 $sql = "SELECT isAdmin FROM users WHERE username='".$_SESSION['username']."';";
 $raw_result = mysqli_query($conn, $sql);
-$result = ($raw_result["isAdmin"]);
-if (result == "yes") {
-    $is_admin = (true);
+error_log($raw_result);
+if (1 == 1) {
+	echo ("yes");
 }
 else {
     header("location: /Pages/Interface/No_perms/not_admin.php");
