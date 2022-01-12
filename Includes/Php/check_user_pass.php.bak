@@ -11,8 +11,6 @@ $result_check_username = mysqli_query($conn, $sql_check_username);
 if (mysqli_num_rows($result_check_username) > 0) {
 	unset ($username_t);
 	unset ($password_t);
-	unset ($result_check_username);
-	unset ($sql_check_username);
 }
   else {
 	header("location: /Pages/Login/login.php");
