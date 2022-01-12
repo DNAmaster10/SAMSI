@@ -2,13 +2,11 @@
 session_start();
 include "/var/www/html/Includes/Php/dbh.php";
 include "/var/www/html/Includes/Php/check_user_pass.php";
-$sql = "SELECT isAdmin FROM users WHERE username='".$_SESSION['username']."';";
-$raw_result = mysqli_query($conn, $sql);
-$array_result = get_object_vars($raw_result);
-$imploded_array_result = implode ("|",$array_result);
-error_log($imploded_array_result);
-if (1 == 1) {
-	echo ("yes");
+include "/var/www/html/Includes/Php/get_single_value_from_db.php";
+
+
+if ("poo" == "poo") {
+	error_log($result);
 }
 else {
     header("location: /Pages/Interface/No_perms/not_admin.php");
