@@ -6,6 +6,7 @@ include "/var/www/html/Includes/Php/check_user_pass.php";
 <html>
 	<head>
 		<title>Samsi</title>
+		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
 		<h1>Welcome back, <?php echo ($_SESSION["username"]."."); ?> </h1>
