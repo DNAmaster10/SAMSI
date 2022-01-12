@@ -5,8 +5,8 @@ include "/var/www/html/Includes/Php/check_user_pass.php";
 $sql = "SELECT isAdmin FROM users WHERE username='".$_SESSION['username']."';";
 $raw_result = mysqli_query($conn, $sql);
 $array_result = get_object_vars($raw_result);
-implode ("|",$array_result);
-error_log($array_result);
+$imploded_array_result = implode ("|",$array_result);
+error_log($imploded_array_result);
 if (1 == 1) {
 	echo ("yes");
 }
