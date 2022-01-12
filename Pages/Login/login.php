@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <head>
+  <link rel="stylesheet" href="/Includes/Css/main.css">
   <title>Login</title>
+  </head>
   <body>
     <p>Enter your login credidentials bellow</p>
     <br>
