@@ -1,4 +1,5 @@
 <?php
+include "/var/www/html/Includes/php/dbh.php";
 #Get username and password
 $username_t = $_SESSION["username"];
 $password_t = $_SESSION["password"];
