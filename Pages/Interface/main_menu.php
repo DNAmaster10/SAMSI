@@ -1,5 +1,9 @@
 <?php
+#Access global variables
 session_start();
+#Connect to database
+include "/var/www/html/Includes/Php/dbh.php";
+#Check user's username and password
 include "/var/www/html/Includes/Php/check_user_pass.php";
 ?>
 <!DOCTYPE html>
