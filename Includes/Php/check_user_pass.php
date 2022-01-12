@@ -8,8 +8,8 @@ $sql_check_username = "SELECT * FROM users WHERE username='".$username_t."' AND 
 $result_check_username = mysqli_query($conn, $sql_check_username);
 
 if (mysqli_num_rows($result_check_username) > 0) {
-	unset $username_t;
-	unset $password_t;
+	unset ($username_t);
+	unset ($password_t);
 }
   else {
 	header("location: /Pages/Login/login.php");
