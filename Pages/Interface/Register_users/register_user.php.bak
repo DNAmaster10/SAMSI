@@ -9,7 +9,7 @@ if (result == "yes") {
     $is_admin = (true);
 }
 else {
-    header("location: /Pages/Interface/No_perms/not_admin.php");
+    header(location:"/Pages/Interface/No_perms/not_admin.php");
 }
 ?>
 <!DOCTYPE html>
