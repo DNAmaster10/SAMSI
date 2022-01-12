@@ -12,7 +12,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
 
 if ($result == "yes") {
-	is_admin = (true);
+	$is_admin = (true);
 }
 else {
     header("location: /Pages/Interface/No_perms/not_admin.php");
