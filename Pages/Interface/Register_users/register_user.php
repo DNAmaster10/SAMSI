@@ -4,7 +4,9 @@ include "/var/www/html/Includes/Php/dbh.php";
 include "/var/www/html/Includes/Php/check_user_pass.php";
 $sql = "SELECT isAdmin FROM users WHERE username='".$_SESSION['username']."';";
 $raw_result = mysqli_query($conn, $sql);
-error_log($raw_result);
+$array_result = get_object_vars($raw_result);
+implode ("|",$array_result);
+error_log($array_result);
 if (1 == 1) {
 	echo ("yes");
 }
