@@ -4,6 +4,7 @@ session_start();
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/Includes/Css/main.css">
     <title>SAMSi</title>
   </head>
   <body>
