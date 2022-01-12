@@ -1,4 +1,5 @@
 <?php
+session_start();
 include ("/var/www/html/Includes/Php/dbh.php");
 #Get username and password
 $username_t = $_SESSION["username"];
