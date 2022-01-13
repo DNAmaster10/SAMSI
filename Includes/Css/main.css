@@ -7,3 +7,4 @@ body {
   padding: 10px;
   text-align: center;
 }
+input.input_menu { display: inline; }
