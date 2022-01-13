@@ -31,11 +31,13 @@ else {
 		<input type="submit" value="Home">
 	</form>
 	<br>
+	<div class="input_menu">
 	<form action="./register_users_submit.php">
 		<p>Username: </p><input type="text"> <br>
 		<p>Password: </p><input type="text"> <br>
 		<p>Account type: </p>
 		<input type="submit" value="Register User">
 	</form>
+	</div>
     </body>
 </html>
