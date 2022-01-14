@@ -36,7 +36,7 @@ else {
 		<p>Username: </p><input type="text"> <br>
 		<p>Password: </p><input type="text"> <br>
 		<p>Account type: </p><input type="radio" value="student" name="account_type">
-		<input type="submit" value="Register User">
+		<input type="submit" value="Register User"> 
 	</form>
 	</div>
     </body>
