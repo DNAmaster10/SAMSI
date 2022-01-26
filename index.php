@@ -27,7 +27,6 @@
             		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" />
         	</form>
 		<br>
-		<img src="/Includes/Images/logo_text.png" alt="Logo_text">
 		<div class="footer">
   			<p>Pre-alpha v 0.0.3 - All rights reserved  THE SAMSI CORPORATION</p>
 		</div>
