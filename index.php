@@ -3,6 +3,18 @@
 	<head>
 		<link rel="stylesheet" href="/Includes/Css/main.css"></link>
 		<title>Samsi</title>
+	
+		<style>
+		body {
+  			margin: 0;
+		}
+
+		.header {
+  			background-color: #af93d7;
+  			padding: 20px;
+  			text-align: center;
+		}
+</style>
 	</head>
     	<body>
         	<h1>Welcome to Samsi</h1>
