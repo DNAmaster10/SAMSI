@@ -29,7 +29,7 @@
 		<br>
 		<img src="/Includes/Images/logo_text.png" alt="Logo_text">
 		<div class="footer">
-  			<p>Pre-alpha v 0.0.2 - All rights reserved  THE SAMSI CORPORATION</p>
+  			<p>Pre-alpha v 0.0.3 - All rights reserved  THE SAMSI CORPORATION</p>
 		</div>
 
     </body>
