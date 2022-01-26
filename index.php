@@ -18,7 +18,7 @@
 	</head>
     	<body>
         	<div class="header">
-			<h1>Welcome to Samsi</h1>
+			<img src="/Includes/Images/logo_text.png" alt="Logo_text"></img>
 		</div>
         	<form action="/Pages/Login/login.php">
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
