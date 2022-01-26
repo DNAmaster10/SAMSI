@@ -17,7 +17,9 @@
 </style>
 	</head>
     	<body>
-        	<h1>Welcome to Samsi</h1>
+        	<div class="header">
+			<h1>Welcome to Samsi</h1>
+		</div>
         	<form action="/Pages/Login/login.php">
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
         	</form>
