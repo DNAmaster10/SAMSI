@@ -5,7 +5,7 @@
   <title>Login</title>
   <style>
     body {
- background-image: url("../../seb_pic/MicrosoftTeams-image.png");
+ background-image: url("./MicrosoftTeams-image.png");
  background-color: #cccccc;
 }
     </style>
@@ -20,4 +20,3 @@
     </form>
   </body>
 </html>
-
