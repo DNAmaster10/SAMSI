@@ -3,6 +3,12 @@
   <head>
   <link rel="stylesheet" href="/Includes/Css/main.css">
   <title>Login</title>
+  <style>
+    body {
+ background-image: url("../../../seb_pic/MicrosoftTeams-image.png");
+ background-color: #cccccc;
+}
+    </style>
   </head>
   <body>
     <p>Enter your login credidentials bellow</p>
