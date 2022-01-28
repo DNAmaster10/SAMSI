@@ -33,8 +33,8 @@ else {
 	<br>
 	<div class="input_menu">
 	<form action="./register_users_submit.php">
-		<p>Username: </p><input type="text"> <br>
-		<p>Password: </p><input type="text"> <br>
+		<p>Username: </p><input type="text" name="username"> <br>
+		<p>Password: </p><input type="text" name="password"> <br>
 		<p>Account type: </p><input type="radio" value="student" name="account_type">
 		<input type="submit" value="Register User"> 
 	</form>
