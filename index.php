@@ -11,7 +11,7 @@
 
 		.header {
   			background-color: #af93d7;
-  			padding: 50px;
+  			padding: 0px;
   			text-align: center;
 		}
 </style>
