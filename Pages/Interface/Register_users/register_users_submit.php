@@ -12,16 +12,6 @@ $account_type = $_POST["account_type"];
 
 $continue = 1;
 
-//verify user input is correct
-if ($account_type !== "student") {
-  if ($account_type !== "teacher") {
-    if ($account_type !== "admin") {
-      $text_output = "There was an error selecting the account type!";
-      $continue = 0;
-    }
-  }
-}
-
 if ($continue == 1) {
 //writing to DB
 $table_name = "users";
