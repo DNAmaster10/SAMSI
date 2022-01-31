@@ -12,7 +12,7 @@
 		.header {
   			background-color: #af93d7;
   			padding: 0px;
-  			text-align: center;
+  			text-align: left;
 		}
 </style>
 	</head>
