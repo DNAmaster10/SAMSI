@@ -28,7 +28,7 @@
         	</form>
 		<br>
 		<div class="footer">
-  			<p>Pre-alpha v 0.0.3 - All rights reserved  THE SAMSI CORPORATION</p>
+  			<p>Pre-alpha v 0.0.4 - All rights reserved  THE SAMSI CORPORATION</p>
 		</div>
 
     </body>
