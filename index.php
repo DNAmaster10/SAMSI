@@ -19,6 +19,9 @@
     	<body>
         	<div class="header">
 			<img src="/Includes/Images/logo_text.png" alt="Logo_text"></img>
+			<form action="/Pages/Login/login.php">
+           			<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
+        		</form>
 		</div>
         	<form action="/Pages/Login/login.php">
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
