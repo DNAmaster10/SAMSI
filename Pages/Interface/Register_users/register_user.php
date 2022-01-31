@@ -4,14 +4,14 @@ include "/var/www/html/Includes/Php/dbh.php";
 include "/var/www/html/Includes/Php/check_user_pass.php";
 
 $table_name = "users";
-$column_name = "isAdmin";
+$column_name = "account_type";
 $where_column = "username";
 $where_value = ($_SESSION["username"]);
 
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
 
-if ($result == "yes") {
+if ($result == "admin") {
 	$is_admin = (true);
 }
 else {
