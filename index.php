@@ -36,9 +36,11 @@
             		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" />
         	</form>
 		<br>
+		<footer>
 		<div class="footer">
   			<p>Pre-alpha v 0.0.4 - All rights reserved  THE SAMSI CORPORATION</p>
 		</div>
+		</footer>
 
     </body>
 </html>
