@@ -33,11 +33,11 @@ else {
 	<br>
 	<div class="input_menu">
 	<form action="./register_users_submit.php">
-		<p>Username: </p><input type="text" name="username"> <br>
-		<p>Password: </p><input type="text" name="password"> <br>
-		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type"><br>
-		<p>Teacher</p><input type="radio" value="teacher" name="account_type"><br>
-		<p>Administrator</p><input type="radio" value="admin" name="account_type"><br>
+		<p>Username: </p><input type="text" name="username" required> <br>
+		<p>Password: </p><input type="text" name="password" required> <br>
+		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type" required><br>
+		<p>Teacher</p><input type="radio" value="teacher" name="account_type" required><br>
+		<p>Administrator</p><input type="radio" value="admin" name="account_type" required><br>
 		<input type="submit" value="Register User"> 
 	</form>
 	</div>
