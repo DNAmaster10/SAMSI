@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/Includes/Css/main.css"></link>
-		<title>Samsi</title>
+		<title>SAMSi</title>
 	
 		<style>
 		body {
