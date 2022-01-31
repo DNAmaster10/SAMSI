@@ -35,9 +35,9 @@ else {
 	<form action="./register_users_submit.php">
 		<p>Username: </p><input type="text" name="username"> <br>
 		<p>Password: </p><input type="text" name="password"> <br>
-		<p>Account type: </p><input type="radio" value="student" name="account_type">
-		<input type="radio" value="teacher" name="account_type">
-		<input type="radio" value="admin" name="account_type">
+		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type"><br>
+		<p>Teacher</p><input type="radio" value="teacher" name="account_type"><br>
+		<p>Administrator</p><input type="radio" value="admin" name="account_type"><br>
 		<input type="submit" value="Register User"> 
 	</form>
 	</div>
