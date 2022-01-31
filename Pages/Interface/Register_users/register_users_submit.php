@@ -1,5 +1,8 @@
 <?php
-
+include "/var/wwww/html/Includes/dbh.php";
+include "/var/www/html/Includes/check_user_pass.php";
+$username = $_POST["username"];
+$password = $_POST["password"];
 ?>
 <html>
   <head>
