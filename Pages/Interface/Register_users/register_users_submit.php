@@ -3,7 +3,7 @@
 session_start();
 
 //Connect to database
-include "/var/wwww/html/Includes/Php/dbh.php";
+include "/var/www/html/Includes/Php/dbh.php";
 
 //Make sure user is logged in
 include "/var/www/html/Includes/Php/check_user_pass.php";
