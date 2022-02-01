@@ -43,7 +43,7 @@
   #add username and password to sql database
   try {
   if ($continue == 1) {
-	$sql = ("INSERT INTO users (username, password, account_type) VALUES ('".$adminName."','".$adminPassword."'admin');");
+	$sql = ("INSERT INTO users (username,password,account_type) VALUES ('".$adminName."','".$adminPassword."'admin');");
 	mysqli_query ($conn, $sql); 	
 	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
 	}
@@ -53,9 +53,12 @@
   }
   ?>
   <body>
-    <p> <?php echo $textOutput; ?></p>
+    <p><?php echo $textOutput; ?></p>
     <form action="/Pages/Login/login.php">
       <input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
+    </form>
+    <form action="../index.php">
+	    <input type="submit" value="Home">
     </form>
   </body>
 </html>
