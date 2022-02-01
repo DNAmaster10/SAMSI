@@ -32,7 +32,7 @@ else {
 	</form>
 	<br>
 	<div class="input_menu">
-	<form action="./register_users_submit.php" method="post">
+	<form action="./register_users_submit.php" method="POST">
 		<p>Username: </p><input type="text" name="username" required> <br>
 		<p>Password: </p><input type="text" name="password" required> <br>
 		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type" required><br>
