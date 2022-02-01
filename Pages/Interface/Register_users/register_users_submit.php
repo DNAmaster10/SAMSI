@@ -18,8 +18,8 @@ $continue = 1;
 if ($continue == 1) {
 //writing to DB
 $table_name = "users";
-$columns = ("username,password,account_type");
-$values = ("'".$username."','".$password."','".$account_type.'");
+$columns = "username,password,account_type";
+$values = "'".$username."','".$password."','".$account_type."'";
 include "/var/www/html/Includes/Php/write_to_db.php";
 $text_output = ("Account ".$username." was successfully registered");
 }
