@@ -1,4 +1,7 @@
 <?php
+//start session to access current users login details
+session_start();
+
 //Connect to database
 include "/var/wwww/html/Includes/Php/dbh.php";
 
