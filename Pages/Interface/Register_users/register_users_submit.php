@@ -1,9 +1,9 @@
 <?php
 //Connect to database
-include "/var/wwww/html/Includes/dbh.php";
+include "/var/wwww/html/Includes/Php/dbh.php";
 
 //Make sure user is logged in
-include "/var/www/html/Includes/check_user_pass.php";
+include "/var/www/html/Includes/Php/check_user_pass.php";
 
 //get variables from HTML form
 $username = $_POST["username"];
@@ -17,7 +17,7 @@ if ($continue == 1) {
 $table_name = "users";
 $columns = ("username,password,account_type");
 $values = ("'.$username.','.$password.','.$account_type.'");
-include "/var/www/html/Includes/write_to_db.php";
+include "/var/www/html/Includes/Php/write_to_db.php";
 $text_output = ("Account ".$username." was successfully registered");
 }
 ?>
