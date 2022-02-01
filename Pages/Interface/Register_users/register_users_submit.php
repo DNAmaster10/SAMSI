@@ -31,7 +31,7 @@ $text_output = ("Account ".$username." was successfully registered");
     <form action="./register_user.php">
       <input type="submit" value="Register someone else">
     </form>
-    <form action="././main_menu.php">
+    <form action="../main_menu.php">
       <input type="submit" value="Home">
     </form>
     <br>
