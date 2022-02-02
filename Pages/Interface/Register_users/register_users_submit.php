@@ -23,21 +23,27 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
 if ($result == "null") {
 $continue = 1;
-$text_output = "An account with that username has already been registered!";
 }
 else {
 $continue = 0;
+$text_output = "An account with that username has already been registered!";
 }
 
 if ($continue == 1) {
-//writing to DB
+//writing to users DB
 $table_name = "users";
 $columns = "username,password,account_type";
 $values = "'".$username."','".$password."','".$account_type."'";
 include "/var/www/html/Includes/Php/write_to_db.php";
+unset $table_name;
+unset $columns;
+unset $values;
+$table_name = "themes";
+$columns = "username,theme";
+$values = "'".$username."','default'";
+include "/var/www/html/Includes/Php/write_to_db.php";
+
 $text_output = ("Account ".$username." was successfully registered");
-
-
 }
 ?>
 <html>
