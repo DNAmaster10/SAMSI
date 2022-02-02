@@ -18,7 +18,7 @@ $continue = 1;
 $table_name = "users";
 $column_name = "account_type";
 $where_column = "username";
-$where_value = "'".$username."'";
+$where_value = $username;
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
 if ($result == "null") {
