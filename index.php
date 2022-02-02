@@ -10,7 +10,7 @@
 		}
 
 		.header {
-  			background-color: #af93d7;
+  			background-color: #572273;
   			padding: 0px;
   			text-align: left;
 		}
