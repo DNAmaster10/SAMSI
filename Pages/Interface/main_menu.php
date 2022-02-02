@@ -24,10 +24,14 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 	</head>
 	<body>
 		<h1>Welcome back, <?php echo ($_SESSION["username"]."."); ?> </h1>
-		<br>
-		<form action="./Register_users/register_user.php">
-			<input type="submit" value="Register new users">
-		</form>
+		<?php 
+		if ($result == "admin") {
+		echo ("		<br>
+		<form action='./Register_users/register_user.php'>
+			<input type='submit' value='Register new users'>
+		</form> ";
+		}
+		?>
 		<br>
 		<form action="../Logout/logout.php">
 			<input type="submit" value="Log out">
