@@ -41,16 +41,9 @@
 	  $textOutput = ("That username is already in use!");
   }
   #add username and password to sql database
-  try {
-  if ($continue == 1) {
 	$sql = ("INSERT INTO users (username,password,account_type) VALUES ('".$adminName."','".$adminPassword."'admin');");
 	mysqli_query ($conn, $sql); 	
 	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
-	}
-  }
-  catch (Exception $ex) {
-	  $textOutput = ("An error occured!");
-  }
   ?>
   <body>
     <p><?php echo $textOutput; ?></p>
