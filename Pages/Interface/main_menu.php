@@ -29,7 +29,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 		echo ("<br>
 		<form action='./Register_users/register_user.php'>
 		  <input type='submit' value='Register new users'>
-		</form> ";
+		</form> ");
 		}
 		?>
 		<br>
