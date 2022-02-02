@@ -21,9 +21,12 @@ $where_column = "username";
 $where_value = "'".$username."'";
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 
-if ($result !== "null") {
-$continue = 0;
+if ($result == "null") {
+$continue = 1;
 $text_output = "An account with that username has already been registered!";
+}
+else {
+$continue = 0;
 }
 
 if ($continue == 1) {
