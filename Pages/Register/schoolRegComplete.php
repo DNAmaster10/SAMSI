@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <?php
+<?php
   #connect to database
   include "/var/www/html/Includes/Php/dbh.php";
   
@@ -41,10 +39,16 @@
 	  $textOutput = ("That username is already in use!");
   }
   #add username and password to sql database
-	$sql = ("INSERT INTO users (username,password,account_type) VALUES ('".$adminName."','".$adminPassword."'admin');");
-	mysqli_query ($conn, $sql); 	
-	$textOutput = ("All done! You should now be able to login with your admin account to begin your SAMSi journey.");
+  $table_name = "users";
+  $columns = "username,password,account_type";
+  $values = "'".$adminName."','".$adminPassword."','admin'";
+  include "/var/www/html/Includes/Php/write_to_db.php";	
+  if ($continue != 0) {
+  $textOutput = "All done! You may now log into your admin account.";
+  }
   ?>
+<!DOCTYPE html>
+<html>
   <body>
     <p><?php echo $textOutput; ?></p>
     <form action="/Pages/Login/login.php">
