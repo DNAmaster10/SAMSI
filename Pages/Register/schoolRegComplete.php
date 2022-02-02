@@ -50,6 +50,7 @@
   $table_name = "themes";
   $columns = "username,theme";
   $values = "'".$adminName."','default'";
+  include "/var/www/html/Includes/Php/write_to_db.php";
   ?>
 <!DOCTYPE html>
 <html>
