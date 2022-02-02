@@ -4,7 +4,10 @@
   <link rel="stylesheet" href="/Includes/Css/main.css">
   <title>Login</title>
   <style>
-    body {
+    body, html{
+    height: 100%;
+    }
+ body {
  background-image: url("./MicrosoftTeams-image.png");
  background-color: #cccccc;
  background-position: center;
