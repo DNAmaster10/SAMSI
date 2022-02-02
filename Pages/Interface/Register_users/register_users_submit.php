@@ -45,7 +45,7 @@ $text_output = ("Account ".$username." was successfully registered");
     <title>SAMSi</title>
   </head>
   <body>
-    <p><?php echo $text_output ?></p>
+    <p><?php echo $text_output; echo $result; ?></p>
     <br>
     <form action="./register_user.php">
       <input type="submit" value="Register someone else">
