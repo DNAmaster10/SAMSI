@@ -1,10 +1,20 @@
 <?php
 #Access global variables
 session_start();
+
 #Connect to database
 include "/var/www/html/Includes/Php/dbh.php";
+
 #Check user's username and password
 include "/var/www/html/Includes/Php/check_user_pass.php";
+
+#Find out what account type the user has
+$username = $_SESSION["username"];
+$column_name = "account_type";
+$table_name = "users";
+$where_column = "username";
+$where_value = $username;
+include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 ?>
 <!DOCTYPE html>
 <html>
