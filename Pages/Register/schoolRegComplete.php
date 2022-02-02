@@ -46,6 +46,10 @@
   if ($continue != 0) {
   $textOutput = "All done! You may now log into your admin account.";
   }
+
+  $table_name = "themes";
+  $columns = "username,theme";
+  $values = "'".$adminName."','default'";
   ?>
 <!DOCTYPE html>
 <html>
