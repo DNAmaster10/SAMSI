@@ -39,7 +39,7 @@ $background_colour = "10,200,200";
 		</style>
 		<title>Samsi</title>
 	</head>
-	<body class="body">
+	<body>
 		<h1>Welcome back, <?php echo $username; ?> </h1>
 		<?php 
 		if ($account_type == "admin") {
