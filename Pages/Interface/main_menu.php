@@ -34,7 +34,7 @@ $background_colour = "10,200,200";
 	<head>
 		<style>
 			body {
-				background-colour: rgb<?php echo ($background_colour) ?>;
+				background-colour: rgb(<?php echo ($background_colour) ?>);
 			}
 		</style>
 		<title>Samsi</title>
