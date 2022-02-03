@@ -18,7 +18,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $account_type = $result;
 
 #Find out user's theme
-include "/var/www/Includes/Php/get_user_theme.php";
+include "/var/www/html/Includes/Php/get_user_theme.php";
 ?>
 <!DOCTYPE html>
 <html>
