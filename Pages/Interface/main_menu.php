@@ -33,12 +33,12 @@ $background_colour = "coral";
 <html>
 	<head>
 		<style>
-			body {background-colour: <?php echo ($background_colour) ?>;}
+			body.{background-colour: <?php echo ($background_colour) ?>;}
 		</style>
 		<title>Samsi</title>
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
-	<body>
+	<body class="body">
 		<h1>Welcome back, <?php echo $username; ?> </h1>
 		<?php 
 		if ($account_type == "admin") {
