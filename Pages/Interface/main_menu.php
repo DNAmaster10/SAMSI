@@ -24,7 +24,7 @@ include "/var/www/Includes/Php/get_user_theme.php";
 <html>
 	<head>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
-		<title>Samsi</title>
+		<title>SAMSi</title>
 	</head>
 	<body>
 		<h1>Welcome back, <?php echo $username; ?> </h1>
