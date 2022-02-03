@@ -59,7 +59,7 @@
     <form action="/Pages/Login/login.php">
       <input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
     </form>
-    <form action="../index.php">
+    <form action="../../index.php">
 	    <input type="submit" value="Home">
     </form>
   </body>
