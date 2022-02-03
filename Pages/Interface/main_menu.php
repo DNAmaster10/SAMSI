@@ -32,13 +32,13 @@ $background_colour = "coral";
 <!DOCTYPE html>
 <html>
 	<head>
+				<link rel="stylesheet" href="/Includes/Css/main.css">
 		<style>
 			body {
 				background-colour: <?php echo ($background_colour) ?>;
 			}
 		</style>
 		<title>Samsi</title>
-		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body class="body">
 		<h1>Welcome back, <?php echo $username; ?> </h1>
