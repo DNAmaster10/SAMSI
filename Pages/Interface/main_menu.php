@@ -33,7 +33,9 @@ $background_colour = "coral";
 <html>
 	<head>
 		<style>
-			body.{background-colour: <?php echo ($background_colour) ?>;}
+			body {
+				background-colour: <?php echo ($background_colour) ?>;
+			}
 		</style>
 		<title>Samsi</title>
 		<link rel="stylesheet" href="/Includes/Css/main.css">
