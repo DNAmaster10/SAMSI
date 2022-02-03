@@ -18,12 +18,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $account_type = $result;
 
 #Find out user's theme
-$column_name = "theme";
-$table_name = "themes";
-$where_column = "username";
-$where_value = $username;
-include "/var/www/html/Includes/Php/get_single_value_from_db.php";
-$theme = $result;
+include "/var/www/Includes/Php/get_user_theme.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,6 +36,10 @@ $theme = $result;
 		</form> ");
 		}
 		?>
+		<br>
+		<form action="./Theme/select_theme.php">
+			<input type="submit" value="Change theme">
+		</form>
 		<br>
 		<form action="../Logout/logout.php">
 			<input type="submit" value="Log out">
