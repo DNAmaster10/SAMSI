@@ -26,7 +26,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $theme = $result;
 
 if ($theme == "default") {
-$background_colour = "201, 248, 255";
+$background_color = "201, 248, 255";
 }
 ?>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ $background_colour = "201, 248, 255";
 	<head>
 		<style>
 			body {
-				background-color: rgb(<?php echo ($background_colour) ?>);
+				background-color: rgb(<?php echo ($background_color) ?>);
 			}
 		</style>
 		<title>Samsi</title>
