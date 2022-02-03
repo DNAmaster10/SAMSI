@@ -24,19 +24,11 @@ $where_column = "username";
 $where_value = $username;
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $theme = $result;
-
-if ($theme == "default") {
-$background_color = "201, 248, 255";
-}
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<style>
-			body {
-				background-color: rgb(<?php echo ($background_color) ?>);
-			}
-		</style>
+		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
 		<title>Samsi</title>
 	</head>
 	<body>
