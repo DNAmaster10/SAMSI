@@ -25,7 +25,7 @@ $where_value = $username;
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $theme = $result;
 
-if ($theme == "default";) {
+if ($theme == "default") {
 $background_colour = "coral";
 }
 ?>
