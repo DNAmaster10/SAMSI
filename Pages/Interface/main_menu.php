@@ -26,7 +26,7 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $theme = $result;
 
 if ($theme == "default") {
-$background_colour = "10,200,200";
+$background_colour = "230, 249, 252";
 }
 ?>
 <!DOCTYPE html>
