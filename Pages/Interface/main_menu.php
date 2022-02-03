@@ -15,17 +15,33 @@ $table_name = "users";
 $where_column = "username";
 $where_value = $username;
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
+$account_type = $result;
+
+#Find out user's theme
+$column_name = "theme";
+$table_name = "themes";
+$where_column = "username";
+$where_value = $username;
+include "/var/www/html/Includes/Php/get_single_value_from_db.php";
+$theme = $result;
+
+if ($theme == "default";) {
+$background_colour = "coral";
+}
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+			body {background-colour: <?php echo ($background_colour) ?>;}
+		</style>
 		<title>Samsi</title>
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
-		<h1>Welcome back, <?php echo ($_SESSION["username"]."."); ?> </h1>
+		<h1>Welcome back, <?php echo $username; ?> </h1>
 		<?php 
-		if ($result == "admin") {
+		if ($account_type == "admin") {
 		echo ("<br>
 		<form action='./Register_users/register_user.php'>
 		  <input type='submit' value='Register new users'>
