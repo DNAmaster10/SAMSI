@@ -26,16 +26,15 @@ include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $theme = $result;
 
 if ($theme == "default") {
-$background_colour = "coral";
+$background_colour = "10,200,200";
 }
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-				<link rel="stylesheet" href="/Includes/Css/main.css">
 		<style>
 			body {
-				background-colour: <?php echo ($background_colour) ?>;
+				background-colour: rgb<?php echo ($background_colour) ?>;
 			}
 		</style>
 		<title>Samsi</title>
