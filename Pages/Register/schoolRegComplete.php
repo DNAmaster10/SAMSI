@@ -38,19 +38,22 @@
 	  $continue = 0;
 	  $textOutput = ("That username is already in use!");
   }
+  if ($continue == 1) {
   #add username and password to sql database
   $table_name = "users";
   $columns = "username,password,account_type";
   $values = "'".$adminName."','".$adminPassword."','admin'";
   include "/var/www/html/Includes/Php/write_to_db.php";	
+  }
   if ($continue != 0) {
   $textOutput = "All done! You may now log into your admin account.";
   }
-
+  if ($continue == 1) {
   $table_name = "themes";
   $columns = "username,theme";
   $values = "'".$adminName."','default'";
   include "/var/www/html/Includes/Php/write_to_db.php";
+  }
   ?>
 <!DOCTYPE html>
 <html>
