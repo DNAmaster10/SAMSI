@@ -16,6 +16,7 @@ $where_column = "username";
 $where_value = $username;
 include "/var/www/html/Includes/Php/get_single_value_from_db.php";
 $account_type = $result;
+unset ($column_name);
 
 #Find out user's theme
 $username = $_SESSION["username"];
