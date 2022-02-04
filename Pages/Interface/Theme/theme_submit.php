@@ -2,6 +2,10 @@
 include "/var/www/html/Includes/Php/dbh.php";
 include "/var/www/html/Includes/Php/check_user_pass.php";
 include "/var/www/html/Includes/Php/get_user_theme.php";
+
+
+
+header('Location: select_theme.php');
 ?>
 <html>
   <head>
