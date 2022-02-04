@@ -8,7 +8,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 <html>
 	<head>
 		<title>SAMSi</title>
-		<link rel="stylesheet" href="/var/www/html/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 	</head>
 	<body>
 	<p>Use this page to select your desired themes</p>
