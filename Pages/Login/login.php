@@ -15,10 +15,10 @@
  background-size: cover;
 }
     .login_box {
+            width: 20%;
       background-color: blue;
       text-align: center;
       border: 3px solid lightblue; 
-      width: 20%;
     }
     </style>
   </head>
