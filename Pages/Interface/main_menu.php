@@ -24,7 +24,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo "default" ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<title>SAMSi</title>
 	</head>
 	<body>
