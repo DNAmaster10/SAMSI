@@ -18,6 +18,7 @@
       background-color: blue;
       text-align: center;
       border: 3px solid lightblue; 
+      width: 20%;
     }
     </style>
   </head>
