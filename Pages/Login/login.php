@@ -14,9 +14,15 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
+    login_box.{
+      background-color: blue;
+      text-align: center;
+      border: 3px solid lightblue; 
+    }
     </style>
   </head>
   <body>
+    <div class="login_box">
     <p>Enter your login credidentials bellow</p>
     <br>
     <form action="/Pages/Login/login_submit.php">
@@ -24,5 +30,6 @@
         <p>Password: </p><input type="text" id="password_text_box" name="password"><br>
         <input type="submit" value="Login">
     </form>
+    </div>
   </body>
 </html>
