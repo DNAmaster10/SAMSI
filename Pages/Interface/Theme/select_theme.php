@@ -15,7 +15,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 	<body>
 		<p>Use this page to select your desired themes</p>
 		<br>
-		<form action="theme_submit.php">
+		<form action="theme_submit.php" method="POST">
 			<input type="radio" value="default" name="theme_select" <?php if ($theme == "default") {echo "checked";} ?>><label>Default</label>
 			<input type="radio" value="cleo" name="theme_select" <?php if ($theme == "cleo") {echo "checked";} ?>><label>Cleo</label>
 			<br>
