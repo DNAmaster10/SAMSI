@@ -14,7 +14,7 @@
  background-repeat: no-repeat;
  background-size: cover;
 }
-    login_box.{
+    .login_box {
       background-color: blue;
       text-align: center;
       border: 3px solid lightblue; 
