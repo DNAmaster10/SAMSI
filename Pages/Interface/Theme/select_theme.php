@@ -21,5 +21,9 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 			<br>
 			<input type="submit" value="Save">
 		</form>
+		<br>
+		<form action="../main_menu.php">
+			<input type="submit" value="Back">
+		</form>
 	</body>
 </html>
