@@ -15,6 +15,9 @@
  background-size: cover;
 }
     .login_box {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
             width: 20%;
       background-color: blue;
       text-align: center;
