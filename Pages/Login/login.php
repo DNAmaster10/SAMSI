@@ -27,6 +27,9 @@
 	  height: 50%;
 	  padding: 10px;
     }
+	p {
+		color: white;
+	}
     </style>
   </head>
   <body>
