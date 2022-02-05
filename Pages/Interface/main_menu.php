@@ -33,8 +33,8 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<?php 
 		if ($account_type == "admin") {
 		echo ("<br>
-		<form action='./Register_users/register_user.php'>
-		  <input type='submit' value='Register new users'>
+		<form action='./Manage_accounts/manage_accounts_menu.php'>
+		  <input type='submit' value='Mannage accounts'>
 		</form> ");
 		}
 		?>
