@@ -24,6 +24,7 @@
       text-align: center;
       border: 3px solid lightblue; 
 	  border-radius: 25px;
+	  height: 50%;
     }
     </style>
   </head>
