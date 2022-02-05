@@ -1,9 +1,9 @@
 # SAMSi
-An open source alternative to microsoft teams.
+An open source alternative to microsoft teams targeting schools.
 
 Currently a couple of security measures are in place. This is just for testing purposes. Do NOT try and use as an actual website, and especially do not port forward any web servers hosting this. SQL injection is probably very possible as of now.
 
-To use, (currently can only works on Linux, as directory paths start with /var) run the bash script (re-install.bash) in /var/www. Make sure you have the git module installed, and you run the bash script as sudo.
+To use, (currently can only work on Linux, as directory paths start with /var) run the bash script (re-install.bash) in /var/www. Make sure you have the git module installed, and you run the bash script as sudo.
 
 Running re-install will no longer destroy user data, as we have migrated to SQL.
 
