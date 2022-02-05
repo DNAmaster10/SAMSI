@@ -1,5 +1,5 @@
 # SAMSi
-An open source alternative to microsoft teams.
+An open source alternative to microsoft teams targeting schools.
 
 Currently a couple of security measures are in place. This is just for testing purposes. Do NOT try and use as an actual website, and especially do not port forward any web servers hosting this. SQL injection is probably very possible as of now.
 
