@@ -19,9 +19,11 @@
 		margin-left: auto;
 		margin-right: auto;
             width: 20%;
+
       background-color: blue;
       text-align: center;
       border: 3px solid lightblue; 
+	  border-radius: 25px;
     }
     </style>
   </head>
