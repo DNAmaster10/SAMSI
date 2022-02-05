@@ -29,7 +29,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<title>SAMSi</title>
 	</head>
 	<body>
-		<h1>Welcome back, <?php echo $username; ?> </h1>
+		<h1>Welcome back, <?php echo $username; ?>.</h1>
 		<?php 
 		if ($account_type == "admin") {
 		echo ("<br>
