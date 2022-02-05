@@ -27,7 +27,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
   </head>
   <body>
     <h1>Where would you like to go?</h1><br>
-    <form action="./register_user.php">
+    <form action="./Register_users/register_user.php">
       <input type="submit" value="Register users">
     </form>
   </body>
