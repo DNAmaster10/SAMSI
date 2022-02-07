@@ -23,8 +23,8 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 <html>
   <head>
     <title>SAMSi</title>
-    <link rel="stylesheet" href="/var/www/html/Includes/Css/Themes/<?php echo $theme; ?>.css">
-    <link rel="stylesheet" href="/var/www/html/Includes/Css/main.css">
+    <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
+    <link rel="stylesheet" href="/Includes/Css/main.css">
   </head>
   <body>
     <h1>Where would you like to go?</h1><br>
