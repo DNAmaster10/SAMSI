@@ -19,6 +19,7 @@ else {
 
 include "/var/www/html/Includes/Php/get_user_theme.php";
 ?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>SAMSi</title>
