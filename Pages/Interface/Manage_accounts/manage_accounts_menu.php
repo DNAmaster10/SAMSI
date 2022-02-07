@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "/var/www/html/Includes/Php/dbh.php";
-include "/var/www/html/Includes/Php/check_user_pass";
+include "/var/www/html/Includes/Php/check_user_pass.php";
 $table_name = "users";
 $column_name = "account_type";
 $where_column = "username";
