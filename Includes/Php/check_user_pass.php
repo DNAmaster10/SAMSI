@@ -1,5 +1,4 @@
 <?php
-session_start();
 #Get username and password
 $username_t = $_SESSION["username"];
 $password_t = $_SESSION["password"];
