@@ -39,6 +39,10 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		}
 		?>
 		<br>
+		<form action="./Classes/class_select_menu.php">
+			<input type="submit" value="Classes">
+		</form>
+		<br>
 		<form action="./Theme/select_theme.php">
 			<input type="submit" value="Change theme">
 		</form>
