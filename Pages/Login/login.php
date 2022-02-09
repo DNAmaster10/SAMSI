@@ -20,10 +20,10 @@
 		margin-right: auto;
             width: 20%;
 
-      background-color: blue;
+      background-color: 572273;
       text-align: center;
       border: 3px solid lightblue; 
-	  border-radius: 50px;
+	  border-radius: 25px;
 	  height: 50%;
 	  padding: 10px;
     }
