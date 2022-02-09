@@ -23,3 +23,7 @@ input.input_menu { display: inline; }
 p {
   font-family: "Lucida Console", "Courier New", monospace;
 }
+
+.body {
+  background-color: #d6f8ff;
+}
