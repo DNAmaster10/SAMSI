@@ -19,7 +19,7 @@
 	    	margin-top: 100px;
   		margin-bottom: 100px;
  		margin-right: 100px;
-  		margin-left: 500px;	    
+  		margin-left: 750px;	    
            	width: 20%;
 
       background-color: #572273;
