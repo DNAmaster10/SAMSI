@@ -25,7 +25,7 @@
       border: 3px solid lightblue; 
 	  border-radius: 25px;
 	  height: 50%;
-	  padding: 100px;
+	  padding: 25px;
     }
 	p {
 		color: white;
