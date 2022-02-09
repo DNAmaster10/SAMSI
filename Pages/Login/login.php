@@ -18,7 +18,7 @@
 		display: block;		
 	    	margin-top: 100px;
   		margin-bottom: 100px;
- 		margin-right: 80px;
+ 		margin-right: 300px;
   		margin-left: 150px;	    
            	width: 20%;
 
