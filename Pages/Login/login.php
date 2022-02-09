@@ -20,7 +20,7 @@
 		margin-right: auto;
             width: 20%;
 
-      background-color: 572273;
+      background-color: #572273;
       text-align: center;
       border: 3px solid lightblue; 
 	  border-radius: 25px;
