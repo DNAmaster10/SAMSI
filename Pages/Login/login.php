@@ -16,10 +16,10 @@
 }
     .login_box {
 		display: block;		
-	    	margin-top: 200px;
+	    	margin-top: 100px;
   		margin-bottom: 100px;
- 		margin-right: 150px;
-  		margin-left: 80px;	    
+ 		margin-right: 80px;
+  		margin-left: 150px;	    
            	width: 20%;
 
       background-color: #572273;
