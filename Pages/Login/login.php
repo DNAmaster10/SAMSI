@@ -18,8 +18,8 @@
 		display: block;		
 	    	margin-top: 100px;
   		margin-bottom: 100px;
- 		margin-right: 300px;
-  		margin-left: 10px;	    
+ 		margin-right: 100px;
+  		margin-left: 500px;	    
            	width: 20%;
 
       background-color: #572273;
