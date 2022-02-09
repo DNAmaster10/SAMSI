@@ -31,6 +31,10 @@
 	p {
 		color: white;
 	}
+	 
+	h3 {
+		color: white;
+	  }
     </style>
   </head>
   <body>
