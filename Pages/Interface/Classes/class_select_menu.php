@@ -11,6 +11,7 @@
 	<head>
 		<title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
 		<?php if ($account_type == "teacher" or $account_type == "admin") {echo '
