@@ -15,10 +15,12 @@
  background-size: cover;
 }
     .login_box {
-		display: block;
-		margin-left: auto;
-		
-            width: 20%;
+		display: block;		
+	    	margin-top: 200px;
+  		margin-bottom: 100px;
+ 		margin-right: 150px;
+  		margin-left: 80px;	    
+           	width: 20%;
 
       background-color: #572273;
       text-align: center;
