@@ -23,7 +23,7 @@
       background-color: blue;
       text-align: center;
       border: 3px solid lightblue; 
-	  border-radius: 25px;
+	  border-radius: 50px;
 	  height: 50%;
 	  padding: 10px;
     }
