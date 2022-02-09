@@ -22,7 +22,7 @@
   		margin-left: 750px;	    
            	width: 20%;
 
-      background-color: #ffffff;
+      background-color: #000000;
       text-align: center;
 	  border-radius: 25px;
 	  height: 50%;
