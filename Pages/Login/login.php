@@ -19,7 +19,7 @@
 	    	margin-top: 100px;
   		margin-bottom: 100px;
  		margin-right: 100px;
-  		margin-left: 850px;	    
+  		margin-left: 800px;	    
            	width: 20%;
 
       background-color: rgba(0, 34, 56, 0.9);
