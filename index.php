@@ -17,7 +17,10 @@
 		.buttons {
 			text-align: right;
 		}
-			
+		
+		.footer{
+			margin-bottom: 10px;
+		}
 </style>
 	</head>
     	<body>
