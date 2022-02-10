@@ -18,10 +18,7 @@
 			text-align: right;
 		}
 		
-		.footer{
-			margin-top: 560px;
-			margin-bottom: 10px;
-		}
+		
 </style>
 	</head>
     	<body>
