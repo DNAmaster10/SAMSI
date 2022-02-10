@@ -19,7 +19,7 @@
 		}
 		
 		.footer{
-			margin-top: 500px;
+			margin-top: 600px;
 			margin-bottom: 10px;
 		}
 </style>
