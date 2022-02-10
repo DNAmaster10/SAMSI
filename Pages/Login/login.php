@@ -43,7 +43,7 @@
   </head>
   <body>
     <div class="login_box">
-    <h3>Enter your login credidentials below</h3>
+    <h3>Enter Your Login Credidentials Below</h3>
     <br>
     <form action="/Pages/Login/login_submit.php">
         <p>Username: </p><input type="text" id="username_text_box" name="username"><br>
