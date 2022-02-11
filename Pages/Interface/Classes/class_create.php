@@ -32,6 +32,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 	  <p>Hey <?p echo $_SESSION["username"]; ?>! Use this page to create a new classroom.</p><br>
 	  <form action="./class_create_submit.php" method="POST">
 			<input type="text" name="class_name" placeholder="class name">
+		  	<input type="submit" value="Create class">
 	  </form>
   </body>
 </html>
