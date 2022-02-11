@@ -18,6 +18,6 @@
 		<form action="./class_create.php">
 			<input type="submit" value="New Class">
 		</form>
-		'; ?>
+		'; } ?>
 	</body>
 </html>
