@@ -20,6 +20,7 @@ if ($result == "admin" or $result == "teacher") {
 else {
     header("location: /Pages/Interface/No_perms/not_admin.php");
 }
+include "/var/www/html/Includes/Php/get_user_theme.php";
 ?>
 <html>
   <head>
@@ -28,5 +29,6 @@ else {
     <link rel="stylesheef" href="/Includes/Css/main.css">
   </head>
   <body>
+	  <p>Hey <?p echo $_SESSION["username"]; ?></p>
   </body>
 </html>
