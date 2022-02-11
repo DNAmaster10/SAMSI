@@ -29,6 +29,9 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
     <link rel="stylesheef" href="/Includes/Css/main.css">
   </head>
   <body>
-	  <p>Hey <?p echo $_SESSION["username"]; ?></p>
+	  <p>Hey <?p echo $_SESSION["username"]; ?>! Use this page to create a new classroom.</p><br>
+	  <form action="./class_create_submit.php" method="POST">
+			<input type="text" name="class_name" placeholder="class name">
+	  </form>
   </body>
 </html>
