@@ -4,7 +4,7 @@
 	include "/var/www/html/Includes/Php/dbh.php";
 	include "/var/www/html/Includes/Php/check_user_pass.php";
 	include "/var/www/html/Includes/Php/get_user_theme.php";
-	include "/var/www/html/Includes/Php/get_account_type/php";
+	include "/var/www/html/Includes/Php/get_account_type.php";
 ?>
 <!DOCTYPE html>
 <html>
