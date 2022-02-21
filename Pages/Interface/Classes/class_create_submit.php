@@ -1,4 +1,5 @@
 <?php
+session_start();
 #connect to database
 include "/var/www/html/Includes/Php/dbh.php";
 #Make sure users login details are correct
