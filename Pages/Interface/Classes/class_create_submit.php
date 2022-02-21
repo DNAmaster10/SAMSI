@@ -14,7 +14,7 @@ else {
 $class_name = $_POST["class_name"];
 $username = $_SESSION["username"];
   
-$sql = "INSERT INTO class_data ('class,owner') VALUES ('".$class_name."','".$username."')";
+$sql = "INSERT INTO class_data (class,owner) VALUES ('".$class_name."','".$username."')";
 
 #redirect user back to the class select menu
 header("location: /Pages/Interface/Classes/class_select_menu.php");
