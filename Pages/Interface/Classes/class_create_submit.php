@@ -11,8 +11,9 @@ if ($account_type !== "admin" and $account_type !== "teacher") {
 else {
 #Get the users input from the previous page
 $class_name = $_POST["class_name"];
-
-$sql = "INSERT INTO class_data ('class,owner') VALUES ('')";
+$username = $_SESSION["username"];
+  
+$sql = "INSERT INTO class_data ('class,owner') VALUES ('".$class_name."','".$username."')";
 
 #redirect user back to the class select menu
 header("location: /Pages/Interface/Classes/class_select_menu.php");
