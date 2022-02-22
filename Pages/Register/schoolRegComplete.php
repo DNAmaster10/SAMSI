@@ -55,6 +55,8 @@
   include "/var/www/html/Includes/Php/write_to_db.php";
 	 
   $sql = "INSERT INTO user_classes (username) VALUES ('.$adminName.')";
+	  
+  mysqli_query($conn, $sql);
   }
   ?>
 <!DOCTYPE html>
