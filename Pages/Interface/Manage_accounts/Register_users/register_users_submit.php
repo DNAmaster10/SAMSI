@@ -43,6 +43,8 @@ $columns = "username,theme";
 $values = "'".$username."','default'";
 include "/var/www/html/Includes/Php/write_to_db.php";
 
+$sql = "INSERT INTO user_classes (username) VALUES ('.$username.')";
+  
 $text_output = ("Account ".$username." was successfully registered");
 }
 ?>
