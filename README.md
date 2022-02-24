@@ -11,4 +11,4 @@ Currently, you have to manually set up the databases with MySQLi, however we hav
 
 To update the site, run re-install.
 
-Our site depends on: apache2, php, MySQLi, php-MySQL, and bash
+Our site depends on: apache2, php, MySQLi, php-MySQL, and bash.
