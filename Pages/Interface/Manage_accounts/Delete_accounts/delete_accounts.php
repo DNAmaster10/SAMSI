@@ -7,6 +7,7 @@ include $file_path."/Includes/Php/get_account_type.php";
 if ($account_type !== "admin" or $account_type !== "teacher") {	
 	header("location: /Pages/Interface/No_perms/not_admin.php");
 }
+include $file_path."/Includes/Php/get_user_theme.php";
 ?>
 <!DOCTYPE html>
 <html>
