@@ -4,9 +4,12 @@ session_start();
 include ($file_path."/Includes/Php/dbh.php");
 include $file_path."/Includes/Php/check_user_pass.php";
 include $file_path."/Includes/Php/get_account_type.php";
-//if ($account_type !== "admin") {	
-//	header("location: /Pages/Interface/No_perms/not_admin.php");
-//}
+if ($account_type == "admin") {	
+	$is_admin = ("true");
+}
+else {
+	header("location: /Pages/Interface/No_perms/not_admin.php");
+}
 include $file_path."/Includes/Php/get_user_theme.php";
 ?>
 <!DOCTYPE html>
