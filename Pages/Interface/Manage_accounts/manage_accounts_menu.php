@@ -2,13 +2,13 @@
 session_start();
 $file_path = $_SERVER["DOCUMENT_ROOT"];
 include ($file_path."/Includes/Php/dbh.php");
-include "/var/www/html/Includes/Php/check_user_pass.php";
+include $file_path."/Includes/Php/check_user_pass.php";
+include $file_path."/Includes/Php/get_user_theme.php";
 $table_name = "users";
 $column_name = "account_type";
 $where_column = "username";
 $where_value = ($_SESSION["username"]);
-include "/var/www/html/Includes/Php/get_single_value_from_db.php";
-include "/var/www/html/Includes/Php/get_user_theme.php";
+include $file_path."/Includes/Php/get_single_value_from_db.php";
 if ($result == "admin") {
 	$is_admin = (true);
 }
