@@ -11,6 +11,5 @@ if ($raw_result->num_rows > 0) {
 else {
 	$result = "null";
 }
-
 $theme = $result;
 unset($result);
