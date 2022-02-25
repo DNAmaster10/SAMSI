@@ -21,5 +21,10 @@ include $file_path."/Includes/Php/get_user_theme.php";
 	</head>
 	<body>
 		<h1>Hey <?php echo $_SESSION["username"]; ?>! Use this page to remove users from the system.</h1>
+		<br>
+		<form action="./delete_accounts_submit.php" method="POST">
+			<input type="text" placeholder="JohnJames" required>
+			<input type="submit" value="Delete">
+		</form>
 	</body>
 </html>
