@@ -29,7 +29,10 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
   <body>
     <h1>Where would you like to go?</h1><br>
     <form action="./Register_users/register_user.php">
-      <input type="submit" value="Register users">
+		<input type="submit" value="Register users">
     </form>
+	<form action="./Delete_accounts/delete_accounts.php">
+		<input type="submit" value="Delete users">
+	</form>
   </body>
 </html>
