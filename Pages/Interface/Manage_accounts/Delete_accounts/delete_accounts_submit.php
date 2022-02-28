@@ -4,7 +4,7 @@ $file_path = $_SERVER["DOCUMENT_ROOT"];
 session_start();
 include $file_path."/Includes/Php/dbh.php";
 include $file_path."/Includes/Php/check_user_pass.php";
-include $file_path."/Includes/Php/get_account_type";
+include $file_path."/Includes/Php/get_account_type.php";
 if ($account_type == "admin") {
   include $file_path."/Includes/Php/get_user_theme";
   $sql = "DELETE FROM users WHERE username='".$deletion_username."';
