@@ -14,3 +14,22 @@ if ($account_type == "admin") {
 else {
   header("location: /Pages/Interface/No_perms/not_admin.php");
 }
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAMSi</title>
+		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
+  </head>
+  <body>
+    <p>All done!</p>
+    <br>
+    <form action="./delete_accounts.php">
+      <input type="submit" value="Delete another user">
+    </form>
+    <form action="/Pages/Interface/main_menu.php">
+      <input type="submit" value="Home">
+    </form>
+  </body>
+</html>
