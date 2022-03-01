@@ -14,8 +14,9 @@ include $file_path."/Includes/Php/get_user_theme.php";
   </head>
   <body>
     <p>Enter class code bellow</p>
-    <form>
+    <form action="./join_class_from_code_submit.php" method="POST">
       <input type="text" placeholder="1234" name="input_code" required>
+      <input type="submit" value="Join">
     </form>
   </body>
 </html>
