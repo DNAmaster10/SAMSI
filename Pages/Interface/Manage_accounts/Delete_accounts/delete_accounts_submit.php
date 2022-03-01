@@ -7,7 +7,7 @@ include $file_path."/Includes/Php/check_user_pass.php";
 include $file_path."/Includes/Php/get_account_type.php";
 if ($account_type == "admin") {
   include $file_path."/Includes/Php/get_user_theme.php";
-  $sql = "DELETE FROM users WHERE username='".$deletion_username."';DELETE FROM user_classes WHERE username='".$deletion_username."';DELETE FROM themes WHERE username='".$deletion_username."'";
+  $sql = "DELETE FROM users WHERE username='".$deletion_username."'; DELETE FROM user_classes WHERE username='".$deletion_username."'; DELETE FROM themes WHERE username='".$deletion_username."'";
   mysqli_query($conn, $sql) or die (mysqli_error($conn));;
 }
 else {
