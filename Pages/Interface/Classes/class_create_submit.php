@@ -23,6 +23,11 @@ header("location: /Pages/Interface/Classes/class_select_menu.php");
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+<title>Samsi</title>
+    <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
+    <link rel="stylesheet" href="/Includes/Css/main.css">
+</head>
 <body>
   A fatal error occured!
 </body>
