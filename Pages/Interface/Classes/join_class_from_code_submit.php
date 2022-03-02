@@ -20,7 +20,13 @@ $where_value = $_SESSION["username"];
 include $file_path."/Includes/Php/get_single_value_from_db.php";
 $current_user_classes = $result;
 
-
-
-$sql = "UPDATE user_classes SET ";
+$current_classes_array = explode(',', $current_user_classes);
+if (in_array($class_name, $current_classes_array)){
+	$text_output = "You are already a member of that class!";
+}
+else {
+	$new_user_classes = $current_user_classes.$class_name;
+	$sql = "UPDATE user_classes SET classes='".$new_user_classes."' WHERE username='".$_SESSION['username']."';";
+	mysqli_query ($conn,$sql);
+}
 >
