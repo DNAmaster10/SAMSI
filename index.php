@@ -26,10 +26,10 @@
 			<img src="/Includes/Images/logo_text.png" alt="Logo_text"></img>
 		</div>
         	<form action="/Pages/Login/login.php">
-           		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" />
+           		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login">
         	</form>
         	<form action="/Pages/register.php">
-            		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" />
+            		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account">
         	</form>
 		<br>
 		<footer>
@@ -38,5 +38,5 @@
 		</div>
 		</footer>
 
-    </body>
+   	 </body>
 </html>
