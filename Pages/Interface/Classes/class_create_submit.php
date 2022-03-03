@@ -25,7 +25,7 @@ include $file_path."/Includes/Php/get_single_value_from_db.php";
 $classes_string = $result;
 
 $classes_string = $classes_string.$class_name.",";
-$sql = "UPDATE user_classes SET classes='".$classes_string."' WHERE username='".$_SESSION["username"];."';";
+$sql = "UPDATE user_classes SET classes='".$classes_string."' WHERE username='".$_SESSION["username"]."';";
 mysql_query ($conn, $sql);
   
 #redirect user back to the class select menu
