@@ -21,6 +21,9 @@ $current_classes_array = explode(',', $current_user_classes);
 if (in_array($class_name, $current_classes_array)){
 	$text_output = "You are already a member of that class!";
 }
+else if ($class_name == "null") {
+    $text_output = "That is not a valid code";
+}
 else {
 	$new_user_classes = $current_user_classes.$class_name;
 	$sql = "UPDATE user_classes SET classes='".$new_user_classes.",' WHERE username='".$_SESSION['username']."';";
