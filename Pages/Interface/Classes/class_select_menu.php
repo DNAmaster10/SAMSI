@@ -48,6 +48,11 @@
 	<?php 
 		for ($i = 0; $i <= $class_ammount; $i++) {
 			echo ($classes_array[$i]);
+			echo "
+			<form action='./class_home.php' method='POST'>
+				<input type='submit' value='".($classes_array[$i])."'>
+			</form>
+			"
 		}
 		?>
 	</body>
