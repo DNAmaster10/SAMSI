@@ -16,6 +16,17 @@ $username = $_SESSION["username"];
   
 $sql = "INSERT INTO class_data (class,owner) VALUES ('".$class_name."','".$username."')";
 mysqli_query ($conn, $sql);
+
+$table_name = "user_classes";
+$column_name = "classes";
+$where_column = "username";
+$where_value = $_SESSION["username"];
+include $file_path."/Includes/Php/get_single_value_from_db.php";
+$classes_string = $result;
+
+$classes_string = $classes_string.$class_name.",";
+$sql = "UPDATE user_classes SET classes='".$classes_string."' WHERE username='".$_SESSION["username"];."';";
+mysql_query ($conn, $sql);
   
 #redirect user back to the class select menu
 header("location: /Pages/Interface/Classes/class_select_menu.php");
