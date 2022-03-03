@@ -33,7 +33,7 @@ else {
 		<title>SAMSi</title>
 	</head>
 	<body>
-		<p><?php echo $text_output ?></p>
+		<p><?php echo $text_output; ?></p>
 		<form action="./class_select_menu.php">
 			<input type="submit" value="Classes">
 		</form>
