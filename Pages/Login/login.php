@@ -8,7 +8,7 @@
     height: 100%;
     }
  body {
- background-image: url("./MicrosoftTeams-image.png");
+ background-image: url("../seb_pic/MicrosoftTeams-image.png");
  background-color: #cccccc;
  background-position: center;
  background-repeat: no-repeat;
