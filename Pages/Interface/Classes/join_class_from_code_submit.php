@@ -27,6 +27,7 @@ else {
 	mysqli_query ($conn,$sql);
 	$text_output = "Done! You're now a member of ".$class_name;
 }
+?>
 <!DOCTYPE html>
 <html>
 	<head>
