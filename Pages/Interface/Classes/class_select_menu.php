@@ -46,7 +46,7 @@
 		</form>
 	<br>
 	<?php 
-		for ($i = 0; $i <= $class_ammount; $i++) {
+		for ($i = 0; $i <= $class_ammount - 2; $i++) {
 			echo "
 			<form action='./class_home.php' method='POST'>
 				<input type='submit' value='".($classes_array[$i])."'>
