@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	$file_path = $_SERVER["DOCUMENT_ROOT"];
 	$username = $_SESSION["username"];
 	include "/var/www/html/Includes/Php/dbh.php";
 	include "/var/www/html/Includes/Php/check_user_pass.php";
