@@ -1,5 +1,6 @@
 <?php
 session_start();
+$file_path = $_SERVER["DOCUMENT_ROOT"];
 #connect to database
 include "/var/www/html/Includes/Php/dbh.php";
 #Make sure users login details are correct
