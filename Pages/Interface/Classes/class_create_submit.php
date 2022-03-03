@@ -27,7 +27,7 @@ $classes_string = $result;
 
 $classes_string = $classes_string.$class_name.",";
 $sql = "UPDATE user_classes SET classes='".$classes_string."' WHERE username='".$_SESSION["username"]."';";
-mysql_query ($conn, $sql);
+mysqli_query ($conn, $sql);
   
 #redirect user back to the class select menu
 header("location: /Pages/Interface/Classes/class_select_menu.php");
