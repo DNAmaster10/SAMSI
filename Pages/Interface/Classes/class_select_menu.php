@@ -5,6 +5,23 @@
 	include "/var/www/html/Includes/Php/check_user_pass.php";
 	include "/var/www/html/Includes/Php/get_user_theme.php";
 	include "/var/www/html/Includes/Php/get_account_type.php";
+	
+	$table_name = "user_classes";
+	$column_name = "classes";
+	$where_column = "username";
+	$where_value = $_SESSION["username"];
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$classes_string = $result;
+	
+	$class_ammount = substr_count($classes_string,",");
+	if ($class_ammount == 0) {
+		$continue = "no";
+	}
+	else {
+		$classes_array = explode(',', $classes_string);
+		$class_ammount = count($classes_array);
+		$continue = "yes";
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,5 +43,11 @@
 			<input type="text" name="join_code" placeholder="1234">
 			<input type="submit" value="Join">
 		</form>
+	<br>
+	<?php 
+		for ($i = 0; $i <= $class_ammount; $i++) {
+			echo ($classes_array[$i]);
+		}
+		?>
 	</body>
 </html>
