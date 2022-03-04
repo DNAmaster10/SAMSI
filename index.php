@@ -15,7 +15,8 @@
   			text-align: left;
 		}
 		.buttons {
-			text-align: right;
+			text-align: center;
+			padding: 5px
 		}
 		
 		
