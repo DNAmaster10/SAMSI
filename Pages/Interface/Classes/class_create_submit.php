@@ -15,6 +15,13 @@ else {
 $class_name = $_POST["class_name"];
 $username = $_SESSION["username"];
   
+#Make sure a class with that name does not already exist
+$table_name = "class_data";
+$column_name = "owner";
+$where_column = "class";
+$where_value = $class_name;
+include $file_path."/Includes/Php/get_single_value_from_db.php";
+  
 $sql = "INSERT INTO class_data (class,owner) VALUES ('".$class_name."','".$username."')";
 mysqli_query ($conn, $sql);
 
@@ -28,7 +35,8 @@ $classes_string = $result;
 $classes_string = $classes_string.$class_name.",";
 $sql = "UPDATE user_classes SET classes='".$classes_string."' WHERE username='".$_SESSION["username"]."';";
 mysqli_query ($conn, $sql);
-  
+
+$sql = "UPDATE class_data SET members='".$_SESSION["username"].",' WHERE class='".$class_name."';";
 #redirect user back to the class select menu
 header("location: /Pages/Interface/Classes/class_select_menu.php");
 }
