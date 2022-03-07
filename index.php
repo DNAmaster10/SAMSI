@@ -6,7 +6,7 @@
 	
 		<style>
 		body {
-  			margin: 5;
+  			margin: 0;
 		}
 
 		.header {
