@@ -18,6 +18,10 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<form action="theme_submit.php" method="POST">
 			<input type="radio" value="default" name="theme_select" <?php if ($theme == "default") {echo "checked";} ?>><label>Default</label>
 			<input type="radio" value="cleo" name="theme_select" <?php if ($theme == "cleo") {echo "checked";} ?>><label>Cleo</label>
+			<input type="radio" value="rose" name="theme_select" <?php if ($theme == "rose") {echo "checked";} ?>><label>Rose</label>
+			<input type="radio" value="tate" name="theme_select" <?php if ($theme == "tate") {echo "checked";} ?>><label>Tate</label>
+			<input type="radio" value="lavender" name="theme_select" <?php if ($theme == "lavender") {echo "checked";} ?>><label>Lavender</label>
+			<input type="radio" value="peach" name="theme_select" <?php if ($theme == "peach") {echo "checked";} ?>><label>Peach</label>
 			<br>
 			<input type="submit" value="Save">
 		</form>
