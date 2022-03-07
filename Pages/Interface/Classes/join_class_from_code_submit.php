@@ -29,6 +29,7 @@ else {
 	$sql = "UPDATE user_classes SET classes='".$new_user_classes.",' WHERE username='".$_SESSION['username']."';";
 	mysqli_query ($conn,$sql);
 	$text_output = "Done! You're now a member of ".$class_name;
+	$table_name = "class_data";
 }
 ?>
 <!DOCTYPE html>
