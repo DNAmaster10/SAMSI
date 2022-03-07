@@ -36,6 +36,8 @@ else {
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	$current_members = $result;
 	$new_members = $current_members.$_SESSION["username"].",";
+	$sql = "UPDATE class_data SET members='".$new_members."';";
+	mysqli_query ($conn,$sql);
 	}
 ?>
 <!DOCTYPE html>
