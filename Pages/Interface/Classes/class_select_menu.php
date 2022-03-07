@@ -32,12 +32,14 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
+        <form action="../main_menu.php">
+            <intput type="submit" value="Home">
+        </form>
 		<?php if ($account_type == "teacher" or $account_type == "admin") {echo '
 		<form action="./class_create.php">
 			<input type="submit" value="New Class">
 		</form>
 		'; } ?>
-		
 	<br>
 		<p>Not a member of any classes? Enter the join code here!</p>
 		<form action="./join_class_from_code.php">
