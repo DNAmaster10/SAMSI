@@ -30,12 +30,20 @@ else {
 	mysqli_query ($conn,$sql);
 	$text_output = "Done! You're now a member of ".$class_name;
 	$table_name = "class_data";
-}
+	$column_name = "members";
+	$where_column = "join_code";
+	$where_value = $input_code;
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$current_members = $result;
+	$new_members = $current_members.$_SESSION["username"].",";
+	}
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>SAMSi</title>
+        <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
 		<p><?php echo $text_output; ?></p>
