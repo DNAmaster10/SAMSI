@@ -33,7 +33,7 @@
 	</head>
 	<body>
         <form action="../main_menu.php">
-            <intput type="submit" value="Home">
+            <input type="submit" value="Home">
         </form>
 		<?php if ($account_type == "teacher" or $account_type == "admin") {echo '
 		<form action="./class_create.php">
