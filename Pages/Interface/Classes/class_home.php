@@ -13,6 +13,17 @@
     else {
         header ("location: /Pages/Interface/Misc/class_not_selected.php");
     }
+    $table_name = "class_data";
+    $column_name = "owner";
+    $where_column = "class";
+    $where_value = $_SESSION["current_class"];
+    include $file_path."/Includes/Php/get_single_value_from_db.php";
+    if ($result == $_SESSION["username"]) {
+        $is_owner = true;
+    }
+    else {
+        $is_owner = false;
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,5 +34,10 @@
     </head>
     <body>
         <p>This class is <?php echo $_SESSION["current_class"]; ?></p>
+        <?php if ($is_owner == true) {echo ' 
+		<form action="./set_homework.php">
+            <input type="submit" value="Set an assignment">
+		</form>
+		';} ?>
     </body>
 </html>
