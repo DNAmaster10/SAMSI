@@ -20,9 +20,26 @@
 		header ("location: /Pages/Interface/");
 	}
 	
+	#Get information entered by user about homework from browser 
 	$title = $_POST["title"];
 	$description = $_POST["description"];
 	$due_date = $_POST["due_date"];
+	$date_set = date("l jS \of F Y h:i:s A");
 	
-	$sql = "UPDATE user_homework";
+	#Add homework to homework database
+	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
+	'".$due_date."','".$date_set."')";
+	
+	#Get current user homework
+	$table_name = "user_homework";
+	$column_name = "homework";
+	$where_column = "username";
+	$where_value = $_SESSION["username"];
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$current_homework = $result;
+	
+	#Add homework to users homework list
+	$current_homework = $current_homework.$title;
+	
+	$sql = "UPDATE user_homework SET homework VALUE";
 ?>
