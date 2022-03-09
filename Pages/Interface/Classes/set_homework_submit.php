@@ -48,6 +48,7 @@
 	
 	#Add homework to users homework list
 	$current_homework = $current_homework.$title;
+	$sql = "INSERT INTO user_homework (username,homework,ID) VALUE ('".$."','".."','".."')":
 	
 	$sql = "UPDATE user_homework SET homework VALUE";
 ?>
