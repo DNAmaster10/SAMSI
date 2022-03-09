@@ -38,6 +38,14 @@
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	$current_homework = $result;
 	
+	#Get homework ID from db
+	$table_name = "homework_data";
+	$column_name = "ID";
+	$where_column = "title";
+	$where_value = $title."') AND (due_date) = ('".$due_date .");";
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$id = $result;
+	
 	#Add homework to users homework list
 	$current_homework = $current_homework.$title;
 	
