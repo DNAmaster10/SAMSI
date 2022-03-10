@@ -34,7 +34,7 @@
 	mysqli_query($conn, $sql);
 	
 	#Get homework ID from db	
-	$sql = "SELECT ID FROM user_homework WHERE title='".$title."' AND (due_date='".$due_date."') AND (class='".$_SESSION["current_class"]."');";
+	$sql = "SELECT ID FROM user_homework WHERE title='".$title."' AND due_date='".$due_date."' AND class='".$_SESSION["current_class"]."');";
 	$raw_result = mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	if ($raw_result->num_rows > 0) {
 		$row = $raw_result->fetch_assoc();
