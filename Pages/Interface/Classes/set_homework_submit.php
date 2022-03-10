@@ -1,4 +1,6 @@
 <?php
+    $text_output = "All done!";
+    $continue = 0;
     session_start();
     $file_path = $_SERVER["DOCUMENT_ROOT"];
     $username = $_SESSION["username"];
@@ -17,11 +19,11 @@
 	$where_value = $_SESSION["current_class"];
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	if ($result != $_SESSION["username"]) {
-		header ("location: /Pages/Interface/");
+		header ("location: /Pages/Interface/Misc/not_owner_of_class.php");
 	}
 	
-	#Get information entered by user about homework from browser 
-	$title = $_POST["title"];
+	#Get information entered by user about homework from browser
+    $title = $_POST["title"];
 	$description = $_POST["description"];
 	$due_date = $_POST["due_date"];
 	$date_set = date("l jS \of F Y h:i:s A");
@@ -30,14 +32,6 @@
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
 	'".$due_date."','".$date_set."')";
 	mysqli_query($conn, $sql);
-	
-	#Get current user homework
-	$table_name = "user_homework";
-	$column_name = "homework";
-	$where_column = "username";
-	$where_value = $_SESSION["username"];
-	include $file_path."/Includes/Php/get_single_value_from_db.php";
-	$current_homework = $result;
 	
 	#Get homework ID from db
 	$table_name = "homework_data";
@@ -53,6 +47,10 @@
 	$where_column = "class";
 	$where_value = $_SESSION["class"];
 	include $file_path."/Includes/Php/get_single_value_from_db";
+	if ($result = "null") {
+        $text_output = "There are no members in this class.";
+        $continue = 0;
+    }
 	$members = $result;
 	
 	#Check if users actually exist in the class
@@ -81,6 +79,7 @@
             $current_homework_id = $result;
             $new_homework_id = $current_homework_id.$id.",";
             $sql = "UPDATE user_homework SET ID='".$id."' WHERE username='".$members_array[$i]."';";
+            mysqli_query ($conn, $sql);
             
         }
 	}
