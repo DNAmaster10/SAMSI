@@ -7,7 +7,7 @@
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";   
 	
-    if ((!isset($_SESSION["current_class"])) {
+    if ((!isset($_SESSION["current_class"]))) {
         header ("location: /Pages/Interface/Misc/class_not_selected.php");
     }
 	$table_name = "class_data";
