@@ -55,7 +55,7 @@
 	
 	#Check if users actually exist in the class
 	$member_ammount = substr_count($members,',');
-	if ($member_count == 0) {
+	if ($member_ammount == 0) {
         $continue = "no";
 	}
 	#Set homework for every user in class
@@ -92,7 +92,7 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <p>All done!</p>
+        <p><?php echo $text_output ?></p>
         <form action="./class_home.php">
             <input type="submit" value="Class home page">
         </form>
