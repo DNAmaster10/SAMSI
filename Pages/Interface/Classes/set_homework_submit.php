@@ -29,6 +29,7 @@
 	#Add homework to homework database
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
 	'".$due_date."','".$date_set."')";
+	mysqli_query($conn, $sql);
 	
 	#Get current user homework
 	$table_name = "user_homework";
@@ -71,6 +72,7 @@
             $current_homework = $result;
             $new_homework = $current_homework.$title.",";
             $sql = "UPDATE user_homework SET homework='".$new_homework."' WHERE username='".$members_array[$i]."';";
+            mysqli_query($conn,$sql);
             $table_name = "user_homework";
             $column_name = "ID";
             $where_column = "username";
@@ -78,6 +80,7 @@
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework_id = $result;
             $new_homework_id = $current_homework_id.$id.",";
+            $sql = "UPDATE user_homework SET ID='".$id."' WHERE username='".$members_array[$i]."';";
             
         }
 	}
