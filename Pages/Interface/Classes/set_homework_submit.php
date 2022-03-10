@@ -45,7 +45,7 @@
 	$table_name = "class_data";
 	$column_name = "members";
 	$where_column = "class";
-	$where_value = $_SESSION["class"];
+	$where_value = $_SESSION["current_class"];
 	include $file_path."/Includes/Php/get_single_value_from_db";
 	if ($result = "null") {
         $text_output = "There are no members in this class.";
