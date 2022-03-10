@@ -83,3 +83,17 @@
         }
 	}
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SAMSi</title>
+        <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
+    </head>
+    <body>
+        <p>All done!</p>
+        <form action="./class_home.php">
+            <input type="submit" value="Class home page">
+        </form>
+    </body>
+</html>
