@@ -56,7 +56,7 @@
 	#Check if users actually exist in the class
 	$member_ammount = substr_count($members,',');
 	if ($member_ammount == 0) {
-        $continue = "no";
+        $continue = 0;
 	}
 	#Set homework for every user in class
 	else {
