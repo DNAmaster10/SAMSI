@@ -42,6 +42,9 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<form action="./Classes/class_select_menu.php">
 			<input type="submit" value="Classes">
 		</form>
+		<form action="./Classes/view_homework.php">
+            <input type="submit" value="Homework">
+		</form>
 		<br>
 		<form action="./Theme/select_theme.php">
 			<input type="submit" value="Change theme">
