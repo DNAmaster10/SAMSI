@@ -35,7 +35,7 @@
     <body>
         <p>This class is <?php echo $_SESSION["current_class"]; ?></p>
         <form action="../main_menu.php">
-            <input type="submit">
+            <input type="submit" value="Back">
         </form>
         <?php if ($is_owner == true) {echo ' 
 		<form action="./set_homework.php">
