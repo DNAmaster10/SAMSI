@@ -61,24 +61,26 @@
 	#Set homework for every user in class
 	else {
         $members_array = explode(',', $members);
+        $student_number = 0;
         for ($i = 0; $i <= $member_ammount - 2; $i++) {
+            $student_number = $student_number + 1;
             $table_name = "user_homework";
             $column_name = "homework";
             $where_column = "username";
-            $where_value = $members_array[$i];
+            $where_value = $members_array[$student_number];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework = $result;
             $new_homework = $current_homework.$title.",";
-            $sql = "UPDATE user_homework SET homework='".$new_homework."' WHERE username='".$members_array[$i]."';";
+            $sql = "UPDATE user_homework SET homework='".$new_homework."' WHERE username='".$members_array[$student_number]."';";
             mysqli_query($conn,$sql);
             $table_name = "user_homework";
             $column_name = "ID";
             $where_column = "username";
-            $where_value = $members_array[$i];
+            $where_value = $members_array[$student_number];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework_id = $result;
             $new_homework_id = $current_homework_id.$id.",";
-            $sql = "UPDATE user_homework SET ID='".$id."' WHERE username='".$members_array[$i]."';";
+            $sql = "UPDATE user_homework SET ID='".$id."' WHERE username='".$members_array[$student_number]."';";
             mysqli_query ($conn, $sql);
             
         }
