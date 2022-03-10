@@ -78,7 +78,6 @@
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework_id = $result;
             $new_homework_id = $current_homework_id.$id.",";
-            $
             
         }
 	}
