@@ -45,7 +45,7 @@
 	else {
 		$result = "null";
 	}
-	$id = $result;
+	$id = (string) $result;
 	
 	#Get list of users to set homework for
 	$table_name = "class_data";
