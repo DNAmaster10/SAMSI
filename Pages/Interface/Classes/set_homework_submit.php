@@ -90,7 +90,7 @@
 			
             $new_homework_id = $current_homework_id.$id.",";
             $sql = "UPDATE user_homework SET ID='".$new_homework_id."' WHERE username='".$members_array[$student_number]."';";
-            mysqli_query ($conn, $sql) or die (mysqli_error($conn));
+            mysqli_query($conn, $sql) or die (mysqli_error($conn));
         }
 	}
 ?>
