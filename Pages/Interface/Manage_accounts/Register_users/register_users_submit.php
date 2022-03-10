@@ -25,7 +25,7 @@ $where_value = $username;
 include $file_path."/Includes/Php/get_single_value_from_db.php";
 
 if ($result == "null") {
-$continue = 1;
+    $continue = 1;
 }
 else {
 $continue = 0;
