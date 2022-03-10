@@ -46,9 +46,30 @@
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	$id = $result;
 	
-	#Add homework to users homework list
-	$current_homework = $current_homework.$title;
-	$sql = "INSERT INTO user_homework (username,homework,ID) VALUE ('".$."','".."','".."')":
+	#Get list of users to set homework for
+	$table_name = "class_data";
+	$column_name = "members";
+	$where_column = "class";
+	$where_value = $_SESSION["class"];
+	include $file_path."/Includes/Php/get_single_value_from_db";
+	$members = $result;
 	
-	$sql = "UPDATE user_homework SET homework VALUE";
+	#Check if users actually exist in the class
+	$member_ammount = substr_count($members,',');
+	if ($member_count == 0) {
+        $continue = "no";
+	}
+	#Set homework for every user in class
+	else {
+        $members_array = explode(',', $members);
+        for ($i = 0; $i <= $member_ammount - 2; $i++) {
+            $table_name = "user_homework";
+            $column_name = "homework";
+            $where_column = "username";
+            $where_value = $members_array[$i];
+            include $file_path."/Includes/Php/get_single_value_from_db.php";
+            $current_homework = $result;
+            
+        }
+	}
 ?>
