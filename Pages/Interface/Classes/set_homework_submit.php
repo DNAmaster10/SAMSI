@@ -30,8 +30,8 @@
 	
 	#Add homework to homework database
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
-	'".$due_date."','".$date_set."')";
-	mysqli_query($conn, $sql);
+	'".$due_date."','".$date_set."');";
+	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
 	#Get homework ID from db	
 	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND due_date='".$due_date."' AND class='".$_SESSION["current_class"]."';";
@@ -45,7 +45,7 @@
 	else {
 		$result = "null";
 	}
-	$id = (string) $result;
+	$ident = (string) $result;
 	
 	#Get list of users to set homework for
 	$table_name = "class_data";
@@ -88,7 +88,7 @@
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework_id = $result;
 			
-            $new_homework_id = $current_homework_id.$id.",";
+            $new_homework_id = $current_homework_id.$ident.",";
             $sql = "UPDATE user_homework SET ID='".$new_homework_id."' WHERE username='".$members_array[$student_number]."';";
             mysqli_query($conn, $sql) or die (mysqli_error($conn));
         }
@@ -106,6 +106,6 @@
         <form action="./class_home.php">
             <input type="submit" value="Class home page">
         </form>
-		<?php echo $id; ?>
+		<?php echo $ident; ?>
     </body>
 </html>
