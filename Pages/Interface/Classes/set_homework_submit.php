@@ -69,6 +69,16 @@
             $where_value = $members_array[$i];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $current_homework = $result;
+            $new_homework = $current_homework.$title.",";
+            $sql = "UPDATE user_homework SET homework='".$new_homework."' WHERE username='".$members_array[$i]."';";
+            $table_name = "user_homework";
+            $column_name = "ID";
+            $where_column = "username";
+            $where_value = $members_array[$i];
+            include $file_path."/Includes/Php/get_single_value_from_db.php";
+            $current_homework_id = $result;
+            $new_homework_id = $current_homework_id.$id.",";
+            $
             
         }
 	}
