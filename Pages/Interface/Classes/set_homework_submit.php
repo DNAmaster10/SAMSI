@@ -33,6 +33,7 @@
 	'".$due_date."','".$date_set."');";
 	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
+	sleep(10);
 	#Get homework ID from db	
 	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND due_date='".$due_date."' AND date_set='".$date_set."';";
 	$raw_result = mysqli_query($conn, $sql) or die (mysqli_error($conn));
@@ -68,7 +69,7 @@
 	else {
         $members_array = explode(',', $members);
         $student_number = 0;
-        for ($i = 0; $i <= $member_ammount; $i++) {
+        for ($i = 0; $i <= $member_ammount - 2; $i++) {
             #Add the homework title
             $student_number = $student_number + 1;
             $table_name = "user_homework";
