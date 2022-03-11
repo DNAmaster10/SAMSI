@@ -68,7 +68,7 @@
 	else {
         $members_array = explode(',', $members);
         $student_number = 0;
-        for ($i = 0; $i <= $member_ammount - 1; $i++) {
+        for ($i = 0; $i <= $member_ammount; $i++) {
             #Add the homework title
             $table_name = "user_homework";
             $column_name = "homework";
