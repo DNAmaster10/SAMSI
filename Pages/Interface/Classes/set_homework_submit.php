@@ -34,11 +34,11 @@
 	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
 	#Get homework ID from db	
-	$sql = "SELECT ID FROM homework_data WHERE title='".$title."'";
+	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND class='".$_SESSION["current_class"]."' AND date_set='".$date_set."'";
 	$raw_result = mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	if ($raw_result->num_rows > 0) {
 		$row = $raw_result->fetch_assoc();
-		$result = $row[$column_name];
+		$result = $row["ID"];
 		unset($row);
 		unset($raw_result);
 	}
