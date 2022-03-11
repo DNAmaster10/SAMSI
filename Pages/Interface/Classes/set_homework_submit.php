@@ -34,10 +34,8 @@
 	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
 	#Get homework ID from db	
-	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND teacher='".$_SESSION["username"]."'";
-	
-	$raw_result = "1";
-	mysqli_query($conn, $sql) or die (mysqli_error($conn));
+	$sql = "SELECT ID FROM homework_data WHERE title='".$title."'";
+	$raw_result = "1";mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	if ($raw_result->num_rows > 0) {
 		$row = $raw_result->fetch_assoc();
 		$result = $row[$column_name];
