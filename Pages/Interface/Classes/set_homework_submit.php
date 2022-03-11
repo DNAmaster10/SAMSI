@@ -68,7 +68,8 @@
 	else {
         $members_array = explode(',', $members);
         $student_number = 0;
-        for ($i = 0; $i <= $member_ammount - 2; $i++) {
+        for ($i = 0; $i <= $member_ammount; $i++) {
+            #Add the homework title
             $student_number = $student_number + 1;
             $table_name = "user_homework";
             $column_name = "homework";
@@ -80,7 +81,7 @@
             $new_homework = $current_homework.$title.",";
             $sql = "UPDATE user_homework SET homework='".$new_homework."' WHERE username='".$members_array[$student_number]."';";
             mysqli_query($conn,$sql);
-			
+			#Add the homework ID
             $table_name = "user_homework";
             $column_name = "ID";
             $where_column = "username";
