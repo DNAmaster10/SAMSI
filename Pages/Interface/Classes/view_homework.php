@@ -25,8 +25,8 @@
 	}
 	else {
         #Creating array of user homework and working out how much there is
-        $homework_count = substr_count($homework_string,',');
-        $homework_array = explode(',', $homework_string);
+        $homework_count = substr_count($id_string,',');
+        $homework_array = explode(',', $id_string);
         
         #Getting list of homework ID's
         $table_name = "user_homework";
