@@ -33,9 +33,8 @@
 	'".$due_date."','".$date_set."');";
 	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
-	sleep(10);
 	#Get homework ID from db	
-	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND due_date='".$due_date."' AND date_set='".$date_set."';";
+	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND date_set='".$date_set."';";
 	$raw_result = mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	if ($raw_result->num_rows > 0) {
 		$row = $raw_result->fetch_assoc();
