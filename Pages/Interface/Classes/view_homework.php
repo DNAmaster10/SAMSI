@@ -1,8 +1,8 @@
 <?php
+	session_start();
     $text_output = "Hey ".$_SESSION["username"]."! Here's what you need to do today:";
     #setting everything up
     $continue = 1;
-	session_start();
 	$file_path = $_SERVER["DOCUMENT_ROOT"];
 	$username = $_SESSION["username"];
 	include "/var/www/html/Includes/Php/dbh.php";
