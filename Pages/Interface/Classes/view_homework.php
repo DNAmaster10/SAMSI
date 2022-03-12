@@ -96,10 +96,11 @@
             $output_date_set = $result;
             
             echo "
-            <h3>".$output_title."</h3>
-            <p>Description: ".$output_description."</p>
-            <p>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|
-            "; 
+			<div>
+				<h3>".$output_title."</h3>
+				<p>Description: ".$output_description."</p>
+				<p><small>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
+            </div>"; 
             }
         ?>
     </body>
