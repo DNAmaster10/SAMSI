@@ -86,19 +86,19 @@
             $where_column = "ID";
             $where_value = $homework_id_array[$i];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
-            $output_description = $result;
+            $output_class = $result;
             
             $table_name = "homework_data";
             $column_name = "date_set";
             $where_column = "ID";
             $where_value = $homework_id_array[$i];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
-            $output_description = $result;
+            $output_date_set = $result;
             
             echo "
             <h3>".$output_title."</h3>
             <p>Description: ".$output_description."</p>
-            <p>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$date_set."|
+            <p>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|
             "; 
             }
         ?>
