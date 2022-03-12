@@ -50,12 +50,23 @@
 			.homework_div {
 				border-style: outset;
 			}
+			.side_bar {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
 		</style>
     </head>
     <body>
         <p><?php echo $text_output; ?></p>
-        <form>
-        </form>
+		<div class="side_bar">
+			<form action="../main_menu.php">
+				<input type="submit" value="Home">
+			</form>
+			<form action="./class_select_menu.php">
+				<input type="submit" value="Classes">
+			</form>
+		</div>
         <?php
             for ($i = 0; $i <= $homework_count - 1; $i++) {
             $table_name = "homework_data";
