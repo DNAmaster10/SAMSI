@@ -46,6 +46,11 @@
         <title>SAMSi</title>
         <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
         <link rel="stylesheet" href="/Includes/Css/main.css">
+		<style>
+			.homework_div {
+				border-style: outset;
+			}
+		<style>
     </head>
     <body>
         <p><?php echo $text_output; ?></p>
@@ -96,7 +101,7 @@
             $output_date_set = $result;
             
             echo "
-			<div>
+			<div class='homework_div'>
 				<h3>".$output_title."</h3>
 				<p>Description: ".$output_description."</p>
 				<p><small>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
