@@ -52,7 +52,7 @@
         <form>
         </form>
         <?php
-            for ($i = 0; $i <= $homework_count; $i++) {
+            for ($i = 0; $i <= $homework_count - 1; $i++) {
             $table_name = "homework_data";
             $column_name = "title";
             $where_column = "ID";

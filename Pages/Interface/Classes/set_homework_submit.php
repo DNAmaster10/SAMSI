@@ -107,6 +107,5 @@
         <form action="./class_home.php">
             <input type="submit" value="Class home page">
         </form>
-		<?php echo $ident; ?>
     </body>
 </html>
