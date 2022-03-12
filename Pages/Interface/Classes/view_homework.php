@@ -50,7 +50,7 @@
 			.homework_div {
 				border-style: outset;
 			}
-		<style>
+		</style>
     </head>
     <body>
         <p><?php echo $text_output; ?></p>
