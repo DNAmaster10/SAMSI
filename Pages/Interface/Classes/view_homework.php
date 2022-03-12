@@ -49,6 +49,7 @@
 		<style>
 			.homework_div {
 				border-style: outset;
+				float: left;
 			}
 			.side_bar {
 				list-style-type: none;
@@ -58,7 +59,6 @@
 		</style>
     </head>
     <body>
-        <p><?php echo $text_output; ?></p>
 		<div class="side_bar">
 			<form action="../main_menu.php">
 				<input type="submit" value="Home">
@@ -67,6 +67,7 @@
 				<input type="submit" value="Classes">
 			</form>
 		</div>
+		<p><?php echo $text_output; ?></p>
         <?php
             for ($i = 0; $i <= $homework_count - 1; $i++) {
             $table_name = "homework_data";
