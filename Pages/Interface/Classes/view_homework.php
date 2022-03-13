@@ -5,10 +5,10 @@
     $continue = 1;
 	$file_path = $_SERVER["DOCUMENT_ROOT"];
 	$username = $_SESSION["username"];
-	include "/var/www/html/Includes/Php/dbh.php";
-	include "/var/www/html/Includes/Php/check_user_pass.php";
-	include "/var/www/html/Includes/Php/get_user_theme.php";
-	include "/var/www/html/Includes/Php/get_account_type.php";
+	include $file_path."/Includes/Php/dbh.php";
+	include $file_path."/Includes/Php/check_user_pass.php";
+	include $file_path."/Includes/Php/get_user_theme.php";
+	include $file_path."/Includes/Php/get_account_type.php";
 	
 	#Getting a list of the users homework
 	$table_name = "user_homework";
@@ -117,8 +117,8 @@
 				<h3> ".$output_title."</h3>
 				<p> Description: ".$output_description."</p>
 				<p><small> Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
-				<form action='./homework_complete_submit.php'>
-					<p> </p>
+				<form action='./homework_complete_submit.php' method='POST'>
+					<p> </p><input type='hidden' name='homework_id' value='".($homework_id_array[$i])."'>
 					<input type='submit' value='Mark as complete'>
 				</form>
 				<p> </p>
