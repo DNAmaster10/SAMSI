@@ -114,9 +114,14 @@
             
             echo "
 			<div class='homework_div'>
-				<h3>".$output_title."</h3>
-				<p>Description: ".$output_description."</p>
-				<p><small>Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
+				<h3> ".$output_title."</h3>
+				<p> Description: ".$output_description."</p>
+				<p><small> Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
+				<form action='./homework_complete_submit.php'>
+					<p> </p>
+					<input type='submit' value='Mark as complete'>
+				</form>
+				<p> </p>
             </div>"; 
             }
         ?>
