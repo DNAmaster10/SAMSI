@@ -30,6 +30,8 @@
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$completed_id_string = $result;
 		$new_completed_id_string = $completed_id_string.$_POST["homework_id"].",";
+		$sql = "UPDATE user_homework SET completed_id='".$new_completed_id_string."' WHERE username='".$_SESSION["username"]."';";
+		mysqli_query($conn, $sql) or die (mysqli_error($conn));
 		
 		#Find out name of the homework
 		$table_name = "homework_data";
