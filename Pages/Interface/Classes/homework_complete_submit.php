@@ -46,7 +46,7 @@
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$new_homework_list = str_replace($homework_title.",","",$result);
 		$sql = "UPDATE user_homework SET homework='".$new_homework_list."' WHERE username='".$_SESSION["username"]."';";
-		mysqli_query($conn,$sql);
+		mysqli_query($conn,$sql) or die (mysqli_error($conn));
 		header ("location: ./view_homework.php");
 	}
 ?>
