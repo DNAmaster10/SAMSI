@@ -83,6 +83,7 @@
             $where_value = $homework_id_array[$i];
             include $file_path."/Includes/Php/get_single_value_from_db.php";
             $output_description = $result;
+            $output_description = str_replace("`","'",$output_description);
             
             $table_name = "homework_data";
             $column_name = "due_date";
