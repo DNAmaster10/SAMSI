@@ -27,8 +27,8 @@
 	$description = $_POST["description"];
 	$due_date = $_POST["due_date"];
 	$date_set = date("l jS \of F Y h:i:s A");
-	
-	$description = str_replace("'","`",$description);
+	$description = str_replace("'","!@apostraphe",$description);
+	$description = str_replace('"',"!@double_appostraphe",$description);
 	
 	#Add homework to homework database
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
