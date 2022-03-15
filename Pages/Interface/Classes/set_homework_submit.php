@@ -23,14 +23,14 @@
 	}
 	
 	#Get information entered by user about homework from browser
-    $title = $_POST["title"];
-	$description = $_POST["description"];
-	$due_date = $_POST["due_date"];
+    $title = $mysqli -> real_escape_string($_POST["title"]);
+	$description = $mysqli -> real_escape_string($_POST["description"]);
+	$due_date = $mysqli -> real_escape_string($_POST["due_date"]);
 	$date_set = date("l jS \of F Y h:i:s A");
 	
 	#Add homework to homework database
-	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES (('".$title."'),('".$description."'),('".$_SESSION["current_class"]."'),('".$_SESSION["username"]."'),
-	('".$due_date."'),('".$date_set."'));";
+	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('".$title."','".$description."','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
+	'".$due_date."','".$date_set."');";
 	mysqli_query($conn, $sql) or die (mysqli_error($conn));
 	
 	#Get homework ID from db	
