@@ -23,9 +23,9 @@
 	}
 	
 	#Get information entered by user about homework from browser
-    $title = real_escape_string($_POST["title"]);
-	$description = real_escape_string($_POST["description"]);
-	$due_date = real_escape_string($_POST["due_date"]);
+    $title = $conn -> real_escape_string($_POST["title"]);
+	$description = $conn -> real_escape_string($_POST["description"]);
+	$due_date = $conn -> real_escape_string($_POST["due_date"]);
 	$date_set = date("l jS \of F Y h:i:s A");
 	
 	#Add homework to homework database
