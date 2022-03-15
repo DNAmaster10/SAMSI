@@ -31,7 +31,7 @@
 	#Add homework to homework database
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('$title','$description','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
 	'$due_date','".$date_set."');";
-	mysqli_query($conn, $sql) or die (error_log("Line 33");
+	mysqli_query($conn, $sql) or die (error_log("Line 33"));
 	
 	#Get homework ID from db	
 	$sql = "SELECT ID FROM homework_data WHERE title='".$title."' AND class='".$_SESSION["current_class"]."' AND date_set='".$date_set."'";
