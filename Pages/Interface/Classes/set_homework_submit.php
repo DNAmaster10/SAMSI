@@ -47,8 +47,7 @@
 	else {
 		$result = "null";
 	}
-	$ident = (string) $result;
-	
+	$ident = $result;
 	#Add homework to class data
 	$table_name = "class_data";
 	$column_name = "homework";
