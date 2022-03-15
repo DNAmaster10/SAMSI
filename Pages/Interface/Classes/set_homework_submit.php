@@ -54,7 +54,7 @@
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	$new_homework_class_data = $result.$ident.",";
 	$sql = "UPDATE class_data SET homework='".$new_homework_class_data."' WHERE class='$_SESSION["current_class"]';";
-	mysqli_query($conn,$sql) or die (mysqli_error($conn));
+	mysqli_query($conn,$sql) or die (error_log("line 56");
 	
 	#Get list of users to set homework for
 	$table_name = "class_data";
@@ -78,7 +78,7 @@
         $members_array = explode(',', $members);
         $student_number = 0;
         $sql = "UPDATE SET not_complete='".$members."' WHERE ID='".$ident."';";
-        mysqli_query($conn,$sql) or die (mysqli_error($conn));
+        mysqli_query($conn,$sql) or die (error_log("80");
         for ($i = 0; $i <= $member_ammount; $i++) {
             #Add the homework title
             $table_name = "user_homework";
