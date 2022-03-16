@@ -1,6 +1,6 @@
 <?php
 session_start();
-$input_code = $_POST["input_code"];
+$input_code = $conn -> real_escape_string($_POST["input_code"]);
 $file_path = $_SERVER["DOCUMENT_ROOT"];
 include $file_path."/Includes/Php/dbh.php";
 include $file_path."/Includes/Php/check_user_pass.php";

@@ -12,7 +12,7 @@ if ($account_type !== "admin" and $account_type !== "teacher") {
 }
 else {
 #Get the users input from the previous page
-$class_name = $_POST["class_name"];
+$class_name = $conn -> real_escape_string($_POST["class_name"]);
 $username = $_SESSION["username"];
   
 #Make sure a class with that name does not already exist

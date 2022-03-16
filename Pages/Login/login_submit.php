@@ -2,9 +2,8 @@
   session_start();
   #connect to database
   include "/var/www/html/Includes/Php/dbh.php";
-  
-  $username_t = $_GET["username"];
-  $password_t = $_GET["password"];
+  $username_t = $conn -> real_escape_string($_POST["username"]);
+  $password_t = $conn -> real_escape_string($_POST["password"]);
   
   $error = 0;
   

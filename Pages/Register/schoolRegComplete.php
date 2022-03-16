@@ -4,9 +4,9 @@
   
   #get inputs from browser
   $continue = (1);
-  $schoolName = $_POST["schoolName"];
-  $adminName = $_POST["adminName"];
-  $adminPassword = $_POST["adminPassword"];
+  $schoolName = $conn -> real_escape_string($_POST["schoolName"]);
+  $adminName = $conn -> real_escape_string($_POST["adminName"]);
+  $adminPassword = $conn -> real_escape_string($_POST["adminPassword"]);
   $textOutput = ("An Error has occured with the variable handling of the $schoolName variable");
   
   #String handling
