@@ -78,7 +78,7 @@
         $members_array = explode(',', $members);
         $student_number = 0;
         $sql = "UPDATE SET not_complete='".$members."' WHERE ID='".$ident."';";
-        mysqli_query($conn,$sql) or die (error_log("80");
+        mysqli_query($conn,$sql) or die (mysqli_error($conn));
         for ($i = 0; $i <= $member_ammount; $i++) {
             #Add the homework title
             $table_name = "user_homework";
