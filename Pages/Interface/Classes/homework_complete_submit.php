@@ -49,7 +49,6 @@
 		$new_homework_list = str_replace($homework_title.",","",$result);
 		$sql = "UPDATE user_homework SET homework='".$new_homework_list."' WHERE username='".$_SESSION["username"]."';";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
-		header ("location: ./view_homework.php");
 		
 		#Add user to completion list in homework data
 		$table_name = "homework_data";
@@ -69,6 +68,8 @@
 		$new_not_complete = str_replace($_SESSION["username"].",","",
 		$sql = ("UPDATE user_homework SET not_complete='".$new_not_complete."' WHERE ID='".$_POST["homework_id"]."';";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
+		
+        header ("location: ./view_homework.php");
 	}
 ?>
 <!DOCTYPE html>
