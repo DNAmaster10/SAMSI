@@ -71,7 +71,7 @@
 		$table_name = "homework_data";
 		$column_name = "not_complete";
 		$where_column = "ID";
-		$where_value = $homwork_post_id;
+		$where_value = $homework_post_id;
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$current_not_complete = $result;
 		$new_not_complete = str_replace($_SESSION["username"].",","",$current_not_complete);
