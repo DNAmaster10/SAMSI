@@ -33,7 +33,7 @@
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$completed_id_string = $result;
 		$new_completed_id_string = $completed_id_string.$homework_post_id.",";
-		$sql = "UPDATE user_homework SET completed_id='".$new_completed_id_string."' WHERE username='".$_SESSION["username"]."';";
+		$sql = "UPDATE user_homework SET completed_id='$new_completed_id_string' WHERE username='".$_SESSION["username"]."';";
 		mysqli_query($conn, $sql) or die (mysqli_error($conn));
 		
 		#Find out name of the homework
@@ -50,7 +50,7 @@
 		$where_value = $_SESSION["username"];
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$new_homework_list = str_replace($homework_title.",","",$result);
-		$sql = "UPDATE user_homework SET homework='".$new_homework_list."' WHERE username='".$_SESSION["username"]."';";
+		$sql = "UPDATE user_homework SET homework='$new_homework_list' WHERE username='".$_SESSION["username"]."';";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
 		
 		#Add user to completion list in homework data
@@ -75,7 +75,7 @@
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$current_not_complete = $result;
 		$new_not_complete = str_replace($_SESSION["username"].",","",$current_not_complete);
-		$sql = "UPDATE user_homework SET not_complete='$new_not_complete' WHERE ID='$homework_post_id';";
+		$sql = "UPDATE homework_data SET not_complete='$new_not_complete' WHERE ID='$homework_post_id';";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
         header ("location: ./view_homework.php");
 	}
