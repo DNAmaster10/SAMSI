@@ -54,7 +54,7 @@
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
 	$new_homework_class_data = $result.$ident.",";
 	$sql = "UPDATE class_data SET homework='$new_homework_class_data' WHERE class='".$_SESSION["current_class"]."';";
-	mysqli_query($conn,$sql) or die (error_log("line 56");
+	mysqli_query($conn,$sql) or die (mysqli_error($conn));
 	
 	#Get list of users to set homework for
 	$table_name = "class_data";
