@@ -75,7 +75,7 @@
 		include $file_path."/Includes/Php/get_single_value_from_db.php";
 		$current_not_complete = $result;
 		$new_not_complete = str_replace($_SESSION["username"].",","",$current_not_complete);
-		$sql = ("UPDATE user_homework SET not_complete='$new_not_complete' WHERE ID='$homework_post_id';";
+		$sql = "UPDATE user_homework SET not_complete='$new_not_complete' WHERE ID='$homework_post_id';";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
         header ("location: ./view_homework.php");
 	}
