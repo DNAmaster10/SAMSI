@@ -69,6 +69,10 @@
 		</div>
 		<p><?php echo $text_output; ?></p>
         <?php
+			if ($id_string == "null") {
+				echo "<p>You're all up to date!</p>";
+			}
+			else {
             for ($i = 0; $i <= $homework_count - 1; $i++) {
             $table_name = "homework_data";
             $column_name = "title";
@@ -126,6 +130,7 @@
 				<p> </p>
             </div>"; 
             }
+			}
         ?>
     </body>
 </html>
