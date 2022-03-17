@@ -46,8 +46,11 @@
 	<body>
 		<h1>Current assignments:</h1>
 		<?php
-		if ($is_homework == 1) {
-				echo "<p>You're all up to date!</p>";
+		if ($is_homework == 0) {
+				echo "<p>There are no assignments set for this class.</p>
+				<form action='./set_homework.php'
+					<input type='submit' value='Set an assignment'>
+				</form>";
 			}
 			else {
             for ($i = 0; $i <= $homework_count - 1; $i++) {
