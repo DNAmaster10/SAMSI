@@ -41,6 +41,9 @@
 		<form action="./set_homework.php">
             <input type="submit" value="Set an assignment">
 		</form>
+		<form action="./view_assignments.php">
+			<input type="submit" value="View assignments">
+		</form>
 		';} ?>
     </body>
 </html>
