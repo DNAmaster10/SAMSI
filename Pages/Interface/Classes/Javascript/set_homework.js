@@ -6,8 +6,5 @@ var day = d.getDate();
 year = year.toString();
 month = month.toString();
 day = day.toString();
-console.log(year);
-console.log(month);
-console.log(day);
 var full_date = day + "-" + month + "-" + year;
 document.getElementById("submit_date").value = full_date;
