@@ -1,3 +1,4 @@
+var start = new Date(document.getElementById('Stardate').value);
 var year = getFullYear();
 var month = getMonth();
 var day = getDay();
