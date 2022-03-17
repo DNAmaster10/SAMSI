@@ -13,7 +13,7 @@
 	$where_column = "class";
 	$where_value = $_SESSION["current_class"];
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
-	if ($result == $_SESSION["username"]; {
+	if ($result == $_SESSION["username"]) {
         $is_owner = 1;
 	}
 	else {
