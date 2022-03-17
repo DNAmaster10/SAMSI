@@ -34,7 +34,7 @@
 		<form action="./set_homework_submit.php" method="POST">
 			<p>Title: </p><input type="text" name="title" required>
 			<p>Description: </p><input type="text" name="description" required>
-			<p>Due data: </p><input type="date" name="due_date" required>
+			<p>Due data: </p><input type="date" name="due_date"  min=required>
 			<input type="submit" value="Set Homework">
 		</form>
 	</body>
