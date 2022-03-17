@@ -53,7 +53,7 @@
 				</form>";
 			}
 			else {
-            for ($i = 0; $i <= $homework_count - 1; $i++) {
+            for ($i = 0; $i <= $homework_count; $i++) {
             $table_name = "homework_data";
             $column_name = "title";
             $where_column = "ID";
