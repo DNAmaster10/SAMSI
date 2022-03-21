@@ -90,7 +90,7 @@
 				";
 				if ($is_owner == 1) {echo "
 				<form action='./view_handins.php'>
-					<p> </p> <input type='hidden' name='homework_id value='".($homework_id_array[$i])."'>
+					<p> </p> <input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
 					<input type='submit' value='View handins'>
 				</form>
 				<form action='./edit_assignment.php' method='POST'>
