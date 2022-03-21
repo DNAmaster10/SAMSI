@@ -44,6 +44,9 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
+		<form action="./class_home.php">
+			<input type="submit" value="Back">
+		</form>
 		<h1>Current assignments:</h1>
 		<?php
 		if ($is_homework == 0) {
