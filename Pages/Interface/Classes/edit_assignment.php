@@ -58,10 +58,13 @@
 		<form action="./view_assignments.php">
 			<input tpye="submit" value="submit">
 		</form>
-		<p>Editing assignment: <?php echo "$title" ?></p>
+		<p>Editing assignment: <?php echo "$title"; ?></p>
 		<form action="./edit_assignment_submit.php" method="post">
-			<p>Title:</p><input type="text" value="<?php echo $title ?>" name="title">
-			<p>Description:</p><input type="text" rows="4" cols="50" name="descripion" value="<?php echo $description?>">
+			<p> Title:</p><input type="text" value="<?php echo $title; ?>" name="title" required>
+			<p> Description:</p><input type="text" rows="4" cols="50" name="descripion" value="<?php echo $description; ?>" required>
+			<p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" required>
+			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id">
+			<input type="submit" value="Submit edits">
 		</form>
 	</body>
 </html>
