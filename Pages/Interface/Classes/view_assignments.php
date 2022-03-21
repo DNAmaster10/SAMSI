@@ -94,7 +94,7 @@
 					<input type='submit' value='View handins'>
 				</form>
 				<form action='./edit_assignment.php' method='POST'>
-					<p> </p><input type='hidden' name='homework_id' value='".($homework_id_array[$i])."'>
+					<p> </p><input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
 					<input type='submit' value='Edit details'>
 				</form>
 				"; }
