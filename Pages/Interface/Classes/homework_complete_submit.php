@@ -66,7 +66,7 @@
 		else {
             $new_completed_users = $completed_users_string.$_SESSION["username"].",";
 		}
-		$sql = "UPDATE user_homework SET completed='$new_completed_users' WHERE ID='homework_post_id'";
+		$sql = "UPDATE homework_data SET completed='$new_completed_users' WHERE ID='homework_post_id'";
 		mysqli_query($conn,$sql) or die (mysqli_error($conn));
 
 		$table_name = "homework_data";
