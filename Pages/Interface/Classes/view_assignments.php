@@ -32,7 +32,7 @@
 	}
 	else {
         $is_homework = 1;
-        $homework_count = substr_count($homework_id_list,",");
+        $homework_count = substr_count($homework_id_list,",") + 1;
         $homework_id_array = explode(",",$homework_id_list);
 	}
 ?>
