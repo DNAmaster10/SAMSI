@@ -26,7 +26,7 @@
     $title = $conn -> real_escape_string($_POST["title"]);
 	$description = $conn -> real_escape_string($_POST["description"]);
 	$due_date = $conn -> real_escape_string($_POST["due_date"]);
-	$date_set = $conn -> real_escape_string($_POST["date_set]);
+	$date_set = $conn -> real_escape_string($_POST["date_set"]);
 	
 	#Add homework to homework database
 	$sql = "INSERT INTO homework_data (title,description,class,teacher,due_date,date_set) VALUES ('$title','$description','".$_SESSION["current_class"]."','".$_SESSION["username"]."',
