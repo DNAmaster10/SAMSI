@@ -47,3 +47,6 @@
     include $file_path."/Includes/Php/get_single_value_from_db.php";
     $due_data = $result;
 ?>
+<!DOCTYPE html>
+<html>
+</html>
