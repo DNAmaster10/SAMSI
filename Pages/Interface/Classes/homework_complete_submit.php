@@ -11,6 +11,7 @@
 	if (isset($_POST["homework_id"])) {
         #filter bad POST
         $homework_post_id = $conn -> real_escape_string($_POST["homework_id"]);
+		$homework_post_id = intval($homework_post_id);
         
 		#Get all of users set homework ID's
 		$table_name = "user_homework";
