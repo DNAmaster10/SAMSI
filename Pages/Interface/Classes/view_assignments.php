@@ -89,7 +89,7 @@
 				<p><small> Date due: ".$output_due_date."| Date set: ".$output_date_set."|</small></p>
 				";
 				if ($is_owner == 1) {echo "
-				<form action='./view_handins.php'>
+				<form action='./view_handins.php' method='POST'>
 					<p> </p> <input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
 					<input type='submit' value='View handins'>
 				</form>
