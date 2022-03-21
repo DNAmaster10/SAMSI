@@ -9,6 +9,17 @@
 	
 	$assignment_id = $conn -> real_escape_string ($_POST["homework_id"]);
 	
+	#Make sure user is admin of class
+	$table_name = "class_data";
+	$column_name = "owner";
+	$where_column = "class";
+	$where_value = $_SESSION["current_class"];
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$class_owner = $result
+	if ($class_owner != $_SESSION["username"]) {
+		header ("location: /Pages/Interface/Misc/not_owner_of_class.php")
+	}
+	
 	$table_name = "homework_data";
 	$column_name = "completed";
 	$where_column = "ID";

@@ -27,11 +27,11 @@
     
     #get assignment details
     $table_name = "homework_data";
-    $column_name = "descripion";
+    $column_name = "description";
     $where_column = "ID";
     $where_value = $homework_id;
     include $file_path."/Includes/Php/get_single_value_from_db.php";
-    $descripion = $result;
+    $description = $result;
     
     $table_name = "homework_data";
     $column_name = "title";
@@ -49,4 +49,19 @@
 ?>
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>SAMSi</title>
+		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
+	</head>
+	<body>
+		<form action="./view_assignments.php">
+			<input tpye="submit" value="submit">
+		</form>
+		<p>Editing assignment: <?php echo "$title" ?></p>
+		<form action="./edit_assignment_submit.php" method="post">
+			<p>Title:</p><input type="text" value="<?php echo $title ?>" name="title">
+			<p>Description:</p><input type="text" rows="4" cols="50" name="descripion" value="<?php echo $description?>">
+		</form>
+	</body>
 </html>
