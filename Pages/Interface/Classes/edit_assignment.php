@@ -45,7 +45,7 @@
     $where_column = "ID";
     $where_vale = $homework_id;
     include $file_path."/Includes/Php/get_single_value_from_db.php";
-    $due_data = $result;
+    $due_date = $result;
 ?>
 <!DOCTYPE html>
 <html>
