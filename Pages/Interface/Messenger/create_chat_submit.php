@@ -22,7 +22,12 @@
 	$time_created = time();
 	
 	#Add information to chat_data table
-    $sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created')";
+	if (isset($_POST["chat_name"])) {
+		$sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created')";
+	}
+	else {
+		$sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('".$_SESSION["username"]."','$chat_title','$time_created')";
+	}
 	mysqli_query ($conn, $sql);
 	
 	#Get chat ID
