@@ -37,7 +37,7 @@
 	if (isset($_POST["members"])) {
 		$members_array = explode(",", $members);
 		$members_count = count($members_array);
-		for ($i = 0; <= $members_count; $i++) {
+		for ($i = 0; $i <= $members_count; $i++) {
 			$table_name = "user_chats";
 			$column_name = "chats";
 			$where_column = "username";
