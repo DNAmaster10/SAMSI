@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SAMSi<title>
+        <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
@@ -24,7 +24,6 @@
         <form action="./create_chat.php">
             <input type="submit" value="Create chat">
         </form>
-        <br>
-        
+        <br>     
     </body>
 </html>
