@@ -6,6 +6,8 @@
     include $file_path."/Includes/Php/check_user_pass.php";
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";
+	
+	#Find out if user is a member of any message groups, and if so, check how much
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,6 +26,11 @@
         <form action="./create_chat.php">
             <input type="submit" value="Create chat">
         </form>
-        <br>     
+        <br>
+		<?php
+			for ($i = 0; $i <= $ - 1; $i++) {
+				
+			}
+		?>
     </body>
 </html>
