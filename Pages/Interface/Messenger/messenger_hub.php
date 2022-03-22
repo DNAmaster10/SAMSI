@@ -21,7 +21,7 @@
         <form action="./join_chat.php">
             <input type="submit" value="Join chat from code">
         </form>
-        <form action-"./create_chat.php">
+        <form action="./create_chat.php">
             <input type="submit" value="Create chat">
         </form>
         <br>
