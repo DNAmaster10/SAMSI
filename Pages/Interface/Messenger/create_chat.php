@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SAMSi<title>
+        <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
