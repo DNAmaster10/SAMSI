@@ -1,26 +1,26 @@
 <?php
-#Access global variables
-session_start();
+	#Access global variables
+	session_start();
 
-#Connect to database
-include "/var/www/html/Includes/Php/dbh.php";
+	#Connect to database
+	include "/var/www/html/Includes/Php/dbh.php";
 
-#Check user's username and password
-include "/var/www/html/Includes/Php/check_user_pass.php";
+	#Check user's username and password
+	include "/var/www/html/Includes/Php/check_user_pass.php";
 
-#Find out what account type the user has
-$username = $_SESSION["username"];
-$column_name = "account_type";
-$table_name = "users";
-$where_column = "username";
-$where_value = $username;
-include "/var/www/html/Includes/Php/get_single_value_from_db.php";
-$account_type = $result;
-unset ($column_name);
+	#Find out what account type the user has
+	$username = $_SESSION["username"];
+	$column_name = "account_type";
+	$table_name = "users";
+	$where_column = "username";
+	$where_value = $username;
+	include "/var/www/html/Includes/Php/get_single_value_from_db.php";
+	$account_type = $result;
+	unset ($column_name);
 
-#Find out user's theme
-$username = $_SESSION["username"];
-include "/var/www/html/Includes/Php/get_user_theme.php";
+	#Find out user's theme
+	$username = $_SESSION["username"];
+	include "/var/www/html/Includes/Php/get_user_theme.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,8 +42,13 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<form action="./Classes/class_select_menu.php">
 			<input type="submit" value="Classes">
 		</form>
+		<br>
 		<form action="./Classes/view_homework.php">
             <input type="submit" value="Homework">
+		</form>
+		<br>
+		<form action="./Messenger/messenger_hub.php">
+			<input type="submit" value="Messages">
 		</form>
 		<br>
 		<form action="./Theme/select_theme.php">
