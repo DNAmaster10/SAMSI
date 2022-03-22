@@ -50,10 +50,10 @@
         <p>Password: </p><input type="text" id="password_text_box" name="password" required><br>
         <input type="submit" value="Login" class="submit_button">
         <br>
-        <form action="/index.php">
+    </form>
+	    <form action="/index.php">
             <input type="submit" value="Home">
         </form>
-    </form>
     </div>
   </body>
 </html>
