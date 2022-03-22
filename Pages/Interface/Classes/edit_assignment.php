@@ -68,6 +68,6 @@
 		</form>
 	</body>
 	<script>
-        document.getElementById("date").defaultValue = $due_dat;
+        document.getElementById("date").defaultValue = "<?php echo $due_date; ?>";
 	</script>
 </html>
