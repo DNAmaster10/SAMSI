@@ -21,7 +21,6 @@
     if ($result != $_SESSION["username"]) {
         header ("location: /Pages/Interface/Misc/not_owner_of_class.php")
     }
-    
     #Get assignment ID from POST
     $homework_id = $conn -> real_escape_string ($_POST["homework_id"]);
     
