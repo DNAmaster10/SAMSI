@@ -58,7 +58,7 @@
 	  
   mysqli_query($conn, $sql);
   
-  $sql = "INSERT INTO user_chats (username) VALUES ('$username');";
+  $sql = "INSERT INTO user_chats (username) VALUES ('$adminName');";
   mysqli_query($conn, $sql) or die (mysqli_error($conn));
   }
   ?>
