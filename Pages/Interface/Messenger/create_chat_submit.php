@@ -59,6 +59,7 @@
 		$sql = "UPDATE user_chats SET chats='$new_chats' WHERE username='".$_SESSION["username"]."';";
 		mysqli_query($conn, $sql);
 	}
+	header ("location: ./messenger_hub");
 ?>
 <!DOCTYPE html>
 <html>
