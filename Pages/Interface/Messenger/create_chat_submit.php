@@ -22,6 +22,7 @@
     $sql = "INSERT INTO chat_data (users,owner,chat_name) VALUES ('$members','".$_SESSION["username"]."','$chat_title')";
 	mysqli_query ($conn, $sql);
 	
+	#Add data to user_chats
 ?>
 <!DOCTYPE html>
 <html>

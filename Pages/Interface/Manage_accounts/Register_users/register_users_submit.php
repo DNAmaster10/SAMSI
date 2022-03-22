@@ -46,12 +46,13 @@ $columns = "username,theme";
 $values = "'".$username."','default'";
 include $file_path."/Includes/Php/write_to_db.php";
 
-$sql = "INSERT INTO user_classes (username) VALUES ('".$username."')";
+$sql = "INSERT INTO user_classes (username) VALUES ('$username')";
 mysqli_query($conn, $sql);
 
-$sql = "INSERT INTO user_homework (username) VALUES ('".$username."');";
+$sql = "INSERT INTO user_homework (username) VALUES ('$username');";
 mysqli_query($conn, $sql);
-  
+
+$sql = "INSERT INTO user_chats (username) VALUES ('$username');";
 $text_output = ("Account ".$username." was successfully registered");
 }
 ?>
