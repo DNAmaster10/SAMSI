@@ -7,11 +7,21 @@
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";
     
+	#get values from POST and filter amd alter them
     $chat_title = $conn -> real_escape_string ($_POST["chat_name"]);
     if (isset($_POST["members"])) {
         $members = $conn -> real_escape_string ($_POST["members"]);
+		if (strpos($members, $_SESSION["username"]) == false) {
+			$members = $members.",".$_SESSION["username"].",";
+		}
     }
-    $sql = "INSERT INTO chat_data (users,owner) VALUES (
+	else {
+		$members = $_SESSION["username"].",";
+	}
+	#Add information to chat_data table
+    $sql = "INSERT INTO chat_data (users,owner,chat_name) VALUES ('$members','".$_SESSION["username"]."','$chat_title')";
+	mysqli_query ($conn, $sql);
+	
 ?>
 <!DOCTYPE html>
 <html>
