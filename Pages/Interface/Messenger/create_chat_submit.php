@@ -18,11 +18,47 @@
 	else {
 		$members = $_SESSION["username"].",";
 	}
+	#Get current time
+	$time_created = time();
+	
 	#Add information to chat_data table
-    $sql = "INSERT INTO chat_data (users,owner,chat_name) VALUES ('$members','".$_SESSION["username"]."','$chat_title')";
+    $sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created')";
 	mysqli_query ($conn, $sql);
 	
+	#Get chat ID
+	$table_name = "chat_data";
+	$column_name = "chat_id";
+	$where_column = "created";
+	$where_value = $time_created;
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$chat_id = $result;
+	
 	#Add data to user_chats
+	if (isset($_POST["members"])) {
+		$members_array = explode(",", $members);
+		$members_count = count($members_array);
+		for ($i = 0; <= $members_count; $i++) {
+			$table_name = "user_chats";
+			$column_name = "chats";
+			$where_column = "username";
+			$where_value = $members_array[$i];
+			$current_chats = $result;
+			$new_chats = $current_chats.$chat_id.",";
+			$sql = "UPDATE user_chats SET chats='$new_chats' WHERE username='".$members_array[$i]."';";
+			mysqli_query($conn, $sql);
+		}
+	}
+	else {
+		$table_name = "user_chats";
+		$column_name = "chats";
+		$where_column = "username";
+		$where_value = $_SESSION["username"];
+		include $file_path."/Includes/Php/get_single_value_from_db.php";
+		$current_chats = $result;
+		$new_chats = $current_chats.$chat_id.",";
+		$sql = "UPDATE user_chats SET chats='$new_chats' WHERE username='".$_SESSION["username"]."';";
+		mysqli_query($conn, $sql);
+	}
 ?>
 <!DOCTYPE html>
 <html>
