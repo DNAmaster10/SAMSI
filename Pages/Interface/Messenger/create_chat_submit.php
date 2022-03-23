@@ -22,7 +22,7 @@
 	$time_created = time();
 	
 	#Add information to chat_data table
-	if (isset($_POST["chat_name"])) {
+	if (isset($_POST["members"])) {
 		$sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created')";
 	}
 	else {
@@ -47,10 +47,13 @@
 			$column_name = "chats";
 			$where_column = "username";
 			$where_value = $members_array[$i];
+			include $file_path."/Includes/Php/get_single_value_from_db.php";
 			$current_chats = $result;
 			$new_chats = $current_chats.$chat_id.",";
 			$sql = "UPDATE user_chats SET chats='$new_chats' WHERE username='".$members_array[$i]."';";
 			mysqli_query($conn, $sql);
+			unset ($current_chats);
+			unset ($new_chats);
 		}
 	}
 	else {
