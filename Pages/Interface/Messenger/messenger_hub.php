@@ -42,7 +42,7 @@
         <br>
 		<?php
             if ($has_chats) {
-                for ($i = 0; $i <= $chat_count - 1; $i++) {
+                for ($i = 0; $i <= $chat_count - 2; $i++) {
                     $table_name = "chat_data";
                     $column_name = "chat_name";
                     $where_column = "chat_id";
