@@ -42,7 +42,7 @@
         <br>
 		<?php
             if ($has_chats) {
-                for ($i = 0; $i <= $chat_count - 1; $i++) {
+                for ($i = 0; $i <= $chat_count - 2; $i++) {
                     $table_name = "chat_data";
                     $column_name = "chat_name";
                     $where_column = "chat_id";
@@ -52,7 +52,7 @@
                     
                     echo "
                     <form action='./chat_gui.php' method='POST'>
-                        <input type='hidden' value='".$chats_array[$i]."'>
+                        <input type='hidden' value='".$chats_array[$i]."' name='chat_id'>
                         <input type='submit' value='$chat_title'>
                     </form>
                     ";
