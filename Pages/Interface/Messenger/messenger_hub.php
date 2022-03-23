@@ -7,7 +7,12 @@
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";
 	
-	#Find out if user is a member of any message groups, and if so, check how much
+	#Find out if user is a member of any message groups, and if so, check how many
+	$table_name = "user_chats";
+	$column_name = "chats";
+	$where_column = "username";
+	$where_value = $_SESSION["username"];
+	
 ?>
 <!DOCTYPE html>
 <html>
