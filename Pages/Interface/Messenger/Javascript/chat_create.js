@@ -16,4 +16,5 @@ function addUser(val) {
 	var new_members_list = current_members_list + "<br>" + val;
 	document.getElementById("members_list").innerHTML = new_members_list;
 	document.getElementById("members").value = new_members;
+	document.getElementById("user_entry_box").value = "";
 }

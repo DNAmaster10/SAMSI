@@ -16,11 +16,11 @@
     </head>
     <body>
         <form action="./create_chat_submit.php" method="POST" id="create_input">
-            <p> Chat name: </p><input type="text" name="chat_name" required>
+            <p> Chat name: </p><input type="text" name="chat_name" placeholder="Name" required>
 			<input type="hidden" name="members" value="" id="members">
             <input type="submit" value="Create">
         </form>
-		<input type="text" onkeyup="getUsers()" id="user_entry_box">
+		<input type="text" onkeyup="getUsers()" id="user_entry_box" placeholder="Members">
 		<p id="members_list">Members: <br><?php echo $_SESSION["username"]; ?></p>
 		<div id="user_buttons">
 		</div>
