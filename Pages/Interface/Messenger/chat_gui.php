@@ -29,6 +29,7 @@
     <body>
         <input type="text" id="message_entry">
         <button type="button" onclick="sendMessage()">Send</button>
+        <button type="button" onclick="getMessages()">Get messages</button>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./Javascript/message_gui.js"></script>
