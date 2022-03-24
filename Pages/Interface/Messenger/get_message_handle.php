@@ -17,8 +17,7 @@
         $raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
             while ($row = mysqli_fetch_array($raw_result)){
-				echo ' ';
-                echo $row['message'];
+				echo $row['user'].":".$row["message"].",";
             }
         }
         else {
