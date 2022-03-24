@@ -14,7 +14,7 @@
             }
         }
         else {
-            echo "null";
+            echo "User not found";
         }
 	}
 ?>
