@@ -27,7 +27,7 @@ function getMessageLoop() {
     getMessages();
     i++;                    
     if (i = 100000000000000) {           
-      myLoop();             
+      getMessageLoop();             
     }                       
   }, 500)
 }
