@@ -6,7 +6,7 @@
 		echo "";
 	}
 	else{
-		$sql = "SELECT username FROM users WHERE username LIKE '"$.username_entry."%' LIMIT 5;";
+		$sql = "SELECT username FROM users WHERE username LIKE '".$username_entry."%' LIMIT 5;";
 		$raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
             while ($row = mysqli_fetch_array($raw_result)){
