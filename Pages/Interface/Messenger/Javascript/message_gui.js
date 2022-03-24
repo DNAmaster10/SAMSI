@@ -10,3 +10,12 @@ function sendMessage() {
         }
     });
 }
+function getMessages() {
+    $.ajax({                                      
+        url: './get_message_handle.php',       
+        type: "POST",
+        success: function(data) {
+            console.log(data);
+        }
+    });
+}

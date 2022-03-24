@@ -2,7 +2,6 @@
     session_start();
     $file_path = $_SERVER["DOCUMENT_ROOT"];
     include $file_path."/Includes/Php/dbh.php";
-    include $file_path."/Includes/Php/get_account_type.php";
     $chat_id = $_SESSION["current_chat"];
     $table_name = "chat_data";
     $column_name = "users";
