@@ -1,9 +1,9 @@
 getUsers(){
-    input_message = document.getElementById("message_entry").value;
+    input_user = document.getElementById("user_entry_box").value;
     $.ajax({                                      
-        url: './send_message_handle.php',       
+        url: './get_users.php',       
         type: "POST",
-        data: {message:input_message},
+        data: {username_entry:input_user},
         success: function(data) {
             console.log(data);
         }

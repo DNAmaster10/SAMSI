@@ -20,6 +20,12 @@
             <p> Other member(s): </p><input type="text" name="members" placeholder="James,ruby02,max">
             <input type="submit" value="Create">
         </form>
+		<input type="text" onkeyup="getUsers()" id="user_entry_box">
 		<p id="members_list"><?php echo $_SESSION["username"]; ?></p>
+		<div>
+			
+		</div>
     </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./Javascript/chat_create.js"></script>
 </html>
