@@ -10,6 +10,6 @@ function getUsers(){
         }
     });
 }
-function addUser(value) {
-	console.log(value);
+function addUser(val) {
+	console.log(val);
 }

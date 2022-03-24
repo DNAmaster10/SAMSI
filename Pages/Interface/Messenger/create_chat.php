@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <form action="./create_chat_submit.php" method="POST">
+        <form action="./create_chat_submit.php" method="POST" id="create_input">
             <p> Chat name: </p><input type="text" name="chat_name" required>
             <p> Other member(s): </p><input type="text" name="members" placeholder="James,ruby02,max">
             <input type="submit" value="Create">
