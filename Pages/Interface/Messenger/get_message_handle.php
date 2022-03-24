@@ -16,13 +16,9 @@
         $sql = "SELECT message_id FROM message_data WHERE chat_id='$chat_id' ORDER BY message_id DESC LIMIT 10";
         $raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
-            $message_id_array = array();
             while ($row = mysqli_fetch_array($raw_result)){
                 echo $row['message_id'];
             }
-            $message_id_array 
-            $message_id_string = implode (",",$message_id_array);
-            echo $message_id_string;
         }
         else {
             echo "null";
