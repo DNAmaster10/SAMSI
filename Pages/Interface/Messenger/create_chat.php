@@ -20,5 +20,6 @@
             <p> Other member(s): </p><input type="text" name="members" placeholder="James,ruby02,max">
             <input type="submit" value="Create">
         </form>
+		<p id="members_list"><?php echo $_SESSION["username"]; ?></p>
     </body>
 </html>
