@@ -51,7 +51,7 @@
                     $chat_title = $result;
                     
                     echo "
-                    <form action='./chat_gui.php' method='POST'>
+                    <form action='./message_hub_redirect.php' method='POST'>
                         <input type='hidden' value='".$chats_array[$i]."' name='chat_id'>
                         <input type='submit' value='$chat_title'>
                     </form>

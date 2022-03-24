@@ -7,7 +7,7 @@
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";
     
-    $chat_id = $conn -> real_escape_string ($_POST["chat_id"]);
+    $chat_id = $_SESSION["current_chat"];
     
     $table_name = "chat_data";
     $column_name = "users";
