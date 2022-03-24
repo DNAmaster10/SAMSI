@@ -1,5 +1,8 @@
 <?php
     session_start();
+	if (!isset($_SESSION["message_ammount"])) {
+		$_SESSION["message_ammount"] = 10;
+	}
     $file_path = $_SERVER["DOCUMENT_ROOT"];
     include $file_path."/Includes/Php/dbh.php";
     $chat_id = $_SESSION["current_chat"];
@@ -13,7 +16,7 @@
         echo "You are not a part of this chat!";
     }
     else {
-        $sql = "SELECT user,message FROM message_data WHERE chat_id='$chat_id' ORDER BY message_id DESC LIMIT 10";
+        $sql = "SELECT user,message FROM message_data WHERE chat_id='$chat_id' ORDER BY message_id DESC LIMIT ".$_SESSION["message_ammount"].";";
         $raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
             while ($row = mysqli_fetch_array($raw_result)){

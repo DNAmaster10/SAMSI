@@ -1,5 +1,6 @@
 <?php
     session_start();
+	$_SESSION["message_ammount"] = 10;
     $file_path = $_SERVER["DOCUMENT_ROOT"];
     $username = $_SESSION["username"];
     include $file_path."/Includes/Php/dbh.php";

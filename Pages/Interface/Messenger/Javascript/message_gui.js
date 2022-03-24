@@ -19,6 +19,19 @@ function getMessages() {
         }
     });
 }
+function loadMore() {
+    $.ajax({                                      
+        url: './load_more.php',       
+        type: "GET",
+        success: function(data) {
+			var first = "Now loading";
+			var second = "messages.";
+			var final_string = first.concat(" ", data);
+			var final_string = final_string.concat(" ", second);
+            console.log(final_string);
+        }
+    });
+}
 
 var i = 1;                 
 
