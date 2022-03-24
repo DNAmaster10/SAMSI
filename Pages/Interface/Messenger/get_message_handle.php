@@ -13,12 +13,12 @@
         echo "You are not a part of this chat!";
     }
     else {
-        $sql = "SELECT message_id FROM message_data WHERE chat_id='$chat_id' ORDER BY message_id DESC LIMIT 10";
+        $sql = "SELECT user,message FROM message_data WHERE chat_id='$chat_id' ORDER BY message_id DESC LIMIT 10";
         $raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
             while ($row = mysqli_fetch_array($raw_result)){
 				echo ' ';
-                echo $row['message_id'];
+                echo $row['message'];
             }
         }
         else {
