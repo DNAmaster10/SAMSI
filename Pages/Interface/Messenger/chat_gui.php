@@ -27,6 +27,10 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
+		<form action="./messenger_hub.php">
+			<input type="submit" value="Back">
+		</form>
+		<br>
         <input type="text" id="message_entry">
         <button type="button" onclick="sendMessage()">Send</button>
         <button type="button" onclick="getMessages()">Get messages</button>
