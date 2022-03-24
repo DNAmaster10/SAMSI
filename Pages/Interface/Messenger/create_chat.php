@@ -21,8 +21,8 @@
             <input type="submit" value="Create">
         </form>
 		<input type="text" onkeyup="getUsers()" id="user_entry_box">
-		<p id="members_list"><?php echo $_SESSION["username"]; ?></p>
-		<div>
+		<p id="members_list">Members: <br><?php echo $_SESSION["username"]; ?></p>
+		<div id="user_buttons">
 			
 		</div>
     </body>

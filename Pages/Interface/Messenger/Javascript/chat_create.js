@@ -6,6 +6,7 @@ function getUsers(){
         data: {username_entry:input_user},
         success: function(data) {
             console.log(data);
+			document.getElementById("user_buttons").innerHTML = data;
         }
     });
 }
