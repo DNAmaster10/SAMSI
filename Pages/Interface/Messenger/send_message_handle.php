@@ -17,7 +17,7 @@
     else {
         $message = $conn -> real_escape_string ($_POST["message"]);
         $username = $_SESSION["username"];
-        $sql = "INSERT INTO message_data (chat_id,user,message) VALUES ($chat_id,$username,$message)";
+        $sql = "INSERT INTO message_data (chat_id,user,message) VALUES ('$chat_id','$username','$message')";
         mysqli_query($conn, $sql) or die (mysqli_error($conn));
         echo "Message sent successfully!";
     }
