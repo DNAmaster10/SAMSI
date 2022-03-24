@@ -17,8 +17,8 @@
         $raw_result = mysqli_query ($conn, $sql) or die (mysqli_error($conn));
         if ($raw_result -> num_rows > 0) {
             $message_id_array = array();
-            while ($row = $raw_result->fetch_assoc()) {
-                $message_id_array[] = $row;
+            while ($row = mysqli_fetch_array($raw_result)){
+                echo $row['message_id'];
             }
             $message_id_array 
             $message_id_string = implode (",",$message_id_array);
