@@ -17,13 +17,12 @@
     <body>
         <form action="./create_chat_submit.php" method="POST" id="create_input">
             <p> Chat name: </p><input type="text" name="chat_name" required>
-            <p> Other member(s): </p><input type="text" name="members" placeholder="James,ruby02,max">
+			<input type="hidden" name="members" value="" id="members">
             <input type="submit" value="Create">
         </form>
 		<input type="text" onkeyup="getUsers()" id="user_entry_box">
 		<p id="members_list">Members: <br><?php echo $_SESSION["username"]; ?></p>
 		<div id="user_buttons">
-			
 		</div>
     </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
