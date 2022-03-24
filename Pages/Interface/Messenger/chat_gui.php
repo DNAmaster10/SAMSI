@@ -27,5 +27,9 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
+        <input type="text" id="message_entry">
+        <button type="button" onclick="sendMessage()">Send</button>
     </body>
+    <scrit src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./Javascript/message_gui.js"></script>
 </html>
