@@ -1,4 +1,4 @@
-getUsers(){
+function getUsers(){
     input_user = document.getElementById("user_entry_box").value;
     $.ajax({                                      
         url: './get_users.php',       
