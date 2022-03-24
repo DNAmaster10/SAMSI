@@ -10,3 +10,6 @@ function getUsers(){
         }
     });
 }
+function addUser(value) {
+	console.log(value);
+}
