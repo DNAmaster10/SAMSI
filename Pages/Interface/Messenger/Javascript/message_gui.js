@@ -15,7 +15,7 @@ function getMessages() {
         url: './get_message_handle.php',       
         type: "POST",
         success: function(data) {
-            console.log(data);
+            document.getElementById("message_p").innerHTML = data;
         }
     });
 }
