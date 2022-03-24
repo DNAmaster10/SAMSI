@@ -19,3 +19,17 @@ function getMessages() {
         }
     });
 }
+
+var i = 1;                 
+
+function getMessageLoop() {         
+  setTimeout(function() {   
+    getMessages();
+    i++;                    
+    if (i = 100000000000000) {           
+      myLoop();             
+    }                       
+  }, 3000)
+}
+
+getMessageLoop();                   
