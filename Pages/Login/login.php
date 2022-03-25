@@ -19,7 +19,7 @@
 }
     .login_box {
 		display: block;		
-		margin-top: 20%;
+		margin-top: 5%;
 		margin-bottom: 50%;
 		margin-right: 10%;
 		margin-left: 60%;	    
