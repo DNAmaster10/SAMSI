@@ -32,7 +32,7 @@
     $where_value = $chat_id;
     include $file_path."/Includes/Php/get_single_value_from_db.php";
     $current_users = $result;
-    if (str_contains($current_users, $user.",")) {
+    if (strpos($current_users, $user.",") !== false) {
         echo "2";
     }
     else {
