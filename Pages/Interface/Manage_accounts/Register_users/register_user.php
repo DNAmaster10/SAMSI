@@ -43,10 +43,10 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
     <body>
         <h1>Register an account</h1>
     <form action="../manage_accounts_menu.php" class="select_form">
-    <input type="submit" value="Back">
+    <input type="submit" value="Back" class="block_button">
     </form><br>
 	<form action="../../main_menu.php" class="select_form">
-		<input type="submit" value="Home">
+		<input type="submit" value="Home" class="block_button">
 	</form>
 	<p>Hey <?php echo ($_SESSION["username"]); ?>! Use this page to register users, such as teachers and students.</p><br>
 	<br>
