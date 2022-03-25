@@ -23,6 +23,15 @@ else {
     <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
     <link rel="stylesheet" href="/Includes/Css/main.css">
   </head>
+  <style>
+  		.select_form{
+			display: inline-block;
+		}
+		.block_button{
+			padding: 15px 32px;
+			font-size: 16px;
+		}
+  </style>
   <body>
     <h1>Where would you like to go?</h1><br>
 	<form action="../main_menu.php">
@@ -31,8 +40,8 @@ else {
     <form action="./Register_users/register_user.php">
 		<input type="submit" value="Register users" class="block_button">
     </form>
-	<form action="./Delete_accounts/delete_accounts.php" class="block_button">
-		<input type="submit" value="Delete users">
+	<form action="./Delete_accounts/delete_accounts.php">
+		<input type="submit" value="Delete users" class="block_button">
 	</form>
   </body>
 </html>
