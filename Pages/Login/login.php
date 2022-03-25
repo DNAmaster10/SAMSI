@@ -5,7 +5,7 @@
   <title>Login</title>
   <style>
     body, html{
-    height: 100%;
+    height: 95%;
     }
  body {
  background-image: url("./MicrosoftTeams-image.png");

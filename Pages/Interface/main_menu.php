@@ -33,6 +33,10 @@
 		.select_form{
 			display: inline-block;
 		}
+		.block_button{
+			padding: 15px 32px;
+			font-size: 16px;
+		}
 	</style>
 	<body>
 		<h1>Welcome back, <?php echo $username; ?>.</h1>
