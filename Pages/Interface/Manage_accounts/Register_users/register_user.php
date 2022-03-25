@@ -60,7 +60,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type" required><br>
 		<p>Teacher</p><input type="radio" value="teacher" name="account_type" required><br>
 		<p>Administrator</p><input type="radio" value="admin" name="account_type" required><br>
-		<input type="submit" value="Register User" class="block_button_small">
+		<input type="submit" value="Register User" class="block_button">
 	</form>
 	</div>
     </body>
