@@ -1,8 +1,8 @@
 <?php
 session_start();
-$input_code = $conn -> real_escape_string($_POST["input_code"]);
 $file_path = $_SERVER["DOCUMENT_ROOT"];
 include $file_path."/Includes/Php/dbh.php";
+$input_code = $conn -> real_escape_string($_POST["input_code"]);
 include $file_path."/Includes/Php/check_user_pass.php";
 include $file_path."/Includes/Php/get_user_theme.php";
 $table_name = "class_data";
