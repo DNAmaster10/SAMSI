@@ -5,7 +5,6 @@
   <title>Login</title>
   <style>
     body, html{
-    height: 0;
 	width: 100%;
     }
  body {
