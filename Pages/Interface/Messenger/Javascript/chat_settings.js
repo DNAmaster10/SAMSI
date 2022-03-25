@@ -14,6 +14,9 @@ function addUser() {
             else if (data == 3) {
                 console.log("User successfully added to database");
             }
+            esle if (data == 4) {
+                console.log("Please enter a valid input!");
+            }
             else {
                 console.log("A major error occured at the server end");
             };

@@ -20,7 +20,7 @@
     $admins = $result;
     $admins_array = explode(",",$admins);
     
-    if (!isset($_POST["username"])) {
+    if ($_POST["username"] == "") {
         echo "4";
     }
     else {
