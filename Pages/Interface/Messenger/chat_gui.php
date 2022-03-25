@@ -30,10 +30,15 @@
 		<form action="./messenger_hub.php">
 			<input type="submit" value="Back">
 		</form>
+		<p> </p>
+		<form action="./chat_settings.php" method="POST">
+            <input type="hidden" value="<?php $chat_id
+            ; ?>" name="chat_id">
+            <input type="submit" value="Chat settings">
+		</form>
 		<br>
         <input type="text" id="message_entry">
         <button type="button" onclick="sendMessage()">Send</button>
-        <button type="button" onclick="getMessages()">Get messages</button>
 		<br>
 		<p id="message_p"></p>
 		<button type="button" onclick="loadMore()">Load more messages</button>

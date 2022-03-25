@@ -23,10 +23,10 @@
 	
 	#Add information to chat_data table
 	if (isset($_POST["members"])) {
-		$sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created')";
+		$sql = "INSERT INTO chat_data (users,owner,chat_name,created,admins) VALUES ('$members','".$_SESSION["username"]."','$chat_title','$time_created','$username".","."')";
 	}
 	else {
-		$sql = "INSERT INTO chat_data (users,owner,chat_name,created) VALUES ('".$_SESSION["username"]."','$chat_title','$time_created')";
+		$sql = "INSERT INTO chat_data (users,owner,chat_name,created,admins) VALUES ('".$_SESSION["username"]."','$chat_title','$time_created','$username".","."')";
 	}
 	mysqli_query ($conn, $sql);
 	
