@@ -39,23 +39,18 @@
 		</form> ");
 		}
 		?>
-		<br>
 		<form action="./Classes/class_select_menu.php">
 			<input type="submit" value="Classes" class="block_button">
 		</form>
-		<br>
 		<form action="./Classes/view_homework.php">
             <input type="submit" value="Homework" class="block_button">
 		</form>
-		<br>
 		<form action="./Messenger/messenger_hub.php">
 			<input type="submit" value="Messages" class="block_button">
 		</form>
-		<br>
 		<form action="./Theme/select_theme.php">
 			<input type="submit" value="Change theme" class="block_button">
 		</form>
-		<br>
 		<form action="../Logout/logout.php">
 			<input type="submit" value="Log out" class="block_button">
 		</form>
