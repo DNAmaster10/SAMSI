@@ -5,7 +5,18 @@ function addUser() {
         type: "POST",
         data: {username:username},
         success: function(data) {
-            console.log(data);
+            if (data == 1) {
+                console.log("User is not admin");
+            };
+            else if (data == 2) {
+                console.log("User is already a member of chat");
+            };
+            else if (data == 3) {
+                console.log("User successfully added to database");
+            };
+            else {
+                console.log("A major error occured at the server end");
+            };
         }
     });
 }
