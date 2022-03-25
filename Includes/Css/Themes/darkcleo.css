@@ -5,4 +5,5 @@ font-family: "Lucida Handwriting";
 }
 .block_button {
 	background-color: #29a9ab;
+	border: 2px solid #ffffff;
 }

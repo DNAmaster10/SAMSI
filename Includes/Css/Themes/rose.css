@@ -3,4 +3,5 @@ body {
 }
 .block_button {
 	background-color: #c859d4;
+	border: 2px solid #000000;
 }
