@@ -14,6 +14,8 @@
  background-repeat: no-repeat;
  background-size: cover;
  height: 100%;
+ margin: auto;
+ padding: 0;
 }
     .login_box {
 		display: block;		
