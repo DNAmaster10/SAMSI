@@ -5,7 +5,7 @@
   <title>Login</title>
   <style>
     body, html{
-    height: 95%;
+    height: 0;
 	width: 100%;
     }
  body {
@@ -14,20 +14,20 @@
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ padding-bottom: 65.89%;
 }
     .login_box {
 		display: block;		
-	    	margin-top: 20%;
-  		margin-bottom: 50%;
- 		margin-right: 10%;
-  		margin-left: 60%;	    
-           	width: 20%;
-
-      background-color: rgba(0, 34, 56, 0.9);
-      text-align: center;
-	  border-radius: 25px;
-	  height: 50%;
-	  padding: 5%;
+		margin-top: 20%;
+		margin-bottom: 50%;
+		margin-right: 10%;
+		margin-left: 60%;	    
+        width: 20%;
+		background-color: rgba(0, 34, 56, 0.9);
+		text-align: center;
+		border-radius: 25px;
+		height: 50%;
+		padding: 5%;
     }
 	p {
 		color: white;
