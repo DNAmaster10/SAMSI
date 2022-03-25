@@ -48,7 +48,7 @@
 		<form action="/Pages/Login/login_submit.php" method="POST">
 			<p>Username: </p><input type="text" id="username_text_box" name="username" required><br>
 			<p>Password: </p><input type="text" id="password_text_box" name="password" required><br>
-			<input type="submit" value="Login" class="submit_button">
+			<input type="submit" value="Login" class="block_button">
 			<br>
 		</form>
 	    <form action="/index.php">
