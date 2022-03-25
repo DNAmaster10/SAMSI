@@ -7,13 +7,13 @@ function addUser() {
         success: function(data) {
             if (data == 1) {
                 console.log("User is not admin");
-            };
-            elseif (data == 2) {
+            }
+            else if (data == 2) {
                 console.log("User is already a member of chat");
-            };
-            elseif (data == 3) {
+            }
+            else if (data == 3) {
                 console.log("User successfully added to database");
-            };
+            }
             else {
                 console.log("A major error occured at the server end");
             };
