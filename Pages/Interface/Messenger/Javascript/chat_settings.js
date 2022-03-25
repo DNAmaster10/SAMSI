@@ -14,7 +14,7 @@ function addUser() {
             else if (data == 3) {
                 console.log("User successfully added to database");
             }
-            esle if (data == 4) {
+            else if (data == 4) {
                 console.log("Please enter a valid input!");
             }
             else {
