@@ -20,7 +20,7 @@
 	    	margin-top: 20%;
   		margin-bottom: 50%;
  		margin-right: 10%;
-  		margin-left: 70%;	    
+  		margin-left: 60%;	    
            	width: 20%;
 
       background-color: rgba(0, 34, 56, 0.9);
