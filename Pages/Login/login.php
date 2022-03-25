@@ -38,9 +38,6 @@
 		color: white;
 	  }
 	 
-	.submit_forum {
-		display: inline-block;
-	}
     </style>
   </head>
   <body>
