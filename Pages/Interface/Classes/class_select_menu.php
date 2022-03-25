@@ -42,10 +42,10 @@
 		'; } ?>
 	<br>
 		<p>Not a member of any classes? Enter the join code here!</p>
-		<form action="./join_class_from_code_submit.php" method="POST">
-			<input type="text" name="input_code" placeholder="1234" required>
-			<input type="submit" value="Join">
-		</form>
+	<form action="./join_class_from_code_submit.php" method="POST">
+		<input type="text" placeholder="1234" name="input_code" required>
+		<input type="submit" value="Join">
+	</form>
 	<br>
 	<?php 
 		for ($i = 0; $i <= $class_ammount - 2; $i++) {
