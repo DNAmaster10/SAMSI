@@ -29,6 +29,9 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 		<title>SAMSi</title>
 	</head>
+	<style>
+		
+	</style>
 	<body>
 		<h1>Welcome back, <?php echo $username; ?>.</h1>
 		<?php 
@@ -39,19 +42,19 @@
 		</form> ");
 		}
 		?>
-		<form action="./Classes/class_select_menu.php">
+		<form action="./Classes/class_select_menu.php" class="slelect_form">
 			<input type="submit" value="Classes" class="block_button">
 		</form>
-		<form action="./Classes/view_homework.php">
+		<form action="./Classes/view_homework.php" class="slelect_form">
             <input type="submit" value="Homework" class="block_button">
 		</form>
-		<form action="./Messenger/messenger_hub.php">
+		<form action="./Messenger/messenger_hub.php" class="slelect_form">
 			<input type="submit" value="Messages" class="block_button">
 		</form>
-		<form action="./Theme/select_theme.php">
+		<form action="./Theme/select_theme.php" class="slelect_form">
 			<input type="submit" value="Change theme" class="block_button">
 		</form>
-		<form action="../Logout/logout.php">
+		<form action="../Logout/logout.php" class="slelect_form">
 			<input type="submit" value="Log out" class="block_button">
 		</form>
 	</body>
