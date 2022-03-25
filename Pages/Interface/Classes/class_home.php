@@ -24,6 +24,13 @@
     else {
         $is_owner = false;
     }
+	
+	$table_name = "class_data";
+	$column_name = "join_code";
+	$where_column = "class";
+	$where_value = $_SESSION["current_class"];
+	include $file_path."/Includes/Php/get_single_value_from_db.php";
+	$join_code = $result;
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,17 +40,16 @@
         <link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <p>This class is <?php echo $_SESSION["current_class"]; ?></p>
+        <p>This class is <?php echo $_SESSION["current_class"]; ?>   Join code: <?php echo $join_code; ?></p>
         <form action="../main_menu.php">
             <input type="submit" value="Back">
         </form>
         <?php if ($is_owner == true) {echo ' 
 		<form action="./set_homework.php">
             <input type="submit" value="Set an assignment">
-		</form>
+		</form>';} ?>
 		<form action="./view_assignments.php">
 			<input type="submit" value="View assignments">
 		</form>
-		';} ?>
     </body>
 </html>

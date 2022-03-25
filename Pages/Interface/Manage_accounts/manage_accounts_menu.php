@@ -25,6 +25,9 @@ else {
   </head>
   <body>
     <h1>Where would you like to go?</h1><br>
+	<form action="./main_menu.php">
+		<input type="submit" value="Back">
+	</form>
     <form action="./Register_users/register_user.php">
 		<input type="submit" value="Register users">
     </form>
