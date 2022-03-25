@@ -19,8 +19,8 @@
 		display: block;		
 	    	margin-top: 20%;
   		margin-bottom: 50%;
- 		margin-right: 100px;
-  		margin-left: 800px;	    
+ 		margin-right: 10%;
+  		margin-left: 80%;	    
            	width: 20%;
 
       background-color: rgba(0, 34, 56, 0.9);
