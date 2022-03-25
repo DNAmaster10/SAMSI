@@ -34,7 +34,7 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <input type="text" placeholder="Add member" id="add_member_entry_box">
+        <input type="text" placeholder="Add member" id="add_member_entry_box"></input>
         <button type="button" onclick="addUser()">Add user</button>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
