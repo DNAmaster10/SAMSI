@@ -14,7 +14,7 @@
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- padding-bottom: 100%;
+ height: 100%;
 }
     .login_box {
 		display: block;		
