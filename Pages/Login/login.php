@@ -6,6 +6,7 @@
   <style>
     body, html{
     height: 95%;
+	width: 100%;
     }
  body {
  background-image: url("./MicrosoftTeams-image.png");
