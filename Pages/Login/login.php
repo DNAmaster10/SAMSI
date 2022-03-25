@@ -13,7 +13,6 @@
  background-position: contain;
  background-repeat: no-repeat;
  background-size: cover;
- height: auto;
  margin: auto;
  padding: 0;
 }
