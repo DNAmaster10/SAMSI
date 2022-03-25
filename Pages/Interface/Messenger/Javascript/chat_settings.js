@@ -1,4 +1,4 @@
-function addUser() {
+function sendUser() {
     var username = document.getElementById("add_member_entry_box").value;
     $.ajax({                                      
         url: './chat_settings_add_user.php',       
@@ -33,4 +33,7 @@ function getUsers(){
 			document.getElementById("new_member_button_list").innerHTML = data;
         }
     });
+}
+function addUser(val){
+    document.getElementById("add_member_entry_box").value = val;
 }
