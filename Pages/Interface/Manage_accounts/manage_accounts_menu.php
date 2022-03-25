@@ -34,13 +34,13 @@ else {
   </style>
   <body>
     <h1>Where would you like to go?</h1><br>
-	<form action="../main_menu.php">
+	<form action="../main_menu.php" class="select_form">
 		<input type="submit" value="Back" class="block_button">
 	</form>
-    <form action="./Register_users/register_user.php">
+    <form action="./Register_users/register_user.php" class="select_form">
 		<input type="submit" value="Register users" class="block_button">
     </form>
-	<form action="./Delete_accounts/delete_accounts.php">
+	<form action="./Delete_accounts/delete_accounts.php" class="select_form">
 		<input type="submit" value="Delete users" class="block_button">
 	</form>
   </body>
