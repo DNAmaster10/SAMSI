@@ -35,7 +35,7 @@
     </head>
     <body>
         <input type="text" placeholder="Add member" id="add_member_entry_box">
-        <button type="button" onclick="addUser()">
+        <button type="button" onclick="addUser()">Add user</button>
     </body>
     <script src="./Javascript/"></script>
 </html>
