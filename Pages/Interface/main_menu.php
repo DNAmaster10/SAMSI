@@ -26,6 +26,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
 		<title>SAMSi</title>
 	</head>
 	<body>
