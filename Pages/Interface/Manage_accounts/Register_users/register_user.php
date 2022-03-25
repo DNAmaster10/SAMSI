@@ -27,15 +27,28 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
         <link rel="stylesheet" href="/Includes/Css/main.css">
         <title>SAMSi</title>
     </head>
+    <style>
+      		.select_form{
+			display: inline-block;
+		}
+		.block_button{
+			padding: 15px 32px;
+			font-size: 16px;
+		}
+		.block_button{
+			padding: 5px 24px;
+			font-size: 8px;
+		}
+	</style>
     <body>
         <h1>Register an account</h1>
-	<p>Hey <?php echo ($_SESSION["username"]); ?>! Use this page to register users, such as teachers and students.</p><br>
-  <form action="../manage_accounts_menu.php">
+    <form action="../manage_accounts_menu.php" class="select_form">
     <input type="submit" value="Back">
-  </form><br>
-	<form action="../../main_menu.php">
+    </form><br>
+	<form action="../../main_menu.php" class="select_form">
 		<input type="submit" value="Home">
 	</form>
+	<p>Hey <?php echo ($_SESSION["username"]); ?>! Use this page to register users, such as teachers and students.</p><br>
 	<br>
 	<div class="input_menu">
 	<form action="./register_users_submit.php" method="POST">
@@ -44,7 +57,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type" required><br>
 		<p>Teacher</p><input type="radio" value="teacher" name="account_type" required><br>
 		<p>Administrator</p><input type="radio" value="admin" name="account_type" required><br>
-		<input type="submit" value="Register User"> 
+		<input type="submit" value="Register User" class="block_button_small">
 	</form>
 	</div>
     </body>
