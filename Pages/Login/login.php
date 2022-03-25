@@ -53,7 +53,7 @@
 			<input type="submit" value="Login" class="block_button">
 			<br>
 		</form>
-	    <form action="/index.php" class="submig_forum">
+	    <form action="/index.php" class="submit_forum">
             <input type="submit" value="Home" class="block_button">
         </form>
     </div>
