@@ -35,7 +35,7 @@
 		if ($account_type == "admin") {
 		echo ("<br>
 		<form action='./Manage_accounts/manage_accounts_menu.php'>
-		  <input type='submit' value='Mannage accounts'>
+		  <input type='submit' value='Mannage accounts' class='block_button'>
 		</form> ");
 		}
 		?>
