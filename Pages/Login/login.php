@@ -17,8 +17,8 @@
 }
     .login_box {
 		display: block;		
-	    	margin-top: 100px;
-  		margin-bottom: 100px;
+	    	margin-top: 20%;
+  		margin-bottom: 50%;
  		margin-right: 100px;
   		margin-left: 800px;	    
            	width: 20%;
