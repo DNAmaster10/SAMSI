@@ -46,7 +46,7 @@
     </head>
     <body>
         <input type="text" placeholder="Add member" id="add_member_entry_box" onkeyup="getUsers()">
-        <button type="button" onclick="addUser()">Add user</button>
+        <button type="button" onclick="sendUser()">Add user</button>
         <div id="new_member_button_list"></div>
         <p id="members_list">Members:<br><?php echo $members_list_output; ?></p>
     </body>
