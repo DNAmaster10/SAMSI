@@ -20,14 +20,14 @@
 	    	margin-top: 20%;
   		margin-bottom: 50%;
  		margin-right: 10%;
-  		margin-left: 80%;	    
+  		margin-left: 70%;	    
            	width: 20%;
 
       background-color: rgba(0, 34, 56, 0.9);
       text-align: center;
 	  border-radius: 25px;
 	  height: 50%;
-	  padding: 30px;
+	  padding: 10%;
     }
 	p {
 		color: white;
