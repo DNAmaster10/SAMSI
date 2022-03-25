@@ -30,31 +30,33 @@
 		<title>SAMSi</title>
 	</head>
 	<style>
-		
+		.select_form{
+			display: inline-block;
+		}
 	</style>
 	<body>
 		<h1>Welcome back, <?php echo $username; ?>.</h1>
 		<?php 
 		if ($account_type == "admin") {
 		echo ("<br>
-		<form action='./Manage_accounts/manage_accounts_menu.php'>
+		<form action='./Manage_accounts/manage_accounts_menu.php' class='select_form'>
 		  <input type='submit' value='Mannage accounts' class='block_button'>
 		</form> ");
 		}
 		?>
-		<form action="./Classes/class_select_menu.php" class="slelect_form">
+		<form action="./Classes/class_select_menu.php" class="select_form">
 			<input type="submit" value="Classes" class="block_button">
 		</form>
-		<form action="./Classes/view_homework.php" class="slelect_form">
+		<form action="./Classes/view_homework.php" class="select_form">
             <input type="submit" value="Homework" class="block_button">
 		</form>
-		<form action="./Messenger/messenger_hub.php" class="slelect_form">
+		<form action="./Messenger/messenger_hub.php" class="select_form">
 			<input type="submit" value="Messages" class="block_button">
 		</form>
-		<form action="./Theme/select_theme.php" class="slelect_form">
+		<form action="./Theme/select_theme.php" class="select_form">
 			<input type="submit" value="Change theme" class="block_button">
 		</form>
-		<form action="../Logout/logout.php" class="slelect_form">
+		<form action="../Logout/logout.php" class="select_form">
 			<input type="submit" value="Log out" class="block_button">
 		</form>
 	</body>
