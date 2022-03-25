@@ -40,7 +40,7 @@
         <link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <p>This class is <?php echo $_SESSION["current_class"]; ?>   Join code: <?php echo $join_code; ?></p>
+        <p>This class is <?php echo $_SESSION["current_class"]; ?>   <br>Join code: <?php echo $join_code; ?></p>
         <form action="../main_menu.php">
             <input type="submit" value="Back">
         </form>
