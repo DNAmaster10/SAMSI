@@ -26,12 +26,12 @@ else {
   <body>
     <h1>Where would you like to go?</h1><br>
 	<form action="../main_menu.php">
-		<input type="submit" value="Back">
+		<input type="submit" value="Back" class="block_button">
 	</form>
     <form action="./Register_users/register_user.php">
-		<input type="submit" value="Register users">
+		<input type="submit" value="Register users" class="block_button">
     </form>
-	<form action="./Delete_accounts/delete_accounts.php">
+	<form action="./Delete_accounts/delete_accounts.php" class="block_button">
 		<input type="submit" value="Delete users">
 	</form>
   </body>
