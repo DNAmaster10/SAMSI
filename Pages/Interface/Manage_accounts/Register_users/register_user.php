@@ -35,9 +35,9 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 			padding: 15px 32px;
 			font-size: 16px;
 		}
-		.block_button{
+		.block_button_small{
 			padding: 5px 24px;
-			font-size: 16px;
+			font-size: 8px;
 		}
 	</style>
     <body>
