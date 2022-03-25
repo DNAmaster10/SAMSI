@@ -8,10 +8,10 @@ function addUser() {
             if (data == 1) {
                 console.log("User is not admin");
             };
-            else if (data == 2) {
+            elseif (data == 2) {
                 console.log("User is already a member of chat");
             };
-            else if (data == 3) {
+            elseif (data == 3) {
                 console.log("User successfully added to database");
             };
             else {
