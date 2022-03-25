@@ -23,3 +23,14 @@ function addUser() {
         }
     });
 }
+function getUsers(){
+    input_user = document.getElementById("add_member_entry_box").value;
+    $.ajax({                                      
+        url: './get_users.php',       
+        type: "POST",
+        data: {username_entry:input_user},
+        success: function(data) {
+			document.getElementById("new_member_button_list").innerHTML = data;
+        }
+    });
+}
