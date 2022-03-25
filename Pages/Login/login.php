@@ -15,6 +15,7 @@
  background-size: cover;
  margin: auto;
  padding: 0;
+ background-size: 100%;
 }
     .login_box {
 		display: block;		
