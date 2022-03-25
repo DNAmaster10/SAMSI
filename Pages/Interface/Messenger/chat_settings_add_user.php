@@ -31,12 +31,23 @@
     $where_column = "chat_id";
     $where_value = $chat_id;
     include $file_path."/Includes/Php/get_single_value_from_db.php";
-    $current_users = $result
+    $current_users = $result;
     if (str_contains($current_users, $user.",")) {
         echo "2";
     }
     else {
         $new_users = $current_users.$user.",";
         $sql = "UPDATE chat_data SET users='$new_users' WHERE chat_id='$chat_id';";
+        mysqli_query($conn, $sql);
+        $table_name = "user_chats";
+        $column_name = "chats";
+        $where_column = "username";
+        $where_value = $user;
+        include $file_path."/Includes/Php/get_single_value_from_db.php";
+        $current_user_chats = $result;
+        $new_user_chats = $current_user_chats.$chat_id.",";
+        $sql = "UPDATE user_chats SET chats='$new_user_chats' WHERE username='$user'";
+        mysqli_query($conn, $sql);
+        echo "3";
     }
 ?>
