@@ -10,7 +10,7 @@
  body {
  background-image: url("./MicrosoftTeams-image.png");
  background-color: #cccccc;
- background-position: center;
+ background-position: contain;
  background-repeat: no-repeat;
  background-size: cover;
  height: 100%;
