@@ -20,11 +20,14 @@
     $admins = $result;
     $admins_array = explode(",",$admins);
     
+    if (!isset($_POST["username"])) {
+        echo "4";
+    }
+    else {
     if (!in_array($_SESSION["username"],$admins_array)) {
         header ("location: ../Misc/not_chat_admin.php");
         echo "1";
     }
-    
     $user = $conn -> real_escape_string($_POST["username"]);
     $table_name = "chat_data";
     $column_name = "users";
@@ -49,5 +52,6 @@
         $sql = "UPDATE user_chats SET chats='$new_user_chats' WHERE username='$user'";
         mysqli_query($conn, $sql);
         echo "3";
+    }
     }
 ?>
