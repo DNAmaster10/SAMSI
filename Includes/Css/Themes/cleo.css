@@ -7,3 +7,7 @@ font-family: "Lucida Handwriting";
 	border: 2px solid #000000;
 	color: 000000;
 }
+.button:hover {background-color: #4a7475}
+.button:active {
+	background-color: #4a7475;
+}
