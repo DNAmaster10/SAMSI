@@ -25,6 +25,17 @@
     if (!in_array($_SESSION["username"],$admins_array)) {
         header ("location: ../Misc/not_chat_admin.php");
     }
+    
+    $table_name = "chat_data";
+    $column_name = "users";
+    $where_column = "chat_id";
+    $where_value = $_SESSION["current_chat"];
+    include $file_path."/Includes/Php/get_single_value_from_db.php";
+    $members_array = explode(",",$result);
+    $members_ammount = count($members_array);
+    for ($i = 0; $i < $members_ammount; $i++) {
+        $members_list_output = $members_list_output.$members_array[$i]."<br>";
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,6 +47,7 @@
     <body>
         <input type="text" placeholder="Add member" id="add_member_entry_box">
         <button type="button" onclick="addUser()">Add user</button>
+        <p id="members_list">Members:<br><?php echo $members_list_output; ?></p>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./Javascript/chat_settings.js"></script>
