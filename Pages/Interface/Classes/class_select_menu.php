@@ -42,7 +42,7 @@
 		'; } ?>
 	<br>
 		<p>Not a member of any classes? Enter the join code here!</p>
-		<form action="./join_class_from_code_submit.php">
+		<form action="./join_class_from_code_submit.php" method="POST">
 			<input type="text" name="input_code" placeholder="1234" required>
 			<input type="submit" value="Join">
 		</form>
