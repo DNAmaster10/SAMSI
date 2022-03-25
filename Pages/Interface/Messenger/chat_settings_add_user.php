@@ -4,7 +4,7 @@
     $username = $_SESSION["username"];
     include $file_path."/Includes/Php/dbh.php";
     include $file_path."/Includes/Php/check_user_pass.php";
-    
+    $chat_id = $_SESSION["current_chat"];
     $table_name = "chat_data";
     $column_name = "chat_name";
     $where_column = "chat_id";
