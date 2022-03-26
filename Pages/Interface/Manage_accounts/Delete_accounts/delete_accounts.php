@@ -43,6 +43,7 @@ include $file_path."/Includes/Php/get_user_theme.php";
 			<input type="submit" value="Delete">
 		</form>
 		<input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box">
+		<div id="button_output_field"></div>
 	</body>
 	<script src="./Javascript/delete_accounts.js"></script>
 </html>
