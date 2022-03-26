@@ -39,10 +39,9 @@ include $file_path."/Includes/Php/get_user_theme.php";
 		</form>
 		<br>
 		<form action="./delete_accounts_submit.php" method="POST">
-			Username: <input type="text" placeholder="JohnJames123" name="deletion_username" required>
+			Username: <input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" required>
 			<input type="submit" value="Delete">
 		</form>
-		<input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box">
 		<div id="button_output_field"></div>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
