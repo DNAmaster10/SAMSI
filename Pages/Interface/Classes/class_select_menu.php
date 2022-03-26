@@ -31,13 +31,20 @@
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
+	<style>
+		.class_button {
+			background: url(https://cdn-icons-png.flaticon.com/512/999/999663.png);
+			background-position: 1px 1px;
+			background-repeat: no-repeat;
+		}
+	</style>
 	<body>
         <form action="../main_menu.php">
-            <input type="submit" value="Home">
+            <input type="submit" value="Home" class="block_button">
         </form>
 		<?php if ($account_type == "teacher" or $account_type == "admin") {echo '
 		<form action="./class_create.php">
-			<input type="submit" value="New Class">
+			<input type="submit" value="New Class" class="block_button">
 		</form>
 		'; } ?>
 	<br>
@@ -52,7 +59,7 @@
 			echo "
 			<form action='./class_select_submit.php' method='POST'>
 				<input type='hidden' name='selected_class' value='".($classes_array[$i])."'>
-				<input type='submit' value='".($classes_array[$i])."'>
+				<input type='submit' value='".($classes_array[$i])."' class='class_button small_block_button'>
 			</form>
 			";
 		}
