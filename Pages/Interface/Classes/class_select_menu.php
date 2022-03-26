@@ -33,9 +33,7 @@
 	</head>
 	<style>
 		.class_button {
-			background: url(https://cdn-icons-png.flaticon.com/512/999/999663.png);
-			background-position: 1px 1px;
-			background-repeat: no-repeat;
+			border-radius: 50%;
 		}
 	</style>
 	<body>
