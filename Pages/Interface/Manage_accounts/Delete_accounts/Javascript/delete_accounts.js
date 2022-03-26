@@ -1,5 +1,5 @@
 function getUsers() {
-    var user_input = document.getElemenetById("username_input_box").value;
+    var user_input = document.getElementById("username_input_box").value;
     $.ajax({
         url: './get_users.php',
         type: "POST",
