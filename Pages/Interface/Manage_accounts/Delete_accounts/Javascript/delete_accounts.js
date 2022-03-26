@@ -5,7 +5,10 @@ function getUsers() {
         type: "POST",
         data: {username:user_input},
         success: function(data) {
-            document.getElementtById("
+            document.getElementById("button_output_field").innerHTML = data;
         }
     });
+}
+function deleteUser(val) {
+    document.getElementById("username_input_box").value = val;
 }
