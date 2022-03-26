@@ -45,5 +45,6 @@ include $file_path."/Includes/Php/get_user_theme.php";
 		<input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box">
 		<div id="button_output_field"></div>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="./Javascript/delete_accounts.js"></script>
 </html>
