@@ -37,11 +37,11 @@
 		}
 	</style>
 	<body>
-        <form action="../main_menu.php">
+        <form action="../main_menu.php" class='inline_display'>
             <input type="submit" value="Home" class="block_button">
         </form>
 		<?php if ($account_type == "teacher" or $account_type == "admin") {echo '
-		<form action="./class_create.php">
+		<form action="./class_create.php" class="display_inline">
 			<input type="submit" value="New Class" class="block_button">
 		</form>
 		'; } ?>
@@ -49,7 +49,7 @@
 		<p>Not a member of any classes? Enter the join code here!</p>
 	<form action="./join_class_from_code_submit.php" method="POST">
 		<input type="text" placeholder="1234" name="input_code" required>
-		<input type="submit" value="Join">
+		<input type="submit" value="Join" class="small_block_button">
 	</form>
 	<br>
 	<?php 
