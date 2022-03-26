@@ -13,7 +13,10 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 	</head>
 	<body>
-		<p>Use this page to select your desired themes</p>
+		<h3>Use this page to select your desired themes</h3>
+		<form action="../main_menu.php" >
+			<input type="submit" value="Back" class="block_button" class="block_button">
+		</form>
 		<br>
 		<form action="theme_submit.php" method="POST">
 			<input class="coloured_text" type="radio" value="default" name="theme_select" <?php if ($theme == "default") {echo "checked";} ?>><label>Default</label class="coloured_text"><br>
@@ -26,11 +29,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 			<input class="coloured_text" type="radio" value="darklavender" name="theme_select" <?php if ($theme == "darklavender") {echo "checked";} ?>><label class="coloured_text">Dark Lavender</label><br>
 			<input class="coloured_text" type="radio" value="peach" name="theme_select" <?php if ($theme == "peach") {echo "checked";} ?>><label class="coloured_text">Peach</label>
 			<br>
-			<input type="submit" value="Save" class="block_button">
-		</form>
-		<br>
-		<form action="../main_menu.php">
-			<input type="submit" value="Back" class="block_button">
+			<input type="submit" value="Save" class="block_button" class="small_block_button">
 		</form>
 	</body>
 </html>
