@@ -11,6 +11,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 	<head>
 		<title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
+		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<body>
 		<h3>Use this page to select your desired themes</h3>
