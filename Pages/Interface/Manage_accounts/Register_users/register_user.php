@@ -36,10 +36,6 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 			font-size: 16px;
 			display: inline-block;
 		}
-		.block_button_small{
-			padding: 5px 24px;
-			font-size: 8px;
-		}
 	</style>
     <body>
         <h1>Register an account</h1>
@@ -60,7 +56,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 		<p>Account type: </p><br><p>Student</p><input type="radio" value="student" name="account_type" required><br>
 		<p>Teacher</p><input type="radio" value="teacher" name="account_type" required><br>
 		<p>Administrator</p><input type="radio" value="admin" name="account_type" required><br>
-		<input type="submit" value="Register User" class="block_button">
+		<input type="submit" value="Register User" class="small_block_button">
 	</form>
 	</div>
     </body>
