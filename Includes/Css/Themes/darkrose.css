@@ -30,13 +30,13 @@ body {
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
-	background-color: #691e4f;
+	background-color: #f23ab2;
 	/*The colour of the text of small button when mouse is hover*/
 	color: #ffffff;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #add8d9;
+	background-colour: #ffffff;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
