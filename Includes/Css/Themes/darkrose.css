@@ -55,7 +55,7 @@ input[type=text]:focus:not(hover):not(.large_text_box) {
 	padding: 5px 18px;
 	outline: none;
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
-	color: #24b6ff;
+	color: #074361;
 	/*The colour the background will change to when text box is clicked on*/
 	background-color: #fcd4ee;
 }
