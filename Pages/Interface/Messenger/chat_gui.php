@@ -40,6 +40,9 @@
                 resize: none;
                 margin: 1%;
             }
+            .input_message {
+
+            }
             .send_message_button {
                 padding: 38px 4%;
                 border-radius: 20px;
