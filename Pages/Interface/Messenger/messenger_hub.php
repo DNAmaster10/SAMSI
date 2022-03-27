@@ -28,7 +28,7 @@
         <style>
             * {
                 margin: 0;
-			padding: 0;
+                padding: 0;
             }
         </style>
         <title>SAMSi</title>
@@ -48,7 +48,7 @@
         </form>
         </div>
         <br>
-        <h3>Group Chats</h3>
+        <h2>Group Chats</h2>
 		<?php
             if ($has_chats) {
                 for ($i = 0; $i <= $chat_count - 2; $i++) {
