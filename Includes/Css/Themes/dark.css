@@ -21,50 +21,50 @@ body {
 }
 .small_block_button {
 	/*the colour of the small buttons background when mouse not hover*/
-	background-color: #691e4f;
+	background-color: #085457;
 	/*The colour of the line around the outside of small button when mouse is not hover*/
-	border: 2px solid #ffffff;
+	border: 2px solid #60bcbf;
 	/*The colour of the text when mouse is not hover small button*/
-	color: #ffffff;
+	color: #edf5f5;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
 	background-color: #c3dadb;
 	/*The colour of the text of small button when mouse is hover*/
-	color: #323f40;
+	color: #000000;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #ffffff;
+	background-colour: #425d5e;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of outline of normal sized text boxes when not hovered or selected*/
-	border: 2px solid #ffffff;
+	border: 2px solid #ccdbdb;
 	/*The colour of the background of normal text boxes when not hovered or selected*/
-	background-color: #522943;
+	background-color: #315354;
 	/*The colour of the text of the text box when not hovered or selected*/
-	color: #ffffff;
+	color: #343838;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The colour the border will change when the text box is clicked on to type*/
-	border: 2.4px solid #fc58c3;
+	border: 2.4px solid #edfafa;
 	padding: 5px 18px;
 	outline: none;
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
-	color: #074361;
+	color: #e1eded;
 	/*The colour the background will change to when text box is clicked on*/
-	background-color: #fcd4ee;
+	background-color: #2d3d3d;
 }
 
 input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The colour of the text when the box is hovered, but NOT clicked*/
-	color: #000000;
+	color: #414242;
 	/*The colour of the background when the box is hovered, but NOT clicked*/
-	background-color: #9c5d86;
+	background-color: #798f8f;
 }
 .header {
 	/*The text colour on the header, or the bar at the top*/
