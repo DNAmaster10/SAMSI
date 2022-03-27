@@ -40,7 +40,7 @@ function slideIn() {
     setTimeout(function() {
     document.getElementById("send_message_container").classList.remove("send_message_container_active");
     document.getElementById("send_message_container").classList.add("send_message_container");
-    }, 1000);
+    }, 0);
 }
 var i = 1;                 
 
