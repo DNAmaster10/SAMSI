@@ -38,8 +38,8 @@ function loadMore() {
 }
 function slideIn() {
     setTimeout(function() {
-    document.getElementById("send_message_container").classList.remove("send_message_container_active");
-    document.getElementById("send_message_container").classList.add("send_message_container");
+        document.getElementById("send_message_container").classList.remove("send_message_container_active");
+        document.getElementById("send_message_container").classList.add("send_message_container");
     }, 200);
 }
 var i = 1;                 
