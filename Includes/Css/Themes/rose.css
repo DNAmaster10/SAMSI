@@ -2,7 +2,7 @@ body {
 	background-color: #fcdeff;
 }
 
-block_button {
+.block_button {
 	/*The big button's background colour when the mouse is not hovering over them*/
 	background-color: #c859d4;
 	/*The colour of the line around the outside of the big buttons when the mouse is not hovering over*/
