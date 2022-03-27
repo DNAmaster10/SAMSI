@@ -48,7 +48,7 @@
         </form>
         </div>
         <br>
-        <h2>Group Chats</h2>
+        <h2 style="padding: 5px 2px;>Group Chats</h2>
 		<?php
             if ($has_chats) {
                 for ($i = 0; $i <= $chat_count - 2; $i++) {
