@@ -28,11 +28,14 @@
                 padding: 0;
             }
             .input_message {
-                width: 90%;
+                width: 85%;
                 height: 70px;
                 padding: 12px 20px;
                 border-radius: 20px;
                 font-size: 16px;
+            }
+            .send_message_button {
+                padding: 70px 5%;
             }
         </style>
         <title>SAMSi</title>
@@ -52,7 +55,7 @@
 		</div>
 		<br>
         <textarea id="message_entry" placeholder="Message" class="input_message"></textarea>
-        <button type="button" onclick="sendMessage()">Send</button>
+        <button type="button" onclick="sendMessage()" class="send_message_button">Send</button>
 		<br>
 		<p id="message_p"></p>
 		<button type="button" onclick="loadMore()">Load more messages</button>
