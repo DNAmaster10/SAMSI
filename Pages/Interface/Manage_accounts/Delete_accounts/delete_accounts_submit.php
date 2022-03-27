@@ -31,8 +31,8 @@ else {
     <form action="./delete_accounts.php">
       <input type="submit" value="Delete another user" class="small_block_button">
     </form>
-    <form action="/Pages/Interface/main_menu.php" class="small_block_button">
-      <input type="submit" value="Home">
+    <form action="/Pages/Interface/main_menu.php">
+      <input type="submit" value="Home" class="small_block_button">
     </form>
   </body>
 </html>
