@@ -35,7 +35,8 @@
                 font-size: 16px;
             }
             .send_message_button {
-                padding: 70px 5%;
+                padding: 35px 4%;
+                border-radius: 20px;
             }
         </style>
         <title>SAMSi</title>
