@@ -68,7 +68,7 @@ input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The text colour on the header, or the bar at the top*/
 	color: #ffffff;
 	/*The colour of the background of the header (Make this a different colour to the main background colour */
-	background-color: #456d6e;
+	background-color: #fac0f6;
 	margin: 0;
 	padding: 0;
 	width: 100%;
