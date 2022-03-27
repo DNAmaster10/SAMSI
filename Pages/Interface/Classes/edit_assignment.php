@@ -63,7 +63,7 @@
 			<p> Title:</p><input type="text" value="<?php echo $title; ?>" name="title" required>
 			<p> Description:</p><input type="text" rows="4" cols="50" name="description" value="<?php echo $description; ?>" rows="4" cols="50" class="large_text_box" required>
 		</form>
-            <p> Description:</p><textarea name="description" value="<?php echo $description; ?>" class="large_text_box" required>
+            <p> Description:</p><textarea name="description" value="<?php echo $description; ?>" class="large_text_box" required></textarea>
             <p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" id="usr_form" required>
 			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id" id="usr_form">
 			<input type="submit" value="Submit edits" form="usr_form">
