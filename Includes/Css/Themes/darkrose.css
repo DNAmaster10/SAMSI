@@ -193,6 +193,6 @@ h1 {
 .homework_div {
 	border: 2px solid white;
 }
-input[type=radio] {
+label {
 	color: white;
 }
