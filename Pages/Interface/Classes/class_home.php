@@ -48,10 +48,10 @@
         </div>
         <?php if ($is_owner == true) {echo ' 
 		<form action="./set_homework.php">
-            <input type="submit" value="Set an assignment">
+            <input type="submit" value="Set an assignment" class="small_block_button">
 		</form>';} ?>
 		<form action="./view_assignments.php">
-			<input type="submit" value="View assignments">
+			<input type="submit" value="View assignments" class="small_block_button">
 		</form>
     </body>
 </html>
