@@ -28,7 +28,8 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
 			<input class="coloured_text" type="radio" value="darkrose" name="theme_select" <?php if ($theme == "darkrose") {echo "checked";} ?>><label class="coloured_text">Dark Rose</label><br>
 			<input class="coloured_text" type="radio" value="lavender" name="theme_select" <?php if ($theme == "lavender") {echo "checked";} ?>><label class="coloured_text">Lavender</label><br>
 			<input class="coloured_text" type="radio" value="darklavender" name="theme_select" <?php if ($theme == "darklavender") {echo "checked";} ?>><label class="coloured_text">Dark Lavender</label><br>
-			<input class="coloured_text" type="radio" value="peach" name="theme_select" <?php if ($theme == "peach") {echo "checked";} ?>><label class="coloured_text">Peach</label>
+			<input class="coloured_text" type="radio" value="peach" name="theme_select" <?php if ($theme == "peach") {echo "checked";} ?>><label class="coloured_text">Peach</label><br>
+			<input class="coloured_text" type="radio" value="sage" name="theme_select" <?php if ($theme == "sage") {echo "checked";} ?>><label class="coloured_text">Sage</label>
 			<br>
 			<input type="submit" value="Save" class="small_block_button">
 		</form>
