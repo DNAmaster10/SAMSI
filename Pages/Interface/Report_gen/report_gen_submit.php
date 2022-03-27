@@ -10,7 +10,7 @@
     if (!$account_type == "teacher" or !$account_type == "admin") {
         header ("location: /Pages/Interface/Misc/not_teacher_or_admin.php");
     }
-    $report_num = rand(1,2)
+    $report_num = rand(1,2);
     $name = $conn -> real_escape_string($_POST["name"]);
     $grade = $conn -> real_escape_string($_POST["grade"]);
     $subject = $conn -> real_escape_string($_POST["subject"]);
