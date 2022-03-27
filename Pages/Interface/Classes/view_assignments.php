@@ -45,14 +45,14 @@
 	</head>
 	<body>
 		<form action="./class_home.php">
-			<input type="submit" value="Back">
+			<input type="submit" value="Back" class="block_button">
 		</form>
 		<h1>Current assignments:</h1>
 		<?php
-		if ($is_homework == 0) {
+		if ($is_homework == 0 and $is_owner == 1) {
 				echo "<p>There are no assignments set for this class.</p>
 				<form action='./set_homework.php'
-					<input type='submit' value='Set an assignment'>
+					<input type='submit' value='Set an assignment' class='small_block_button'>
 				</form>";
 			}
 			else {
@@ -94,11 +94,11 @@
 				if ($is_owner == 1) {echo "
 				<form action='./view_handins.php' method='POST'>
 					<p> </p> <input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
-					<input type='submit' value='View handins'>
+					<input type='submit' value='View handins' class='small_block_button'>
 				</form>
 				<form action='./edit_assignment.php' method='POST'>
 					<p> </p><input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
-					<input type='submit' value='Edit details'>
+					<input type='submit' value='Edit details' class='small_block_button'>
 				</form>
 				"; }
 				echo "
