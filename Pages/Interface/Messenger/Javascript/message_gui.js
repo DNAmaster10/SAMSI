@@ -40,7 +40,7 @@ var x = document.getElementById("send_message_container");
 x.addEventListener("webkitAnimationEnd", slideIn);
 
 // Standard syntax
-x.addEventListener("animationend", slideIn);
+x.addEventListener("animationend", slideIn());
 
 function slideIn() {
     setTimeout(function() {
