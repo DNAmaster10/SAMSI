@@ -19,12 +19,12 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <style>
-    .gen_output {
+    .input_message {
         resize: none;
         width: 75%;
         height: 70%;
         font-size: 20px;
-        border-radius: 20px;
+        border-radius: 16px;
     }
     </style>
     <body>
