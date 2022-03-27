@@ -45,3 +45,7 @@ input[type=text]:hover:not(:focus) {
 	color: #616161;
 	background-color: #adadad;
 }
+.header {
+	color: #ffffff;
+	background-color: #456d6e;
+}
