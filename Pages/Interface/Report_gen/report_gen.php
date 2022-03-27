@@ -40,7 +40,7 @@
             <input type="text" placeholder="Grade" name="grade" required>
             <input type="submit" value="Generate Report" class="small_block_button">
         </form>
-        <textarea class="gen_output input_message" readonly><?php if(isset($_SESSION["report"])) {
+        <textarea style="height: 70%;" class="gen_output input_message" readonly><?php if(isset($_SESSION["report"])) {
             echo $_SESSION["report"];
         } ?></textarea>
     </body>
