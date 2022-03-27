@@ -28,7 +28,7 @@
                 padding: 0;
             }
             .input_message {
-                width: 85%;
+                width: 80%;
                 height: 70px;
                 padding: 12px 20px;
                 border-radius: 20px;
@@ -39,7 +39,7 @@
             .send_message_button {
                 padding: 35px 4%;
                 border-radius: 20px;
-                display: inline;
+                display: inline-block;
             }
         </style>
         <title>SAMSi</title>
