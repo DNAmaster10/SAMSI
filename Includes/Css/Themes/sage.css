@@ -1,10 +1,10 @@
 body {
-background-color: #c3e3cf;
+background-color: #dde6d5;
 }
 
 .block_button {
 	/*The big button's background colour when the mouse is not hovering over them*/
-	background-color: #d7e9ed;
+	background-color: #fceee9;
 	/*The colour of the line around the outside of the big buttons when the mouse is not hovering over*/
 	border: 2px solid #000000;
 	/*The colour of the text when the mouse is not hovering over*/
@@ -13,13 +13,13 @@ background-color: #c3e3cf;
 }
 .block_button:hover {
 	/*The colour the background will change when the mouse is hovering*/
-	background-color: #8db0b7;
+	background-color: #f8dc5;
 	/*The colour the text will change when the mouse is hovering*/
 	color: #ffffff;
 }
 .small_block_button {
 	/*the colour of the small buttons background when mouse not hover*/
-	background-color: #d7e9ed;
+	background-color: #fceee9;
 	/*The colour of the line around the outside of small button when mouse is not hover*/
 	border: 2px solid #000000;
 	/*The colour of the text when mouse is not hover small button*/
@@ -28,13 +28,13 @@ background-color: #c3e3cf;
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
-	background-color: #8db0b7;
+	background-color: #f8dc5;
 	/*The colour of the text of small button when mouse is hover*/
-	color: #ffffff;
+	color: #000000;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #fac2b2;
+	background-colour: #a3b899;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
