@@ -41,7 +41,7 @@ include $file_path."/Includes/Php/get_user_theme.php";
 		<br>
 		<form autocomplete="off" action="./delete_accounts_submit.php" method="POST">
 			Username: <input autocomplete="off" type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" required>
-			<input type="submit" value="Delete">
+			<input type="submit" value="Delete" class="small_block_button">
 		</form>
 		<br>
 		<div id="button_output_field"></div>
