@@ -57,7 +57,7 @@ input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
 	color: #202121;
 	/*The colour the background will change to when text box is clicked on*/
-	background-color: #b145ff;
+	background-color: #b8f2f2;
 }
 
 input[type=text]:hover:not(:focus):not(.large_text_box) {
@@ -94,7 +94,7 @@ input[type=date]:focus:not(hover) {
 	/*The colour of the text when clicked, NOT hovered. Make this the same as the text box */
 	color: #202121;
 	/*The colour of the background of date box when clicked, NOT hovered, make this the same as text box*/
-	background-color: #5fe3e3;
+	background-color: #b8f2f2;
 }
 
 input[type=date]:hover:not(:focus) {
@@ -127,7 +127,7 @@ input[type=date]:hover:not(:focus) {
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
 	color: #202121;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	background-color: #5fe3e3;
+	background-color: #b8f2f2;
 	resize: none;
 }
 
@@ -174,7 +174,7 @@ h2 {
 	/*The colour of the text in big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
 	color: #202121;
 	/*The colour of the background of big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	background-color: #5fe3e3;
+	background-color: #b8f2f2;
 	width: 76%;
 }
 
