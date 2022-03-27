@@ -33,10 +33,12 @@
                 padding: 12px 20px;
                 border-radius: 20px;
                 font-size: 16px;
+                display: inline;
             }
             .send_message_button {
                 padding: 35px 4%;
                 border-radius: 20px;
+                display: inline;
             }
         </style>
         <title>SAMSi</title>
