@@ -41,6 +41,9 @@
                 border-radius: 20px;
                 display: inline-block;
             }
+            .inside_header {
+                margin: 5px;
+            }
         </style>
         <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
@@ -48,6 +51,7 @@
     </head>
     <body>
         <div class="header">
+        <div class="inside_header">
 		<form action="./messenger_hub.php" class="inline_display">
 			<input type="submit" value="Back" class="block_button">
 		</form>
@@ -56,6 +60,7 @@
             ; ?>" name="chat_id">
             <input type="submit" value="Chat settings" class="block_button">
 		</form>
+        </div>
 		</div>
 		<br>
 		<div>
