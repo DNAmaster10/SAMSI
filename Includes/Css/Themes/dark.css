@@ -15,7 +15,7 @@ body {
 }
 .block_button:hover {
 	/*The colour the background will change when the mouse is hovering*/
-	background-color: #ffcfee;
+	background-color: #c3dadb;
 	/*The colour the text will change when the mouse is hovering*/
 	color: #000000;
 }
@@ -30,9 +30,9 @@ body {
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
-	background-color: #ffcfee;
+	background-color: #c3dadb;
 	/*The colour of the text of small button when mouse is hover*/
-	color: #000000;
+	color: #323f40;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
