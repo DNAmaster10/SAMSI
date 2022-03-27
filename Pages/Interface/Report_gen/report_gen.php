@@ -24,6 +24,7 @@
             <input type="submit" value="Back" class="block_button">
         </form>
         </div>
+        <br>
         <form action="./report_gen_submit.php" method="POST">
             <input type="text" placeholder="Name" name="name" required>
             <input type="text" placeholder="Subject" name="subject" required>
