@@ -56,7 +56,7 @@
 	</head>
 	<body>
 		<form action="./view_assignments.php">
-			<input tpye="submit" value="submit">
+			<input tpye="submit" value="Back" class="block_button">
 		</form>
 		<p>Editing assignment: <?php echo "$title"; ?></p>
 		<form action="./edit_assignment_submit.php" method="post" id="usr_form">
