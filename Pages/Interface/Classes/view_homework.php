@@ -60,10 +60,10 @@
     </head>
     <body>
 		<div class="side_bar">
-			<form action="../main_menu.php">
+			<form action="../main_menu.php" class="inline_display">
 				<input type="submit" value="Home" class="block_button">
 			</form>
-			<form action="./class_select_menu.php">
+			<form action="./class_select_menu.php" class="inline_display">
 				<input type="submit" value="Classes" class="block_button">
 			</form>
 		</div>
