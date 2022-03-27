@@ -25,14 +25,14 @@ body {
 	/*The colour of the line around the outside of small button when mouse is not hover*/
 	border: 2px solid #ffffff;
 	/*The colour of the text when mouse is not hover small button*/
-	color: #000000;
+	color: #ffffff;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
 	background-color: #ffcfee;
 	/*The colour of the text of small button when mouse is hover*/
-	color: #ffffff;
+	color: #000000;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
