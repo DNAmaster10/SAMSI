@@ -64,6 +64,12 @@
                 background-color: #587e80;
                 color: #ffffff;
             }
+            .send_message_button {
+                background-color: #ffffff;
+            }
+            .send_message_button_active {
+                background-color: #000000;
+            }
         </style>
     </head>
     <body>
@@ -80,7 +86,7 @@
         </div>
 		</div>
 		<br>
-		<div>
+		<div id="send_message_container" class="send_message_container">
         <textarea id="message_entry" placeholder="Message" class="input_message"></textarea>
         <button type="button" onclick="sendMessage()" class="send_message_button block_button">Send</button>
         </div>
