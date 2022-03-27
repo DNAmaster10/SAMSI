@@ -42,9 +42,9 @@ input[type=text]:not(.large_text_box) {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of outline of normal sized text boxes when not hovered or selected*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ffffff;
 	/*The colour of the background of normal text boxes when not hovered or selected*/
-	background-color: #9baaab;
+	background-color: #522943;
 	/*The colour of the text of the text box when not hovered or selected*/
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
