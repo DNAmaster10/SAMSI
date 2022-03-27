@@ -99,3 +99,6 @@ input[type=date]:hover:not(:focus) {
 	background-color: #adadad;
 	resize: none;
 }
+h3 {
+	color: #000000;
+}
