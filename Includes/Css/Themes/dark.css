@@ -10,7 +10,7 @@ body {
 	/*The colour of the line around the outside of the big buttons when the mouse is not hovering over*/
 	border: 2px solid #60bcbf;
 	/*The colour of the text when the mouse is not hovering over*/
-	color: #d8e5e6;
+	color: #edf5f5;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .block_button:hover {
