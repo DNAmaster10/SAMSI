@@ -122,10 +122,10 @@ h2 {
 }
 .input_message:focus:not(hover) {
 	border: 2.4px solid #5bb8ba;
-	padding: 5px 18px;
 	outline: none;
 	color: #000000;
 	background-color: #ffffff;
+	width: 76%;
 }
 
 .input_message:hover:not(:focus) {
