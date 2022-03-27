@@ -61,10 +61,10 @@
     <body>
 		<div class="side_bar">
 			<form action="../main_menu.php">
-				<input type="submit" value="Home">
+				<input type="submit" value="Home" class="block_button">
 			</form>
 			<form action="./class_select_menu.php">
-				<input type="submit" value="Classes">
+				<input type="submit" value="Classes" class="block_button">
 			</form>
 		</div>
 		<p><?php echo $text_output; ?></p>
