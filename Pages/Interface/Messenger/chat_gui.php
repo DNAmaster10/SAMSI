@@ -70,12 +70,10 @@
             }
             @keyframes slidein {
                 from {
-                    margin-left: 100%;
-                    width: 300%
+                    transform: translate(-100%);
                 }
                 to {
-                    margin-left: 0%
-                    width: 100%
+                    transform: translate(100%);
                 }
             }
             .send_message_container_active {
