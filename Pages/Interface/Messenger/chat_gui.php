@@ -75,14 +75,14 @@
 		<form action="./chat_settings.php" method="POST" class="inline_display">
             <input type="hidden" value="<?php $chat_id
             ; ?>" name="chat_id">
-            <input type="submit" value="Chat settings" class="block_button, settings_button">
+            <input type="submit" value="Chat settings" class="block_button">
 		</form>
         </div>
 		</div>
 		<br>
 		<div>
         <textarea id="message_entry" placeholder="Message" class="input_message"></textarea>
-        <button type="button" onclick="sendMessage()" class="send_message_button">Send</button>
+        <button type="button" onclick="sendMessage()" class="send_message_button block_button">Send</button>
         </div>
 		<br>
 		<p id="message_p"></p>
