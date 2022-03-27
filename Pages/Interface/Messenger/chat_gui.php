@@ -38,17 +38,17 @@
                 font-size: 16px;
                 display: inline-block;
                 resize: none;
-                margin: 5px;
+                margin: 1%px;
             }
             .send_message_button {
                 padding: 38px 4%;
                 border-radius: 20px;
                 display: inline-block;
                 float: right;
-                margin: 5px;
+                margin: 1%;
             }
             .inside_header {
-                margin: 5px;
+                margin: 1px;
             }
             .settings_button {
                 float: right;
