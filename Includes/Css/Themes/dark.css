@@ -36,7 +36,7 @@ body {
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #425d5e;
+	background-colour: #3c5252;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
@@ -70,7 +70,7 @@ input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The text colour on the header, or the bar at the top*/
 	color: #ffffff;
 	/*The colour of the background of the header (Make this a different colour to the main background colour */
-	background-color: #425d5e;
+	background-color: #3c5252;
 	margin: 0;
 	padding: 0;
 	width: 100%;
