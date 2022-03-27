@@ -8,7 +8,7 @@
     include $file_path."/Includes/Php/get_user_theme.php";
 
     if (!$account_type == "teacher" or !$account_type == "admin") {
-        header ("location: /Pages/Interface/Misc/not_teacher_or_admin.php")
+        header ("location: /Pages/Interface/Misc/not_teacher_or_admin.php");
     }
     $report_num = rand(1,2)
     $name = $conn -> real_escape_string($_POST["name"]);
