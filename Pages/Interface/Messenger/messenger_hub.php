@@ -36,6 +36,7 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
+        <div>
         <form action="/Pages/Interface/main_menu.php" class="inline_display">
             <input type="submit" value="Home" class="block_button">
         </form>
@@ -45,6 +46,7 @@
         <form action="./create_chat.php" class='inline_display'>
             <input type="submit" value="Create chat" class="block_button">
         </form>
+        </div>
         <br>
         <h3>Group Chats</h3>
 		<?php
