@@ -16,7 +16,7 @@
     $subject = $conn -> real_escape_string($_POST["subject"]);
 
     if ($grade == 8 or $grade == 9 and $report_num == 1) {
-        $_SESSION["report"] = $name." has been making excellent progress in ".$subject­." and I am pleased that they have been applying maximum effort into the subject even during remote learning. My only target would be to continue maintaining the high values and behaviours that they instil in the subject as this will propel them to obtaining amazing grades.";
+        $_SESSION["report"] = $name." has been making excellent progress in ".$conn -> real_escape_string($_POST["subject"])­." and I am pleased that they have been applying maximum effort into the subject even during remote learning. My only target would be to continue maintaining the high values and behaviours that they instil in the subject as this will propel them to obtaining amazing grades.";
     }
     else if ($grade == 8 or $grade == 9 and $report_num == 2) {
         $_SESSION["report"] = $name." is able to comprehend even the most difficult concepts with relative ease and, even more importantly, they are able to explain them clearly and concisely, which is a vital skill for those aspiring to achieve the very top marks. I have little doubt that ".$name." will continue to progress in exactly the same vein next year, and fully expect them to be very successful.";
