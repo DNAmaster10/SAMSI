@@ -22,7 +22,7 @@
 		margin-top: 10%;
 		margin-bottom: 50%;
 		margin-right: 10%;
-		margin-left: 65%;	    
+		margin-left: 60%;	    
         width: 15%;
 		background-color: rgba(0, 34, 56, 0.9);
 		text-align: center;
