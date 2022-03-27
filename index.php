@@ -18,6 +18,16 @@
 			text-align: center;
 			padding: 5px
 		}
+		.block_button {
+			background-color: #71a9ab;
+			border: 2px solid #000000;
+			color: 000000;
+			transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.block_button:hover {
+	background-color: #587e80;
+	color: #ffffff;
+}
 		
 		
 </style>
@@ -27,10 +37,10 @@
 			<img src="/Includes/Images/logo_text.png" alt="Logo_text"></img>
 		</div>
         	<form action="/Pages/Login/login.php">
-           		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login">
+           		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" class="block_button">
         	</form>
         	<form action="/Pages/register.php">
-            		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account">
+            		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" class="block_button">
         	</form>
 		<br>
 		<p>SAMSi is an open-source school communication platform that manages and stores crucial data about students, teachers, and their classes. Our project is largely based off of Microsoft Teams, with influences from the school management system, iSAMS. Currently, we have developed a login and register system, as well as a dynamic account accountment system. We are currently working on a class management system, which we hope to fully incorporate into our franchise soon.</p>
