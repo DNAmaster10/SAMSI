@@ -21,7 +21,7 @@ body {
 }
 .small_block_button {
 	/*the colour of the small buttons background when mouse not hover*/
-	background-color: #71a9ab;
+	background-color: #691e4f;
 	/*The colour of the line around the outside of small button when mouse is not hover*/
 	border: 2px solid #ffffff;
 	/*The colour of the text when mouse is not hover small button*/
@@ -30,7 +30,7 @@ body {
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
-	background-color: #587e80;
+	background-color: #ffcfee;
 	/*The colour of the text of small button when mouse is hover*/
 	color: #ffffff;
 }
