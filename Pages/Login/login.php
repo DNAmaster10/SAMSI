@@ -39,6 +39,8 @@
 	  }
 	 
     </style>
+	<link rel="stylesheet" href="/Includes/Css/main.css">
+    <link
   </head>
   <body>
     <div class="login_box">
@@ -47,11 +49,11 @@
 		<form action="/Pages/Login/login_submit.php" method="POST" class="submit_forum">
 			<p>Username: </p><input type="text" id="username_text_box" name="username" required><br>
 			<p>Password: </p><input type="text" id="password_text_box" name="password" required><br>
-			<input type="submit" value="Login" class="block_button">
+			<input type="submit" value="Login" class="small_block_button">
 			<br>
 		</form>
 	    <form action="/index.php" class="submit_forum">
-            <input type="submit" value="Home" class="block_button">
+            <input type="submit" value="Home" class="small_block_button">
         </form>
     </div>
   </body>
