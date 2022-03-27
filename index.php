@@ -19,14 +19,14 @@
 			padding: 5px
 		}
 		.block_button {
-			background-color: #71a9ab;
+			background-color: #b3e3ff;
 			border: 2px solid #000000;
 			color: 000000;
 			transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .block_button:hover {
-	background-color: #587e80;
-	color: #ffffff;
+	background-color: #84b5d1;
+	color: #000000;
 }
 		
 		
