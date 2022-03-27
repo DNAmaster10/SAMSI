@@ -22,8 +22,8 @@
 		margin-top: 5%;
 		margin-bottom: 50%;
 		margin-right: 10%;
-		margin-left: 60%;	    
-        width: 10%;
+		margin-left: 50%;	    
+        width: 15%;
 		background-color: rgba(0, 34, 56, 0.9);
 		text-align: center;
 		border-radius: 25px;
