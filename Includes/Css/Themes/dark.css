@@ -51,7 +51,7 @@ input[type=text]:not(.large_text_box) {
 }
 input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The colour the border will change when the text box is clicked on to type*/
-	border: 2.4px solid #edfafa;
+	border: 2.4px solid #58b8b8;
 	padding: 5px 18px;
 	outline: none;
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
@@ -70,7 +70,7 @@ input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The text colour on the header, or the bar at the top*/
 	color: #ffffff;
 	/*The colour of the background of the header (Make this a different colour to the main background colour */
-	background-color: #456d6e;
+	background-color: #425d5e;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -79,39 +79,39 @@ input[type=date] {
 	outline: none;
 	padding: 5px 12px;
 	/*The colour of the date input boxes when not clicked. (Make these values match the values of the text boxes)*/
-	border: 2px solid #ffffff;
+	border: 2px solid #ccdbdb;
 	/*The colour of the background of the date boxes when not clicked (Make these values match the text boxes*/
-	background-color: #522943;
+	background-color: #315354;
 	/*The colour of the text when not clicked. Make this match the text boxes*/
-	color: #ffffff;
+	color: #edfafa;
     transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=date]:focus:not(hover) {
 	/*The colour of the border of the date boxes when clicked on, NOT hovered, make this the same as text box */
-	border: 2.4px solid #fc58c3;
+	border: 2.4px solid #58b8b8;
 	padding: 5px 18px;
 	outline: none;
 	/*The colour of the text when clicked, NOT hovered. Make this the same as the text box */
-	color: #074361;
+	color: #e1eded;
 	/*The colour of the background of date box when clicked, NOT hovered, make this the same as text box*/
-	background-color: #fcd4ee;
+	background-color: #405959;
 }
 
 input[type=date]:hover:not(:focus) {
 	/*The colour of the text when the date box is hovered, NOT clicked. Make same as text box */
-	color: #000000;
+	color: #414242;
 	/*The colour of the background of date box when hovered, NOT clicked. Make same as text box*/
-	background-color: #9c5d86;
+	background-color: #798f8f;
 }
 .large_text_box {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of the border of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box*/
-	border: 2px solid #ffffff;
+	border: 2px solid #ccdbdb;
 	/*The colour of the background of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
-	background-color: #522943;
+	background-color: #315354;
 	/*The colour of the text of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
-	color: #ffffff;
+	color: #edfafa;
     transition: border 0.2s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	width: 140px;
 	resize: none;
@@ -120,27 +120,27 @@ input[type=date]:hover:not(:focus) {
 }
 .large_text_box:focus:not(hover) {
 	/*The colour of the border of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	border: 2.4px solid #fc58c3;
+	border: 2.4px solid #58b8b8;
 	width: 80%;
 	height: 50px;
 	outline: none;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	color: #074361;
+	color: #e1eded;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	background-color: #fcd4ee;
+	background-color: #405959;
 	resize: none;
 }
 
 .large_text_box:hover:not(:focus) {
 	/*The colour of the text of the big fat text box when hovered. Make this the same as text box */
-	color: #000000;
+	color: #414242;
 	/*The colour of the background. Make this the same as text box when hovered */
-	background-color: #9c5d86;
+	background-color: #798f8f;
 	resize: none;
 }
 h3 {
 	/*Colour of big text at top. Make this the same as the paragraphs*/
-	color: #f0f7fa;
+	color: #d3dbdb;
 }
 .header {
 	/*Another tag to define the colour of the header backgrounds at the top where the buttons are*/
@@ -148,47 +148,47 @@ h3 {
 }
 h2 {
 	/*The colour of the text of big fat text at top. Make same as paragraphs*/
-	color: #f0f7fa;
+	color: #d3dbdb;
 }
 .input_box {
 	/*The colour of the border around... idk actually. Just make this the same as the border of text boxes when not hovered*/
-	border: 2px solid #ffffff;
+	border: 2px solid #ccdbdb;
 	/*The colour of the background of... again idk, so just make it the same as the text boxes*/
-	background-color: #522943;
+	background-color: #315354;
 }
 .input_message {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of the big box in the message GUI. Make this the same as regular text boxes*/
-	border: 2px solid #ffffff;
+	border: 2px solid #ccdbdb;
 	/*The colour of the big box used in the message GUI. Make this the same as regular text boxes*/
-	background-color: #522943;
+	background-color: #315354;
 	/*The colour of the text in big box in message GUI. Make this the same as regulr text boxes*/
-	color: #ffffff;
+	color: #edfafa;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 .input_message:focus:not(hover) {
 	/*The colour of the border of big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	border: 2.4px solid #fc58c3;
+	border: 2.4px solid #58b8b8;
 	outline: none;
 	/*The colour of the text in big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	color: #074361;
+	color: #e1eded;
 	/*The colour of the background of big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	background-color: #fcd4ee;
+	background-color: #405959;
 	width: 76%;
 }
 
 .input_message:hover:not(:focus) {
 	/*The colour of the text of the big fat box in message GUI when HOVERED. Make this the same as the text boxes when HOVERED*/
-	color: #000000;
+	color: #414242;
 	/*The colour of the background of the big fat box in message GUI when HOVERED. Make this the same as the text boxes when HOVERED*/
-	background-color: #9c5d86;
+	background-color: #798f8f;
 }
 p {
-	color: #f0f7fa;
+	color: #d3dbdb;
 }
 h1 {
-	color: #f0f7fa;
+	color: #d3dbdb;
 }
 .homework_div {
 	border: 2px solid white;
