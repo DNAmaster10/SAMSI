@@ -18,6 +18,15 @@
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
+    <style>
+    .input_message {
+        resize: none;
+        width: 95%;
+        height: 20%;
+        font-size: 20;
+        border-radius: 20px;
+    }
+    </style>
     <body>
         <div class="header">
         <form action="../main_menu.php">
