@@ -60,9 +60,9 @@
 			<input type="submit" value="Messages" class="block_button">
 		</form>
 		<?php if ($account_type == "admin" or $account_type == "teacher") {
-		echo "<form action="./Report_gen/report_gen.php" class="select_form">
+		echo '<form action="./Report_gen/report_gen.php" class="select_form">
 			<input type="submit" value="Report Generator" class="block_button">
-		</form>";
+		</form>';
 		}
 		?>
 		<form action="./Theme/select_theme.php" class="select_form">
