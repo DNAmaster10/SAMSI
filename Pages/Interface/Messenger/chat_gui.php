@@ -77,7 +77,7 @@
                 }
             }
             .send_message_container_active {
-                animation-duration: 0.2s;
+                animation-duration: 0.3s;
                 animation-name: slideout;
                 animation-fill-mode: forwards;
             }
