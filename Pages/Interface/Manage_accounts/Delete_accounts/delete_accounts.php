@@ -39,8 +39,8 @@ include $file_path."/Includes/Php/get_user_theme.php";
 		</form>
 		<br>
 		<br>
-		<form action="./delete_accounts_submit.php" method="POST" autocomplete="off">
-			Username: <input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" required>
+		<form autocomplete="off" action="./delete_accounts_submit.php" method="POST">
+			Username: <input autocomplete="off" type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" required>
 			<input type="submit" value="Delete">
 		</form>
 		<br>
