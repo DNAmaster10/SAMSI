@@ -55,7 +55,7 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
 	<style>
-	input[type=text] {
+	.custom {
 	outline: none;
 	padding: 4px 10px;
 	border: 2px solid #6d9fa1;
@@ -63,7 +63,7 @@
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-input[type=text]:focus:not(hover) {
+.custom:focus:not(hover) {
 	border: 2.4px solid #5bb8ba;
 	padding: 40px 180px;
 	outline: none;
@@ -71,7 +71,7 @@ input[type=text]:focus:not(hover) {
 	background-color: #ffffff;
 }
 
-input[type=text]:hover:not(:focus) {
+.custom:hover:not(:focus) {
 	color: #616161;
 	background-color: #adadad;
 }
