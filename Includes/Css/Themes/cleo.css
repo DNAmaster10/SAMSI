@@ -79,9 +79,9 @@ input[type=date]:hover:not(:focus) {
 	background-color: #9baaab;
 	color: #ffffff;
     transition: border 0.2s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	width: 20px;
+	width: 140px;
 	resize: none;
-	height: 5px;
+	height: 20px;
 	border-radius: 20px;
 }
 .large_text_box:focus:not(hover) {
