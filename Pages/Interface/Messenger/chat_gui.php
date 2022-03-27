@@ -80,7 +80,7 @@
                 animation-duration: 0.2s;
                 animation-name: slideout;
             }
-            @keyframes slidein {
+            @keyframes slideout {
                 from {
                     transform: translate(0%);
                 }
