@@ -162,7 +162,7 @@ h2 {
 	/*The colour of the big box used in the message GUI. Make this the same as regular text boxes*/
 	background-color: #decece;
 	/*The colour of the text in big box in message GUI. Make this the same as regulr text boxes*/
-	color: #ffffff;
+	color: #000000;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 .input_message:focus:not(hover) {
