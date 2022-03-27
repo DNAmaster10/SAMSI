@@ -40,13 +40,20 @@
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
+	<style>
+		.alight_right {
+			display: inline-block;
+			float: right;
+		}
+	</style>
 	<body>
+		<div class="header">
 		<form action="./view_assignments.php">
 			<input type="submit" value="Back">
 		</form>
+		</div>
 		<br>
+		<p class="align_right">Not completed: <?php echo $not_completed ?> </p>
 		<p>Completed: <?php echo $completed ?> </p>
-		<br>
-		<p>Not completed: <?php echo $not_completed ?> </p>
 	</body>
 <html>
