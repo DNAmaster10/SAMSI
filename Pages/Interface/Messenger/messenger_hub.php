@@ -30,14 +30,14 @@
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-        <form action="/Pages/Interface/main_menu.php">
+        <form action="/Pages/Interface/main_menu.php" class="inline_display">
             <input type="submit" value="Home">
         </form>
-        <form action="./join_chat.php">
+        <form action="./join_chat.php" class="inline_display">
             <input type="submit" value="Join chat from code">
         </form>
         <form action="./create_chat.php">
-            <input type="submit" value="Create chat">
+            <input type="submit" value="Create chat" class="inline_display">
         </form>
         <br>
 		<?php
@@ -51,9 +51,9 @@
                     $chat_title = $result;
                     
                     echo "
-                    <form action='./message_hub_redirect.php' method='POST'>
+                    <form action='./message_hub_redirect.php' method='POST' class='inline_display'>
                         <input type='hidden' value='".$chats_array[$i]."' name='chat_id'>
-                        <input type='submit' value='$chat_title'>
+                        <input type='submit' value='$chat_title' class='small_block_button'>
                     </form>
                     ";
                 }
