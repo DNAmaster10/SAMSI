@@ -28,7 +28,7 @@
             <input type="grade" placeholder="Grade" name="grade" required>
             <input type="submit" value="Generate Report">
         </form>
-        <textarea class="report_gen_output" readonly><?php if(!isset $_SESSION["report"]) {
+        <textarea class="report_gen_output" readonly><?php if(isset($_SESSION["report"])) {
             echo $_SESSION["report"];
         } ?></textarea>
     </body>
