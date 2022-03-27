@@ -22,7 +22,7 @@ if (!$result == "admin" or $result == "teacher") {
 <html>
   <head>
     <title>SAMSi</title>
-    <link rel="stylesheef" href="/Includes/Css/main.css">
+    <link rel="stylesheet" href="/Includes/Css/main.css">
     <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
   </head>
   <body>
