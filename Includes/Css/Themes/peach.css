@@ -40,16 +40,16 @@ input[type=text]:not(.large_text_box) {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of outline of normal sized text boxes when not hovered or selected*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #68717e;
 	/*The colour of the background of normal text boxes when not hovered or selected*/
-	background-color: #9baaab;
+	background-color: #d7e9ed;
 	/*The colour of the text of the text box when not hovered or selected*/
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The colour the border will change when the text box is clicked on to type*/
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #8db0b7;
 	padding: 5px 18px;
 	outline: none;
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
@@ -77,7 +77,7 @@ input[type=date] {
 	outline: none;
 	padding: 5px 12px;
 	/*The colour of the date input boxes when not clicked. (Make these values match the values of the text boxes)*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #687;
 	/*The colour of the background of the date boxes when not clicked (Make these values match the text boxes*/
 	background-color: #9baaab;
 	/*The colour of the text when not clicked. Make this match the text boxes*/
