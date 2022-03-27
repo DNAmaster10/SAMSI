@@ -21,9 +21,11 @@
         if ($raw_result -> num_rows > 0) {
             while ($row = mysqli_fetch_array($raw_result)){
                 if ($row["user"] == $_SESSION[$username]) {
-                 echo "You: ".$row["message"]."<br />";
+                    echo "You: ".$row["message"]."<br />";
                 }
-				echo $row['user'].": ".$row["message"]."<br />";
+                else {
+                    echo $row['user'].": ".$row["message"]."<br />";
+                }
             }
         }
         else {
