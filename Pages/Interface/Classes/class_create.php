@@ -7,21 +7,16 @@
     include $file_path."/Includes/Php/get_account_type.php";
     include $file_path."/Includes/Php/get_user_theme.php";
 
-//make sure account is of teacher or admin type
-$table_name = "users";
-$column_name = "account_type";
-$where_column = "username";
-$where_value = ($_SESSION["username"]);
-include "/var/www/html/Includes/Php/get_single_value_from_db.php";
+  $table_name = "users";
+  $column_name = "account_type";
+  $where_column = "username";
+  $where_value = ($_SESSION["username"]);
+  include $file_path."/Includes/Php/get_single_value_from_db.php";
 
 
-if ($result == "admin" or $result == "teacher") {
+if (!$result == "admin" or $result == "teacher") {
 	$can_access = (true);
 }
-else {
-    header("location: /Pages/Interface/No_perms/not_admin.php");
-}
-include "/var/www/html/Includes/Php/get_user_theme.php";
 ?>
 <html>
   <head>
