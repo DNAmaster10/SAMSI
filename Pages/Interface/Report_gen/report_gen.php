@@ -22,8 +22,8 @@
     .input_message {
         resize: none;
         width: 75%;
-        height: 20%;
-        font-size: 15px;
+        height: 70%;
+        font-size: 20px;
         border-radius: 20px;
     }
     </style>
