@@ -41,6 +41,7 @@
                 padding: 35px 4%;
                 border-radius: 20px;
                 display: inline-block;
+                float: left;
             }
             .inside_header {
                 margin: 5px;
