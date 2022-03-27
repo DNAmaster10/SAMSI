@@ -50,6 +50,17 @@
             .settings_button {
                 float: right;
             }
+            }
+            .send_message_button {
+                background-color: #71a9ab;
+                border: 2px solid #000000;
+                color: 000000;
+                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+            }
+            .send_message_button:hover {
+                background-color: #587e80;
+                color: #ffffff;
+            }
         </style>
         <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
