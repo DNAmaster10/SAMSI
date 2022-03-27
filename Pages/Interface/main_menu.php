@@ -57,6 +57,9 @@
 		<form action="./Messenger/messenger_hub.php" class="select_form">
 			<input type="submit" value="Messages" class="block_button">
 		</form>
+		<form action="./Report_gen/report_gen.php" class="select_form">
+			<input type="submit" value="Report Generator" class="block_button">
+		</form>
 		<form action="./Theme/select_theme.php" class="select_form">
 			<input type="submit" value="Change theme" class="block_button">
 		</form>
