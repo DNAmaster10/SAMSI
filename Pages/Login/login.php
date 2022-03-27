@@ -38,13 +38,13 @@
 		color: white;
 	  }
 	 .small_block_button {
-	background-color: #71a9ab;
+	background-color: #b3e3ff;
 	border: 2px solid #000000;
 	color: #000000;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .small_block_button:hover {
-	background-color: #587e80;
+	background-color: #84b5d1;
 	color: #ffffff;
 }
     </style>
