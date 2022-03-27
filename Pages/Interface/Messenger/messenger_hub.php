@@ -31,13 +31,13 @@
     </head>
     <body>
         <form action="/Pages/Interface/main_menu.php" class="inline_display">
-            <input type="submit" value="Home">
+            <input type="submit" value="Home" class="block_button">
         </form>
         <form action="./join_chat.php" class="inline_display">
-            <input type="submit" value="Join chat from code">
+            <input type="submit" value="Join chat from code" class="block_button">
         </form>
         <form action="./create_chat.php" class='inline_display'>
-            <input type="submit" value="Create chat" class="inline_display">
+            <input type="submit" value="Create chat" class="block_button">
         </form>
         <br>
 		<?php
