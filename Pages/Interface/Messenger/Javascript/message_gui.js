@@ -1,7 +1,6 @@
 function sendMessage() {
-    $("#send_message_container").click(function() {
-        $('.transform').toggleClass('send_message_button_active');
-    });
+    $('.transform').toggleClass('send_message_button_active');
+
     input_message = document.getElementById("message_entry").value;
     document.getElementById("message_entry").value = "";
     $.ajax({                                      
