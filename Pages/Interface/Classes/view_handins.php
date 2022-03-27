@@ -15,7 +15,7 @@
 	$where_column = "class";
 	$where_value = $_SESSION["current_class"];
 	include $file_path."/Includes/Php/get_single_value_from_db.php";
-	$class_owner = $result
+	$class_owner = $result;
 	if (!$class_owner = $_SESSION["username"]) {
 		header ("location: /Pages/Interface/Misc/not_owner_of_class.php")
 	}
