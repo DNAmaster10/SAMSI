@@ -1,5 +1,5 @@
 body {
-background-color: #fcdec7;
+background-color: #fcd5c7;
 }
 
 .block_button {
@@ -34,7 +34,7 @@ background-color: #fcdec7;
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #add8d9;
+	background-colour: #f7c5b2;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
