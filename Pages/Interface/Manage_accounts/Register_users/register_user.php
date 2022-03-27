@@ -41,7 +41,7 @@ include "/var/www/html/Includes/Php/get_user_theme.php";
         <h1>Register an account</h1>
 	<div class="select_form">
     <form action="../manage_accounts_menu.php" class="inline_display">
-    <input type="submit" value="Back" class="inline_display">
+    <input type="submit" value="Back" class="block_button">
     </form><br>
 	<form action="../../main_menu.php" class="select_form">
 		<input type="submit" value="Home" class="block_button">
