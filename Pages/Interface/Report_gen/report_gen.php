@@ -25,8 +25,8 @@
         <form action="./report_gen_submit.php" method="POST">
             <input type="text" placeholder="Name" name="name" required>
             <input type="text" placeholder="Subject" name="subject" required>
-            <input type="grade" placeholder="Grade" name="grade" required>
-            <input type="submit" value="Generate Report">
+            <input type="text" placeholder="Grade" name="grade" required>
+            <input type="submit" value="Generate Report" class="small_block_button">
         </form>
         <textarea class="report_gen_output" readonly><?php if(isset($_SESSION["report"])) {
             echo $_SESSION["report"];
