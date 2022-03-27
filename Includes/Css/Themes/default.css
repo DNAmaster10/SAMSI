@@ -1,5 +1,5 @@
 body {
-	background-color: #ededed;
+	background-color: #edf6ff;
 }
 	
 .block_button {
@@ -34,7 +34,7 @@ body {
 }
 .secondary_background {
 	/*The colour of things such as bars at the top for buttons to sit on (headers) and other stuff that needs to stand out*/
-	background-colour: #002238;
+	background-colour: #316282;
 }
 input[type=text]:not(.large_text_box) {
 	outline: none;
@@ -68,7 +68,7 @@ input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The text colour on the header, or the bar at the top*/
 	color: #ffffff;
 	/*The colour of the background of the header (Make this a different colour to the main background colour */
-	background-color: #002238;
+	background-color: #316282;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -142,7 +142,7 @@ h3 {
 }
 .header {
 	/*Another tag to define the colour of the header backgrounds at the top where the buttons are*/
-	background-color: #002238;
+	background-color: #316282;
 }
 h2 {
 	/*The colour of the text of big fat text at top. Make same as paragraphs*/
