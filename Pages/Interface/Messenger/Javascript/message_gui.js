@@ -37,10 +37,14 @@ function loadMore() {
 }
 var x = document.getElementById("send_message_container");
 // Code for Chrome, Safari and Opera
-x.addEventListener("webkitAnimationEnd", slideIn);
+x.addEventListener("webkitAnimationEnd", () => {
+    slideIn();
+});
 
 // Standard syntax
-x.addEventListener("animationend", slideIn);
+x.addEventListener("animationend", () => {
+    slideIn();
+});
 
 function slideIn() {
     document.getElementById("send_message_container").classList.remove("send_message_container_active");
