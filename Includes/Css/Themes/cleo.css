@@ -82,8 +82,8 @@ input[type=date]:hover:not(:focus) {
 }
 .large_text_box:focus:not(hover) {
 	border: 2.4px solid #5bb8ba;
-	width: 200px
-	height: 50px
+	width: 200px;
+	height: 50px;
 	outline: none;
 	color: #000000;
 	background-color: #ffffff;
