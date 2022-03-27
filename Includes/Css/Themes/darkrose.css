@@ -57,14 +57,14 @@ input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
 	color: #000000;
 	/*The colour the background will change to when text box is clicked on*/
-	background-color: #ffffff;
+	background-color: #fcd4ee;
 }
 
 input[type=text]:hover:not(:focus):not(.large_text_box) {
 	/*The colour of the text when the box is hovered, but NOT clicked*/
-	color: #616161;
+	color: #000000;
 	/*The colour of the background when the box is hovered, but NOT clicked*/
-	background-color: #adadad;
+	background-color: #9c5d86;
 }
 .header {
 	/*The text colour on the header, or the bar at the top*/
