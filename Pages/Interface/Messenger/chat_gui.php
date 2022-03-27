@@ -64,10 +64,10 @@
                 background-color: #587e80;
                 color: #ffffff;
             }
-            .send_message_button {
+            .send_message_container {
                 background-color: #ffffff;
             }
-            .send_message_button_active {
+            .send_message_container_active {
                 background-color: #000000;
             }
         </style>

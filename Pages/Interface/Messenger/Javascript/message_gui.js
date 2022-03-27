@@ -1,10 +1,10 @@
 function sendMessage() {
-    $('.send_message_button').toggleClass('send_message_button_active');
+    $('.send_message_container').toggleClass('send_message_container_active');
 
     input_message = document.getElementById("message_entry").value;
     document.getElementById("message_entry").value = "";
-    $.ajax({                                      
-        url: './send_message_handle.php',       
+    $.ajax({
+        url: './send_message_handle.php',
         type: "POST",
         data: {message:input_message},
         success: function(data) {
