@@ -38,7 +38,7 @@
                 margin: 5px;
             }
             .send_message_button {
-                padding: 35px 4%;
+                padding: 38px 4%;
                 border-radius: 20px;
                 display: inline-block;
                 float: right;
