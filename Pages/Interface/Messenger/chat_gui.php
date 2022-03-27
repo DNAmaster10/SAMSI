@@ -65,10 +65,21 @@
                 color: #ffffff;
             }
             .send_message_container {
-                background-color: #ffffff;
+                animation-duration: 0.3s;
+                animation-name: slidein;
+            }
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 300%
+                }
+                to {
+                    margin-left: 0%
+                    width: 100%
+                }
             }
             .send_message_container_active {
-                background-color: #000000;
+
             }
         </style>
     </head>
