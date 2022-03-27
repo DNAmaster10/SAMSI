@@ -18,6 +18,7 @@ if (!$result == "admin" or $result == "teacher") {
 	$can_access = (true);
 }
 ?>
+<!DOCTYPE html>
 <html>
   <head>
     <title>SAMSi</title>
