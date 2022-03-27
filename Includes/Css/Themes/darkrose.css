@@ -79,37 +79,37 @@ input[type=date] {
 	outline: none;
 	padding: 5px 12px;
 	/*The colour of the date input boxes when not clicked. (Make these values match the values of the text boxes)*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ffffff;
 	/*The colour of the background of the date boxes when not clicked (Make these values match the text boxes*/
-	background-color: #9baaab;
+	background-color: #522943;
 	/*The colour of the text when not clicked. Make this match the text boxes*/
 	color: #ffffff;
     transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=date]:focus:not(hover) {
 	/*The colour of the border of the date boxes when clicked on, NOT hovered, make this the same as text box */
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #fc58c3;
 	padding: 5px 18px;
 	outline: none;
 	/*The colour of the text when clicked, NOT hovered. Make this the same as the text box */
-	color: #000000;
+	color: #074361;
 	/*The colour of the background of date box when clicked, NOT hovered, make this the same as text box*/
-	background-color: #ffffff;
+	background-color: #fcd4ee;
 }
 
 input[type=date]:hover:not(:focus) {
 	/*The colour of the text when the date box is hovered, NOT clicked. Make same as text box */
-	color: #616161;
+	color: #000000;
 	/*The colour of the background of date box when hovered, NOT clicked. Make same as text box*/
-	background-color: #adadad;
+	background-color: #9c5d86;
 }
 .large_text_box {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of the border of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ffffff;
 	/*The colour of the background of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
-	background-color: #9baaab;
+	background-color: #522943;
 	/*The colour of the text of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
 	color: #ffffff;
     transition: border 0.2s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -125,17 +125,17 @@ input[type=date]:hover:not(:focus) {
 	height: 50px;
 	outline: none;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	color: #000000;
+	color: #074361;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	background-color: #ffffff;
+	background-color: #fc58c3;
 	resize: none;
 }
 
 .large_text_box:hover:not(:focus) {
 	/*The colour of the text of the big fat text box when hovered. Make this the same as text box */
-	color: #616161;
+	color: #000000;
 	/*The colour of the background. Make this the same as text box when hovered */
-	background-color: #adadad;
+	background-color: #9c5d86;
 	resize: none;
 }
 h3 {
