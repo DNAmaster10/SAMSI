@@ -43,10 +43,6 @@
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 		<style>
-			.homework_div {
-				border: 2px solid white;
-				mix-blend-mode: difference;
-			}
 		</style>
 	</head>
 	<body>
@@ -104,7 +100,7 @@
 				</form>
 				<form action='./edit_assignment.php' method='POST'>
 					<p> </p><input type='hidden' name='homework_id' value='".$homework_id_array[$i]."'>
-					<input type='submit' value='Edit details' class='small_block_button'>
+					<input type='submit' value='Edit details' class='small_block_button not_operator'>
 				</form>
 				"; }
 				echo "
