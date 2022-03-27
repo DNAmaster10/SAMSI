@@ -116,7 +116,7 @@
     <body>
         <p><?php echo $text_output ?></p>
         <form action="./class_home.php">
-            <input type="submit" value="Class home page">
+            <input type="submit" value="Class home page" class="block_button">
         </form>
     </body>
 </html>

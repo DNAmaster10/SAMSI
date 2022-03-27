@@ -29,14 +29,14 @@
 	<body>
 		<p>Hey <?php echo $username; ?>!, use this page to set homework for <?php echo $_SESSION["current_class"]; ?></p>
 		<form action="./class_select_menu.php">
-			<input type="submit" value="Back">
+			<input type="submit" value="Back" class="block_button">
 		</form>
 		<form action="./set_homework_submit.php" method="POST" id="usr_form">
 			<p>Title: </p><input type="text" name="title" required>
 			<p>Description: </p><textarea name="description" class="large_text_box" form="usr_form" required></textarea>
 			<p>Due data: </p><input type="date" name="due_date" required>
 			<input type="hidden" name="date_set" id="submit_date">
-			<input type="submit" value="Set Homework">
+			<input type="submit" value="Set Homework" class="small_block_button">
 		</form>
 	</body>
 	<script src="./Javascript/set_homework.js"></script>

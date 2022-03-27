@@ -125,7 +125,7 @@
 				<p><small> Date due: ".$output_due_date."| Teacher: ".$output_teacher."| Date set: ".$output_date_set."|</small></p>
 				<form action='./homework_complete_submit.php' method='POST'>
 					<p> </p><input type='hidden' name='homework_id' value='".($homework_id_array[$i])."'>
-					<input type='submit' value='Mark as complete'>
+					<input type='submit' value='Mark as complete' class='small_block_button'>
 				</form>
 				<p> </p>
             </div>"; 
