@@ -160,14 +160,14 @@ h2 {
 	/*The colour of the big box in the message GUI. Make this the same as regular text boxes*/
 	border: 2px solid #946e9c;
 	/*The colour of the big box used in the message GUI. Make this the same as regular text boxes*/
-	background-color: #9baaab;
+	background-color: #d6a4db;
 	/*The colour of the text in big box in message GUI. Make this the same as regulr text boxes*/
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 .input_message:focus:not(hover) {
 	/*The colour of the border of big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #ac66ba;
 	outline: none;
 	/*The colour of the text in big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
 	color: #000000;
