@@ -31,7 +31,7 @@
                 padding: 0;
             }
             .input_message {
-                width: 80%;
+                width: 75%;
                 height: 70px;
                 padding: 12px 20px;
                 border-radius: 20px;
