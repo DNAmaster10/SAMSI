@@ -29,7 +29,7 @@ if (!$result == "admin" or $result == "teacher") {
 	  <p>Hey <?p echo $_SESSION["username"]; ?>! Use this page to create a new classroom.</p><br>
 	  <form action="./class_create_submit.php" method="POST">
 			<input type="text" name="class_name" placeholder="class name">
-		  	<input type="submit" value="Create class">
+		  	<input type="submit" value="Create class" class="small_block_button">
 	  </form>
   </body>
 </html>
