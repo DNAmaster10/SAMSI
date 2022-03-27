@@ -21,8 +21,8 @@ if (!$result == "admin" or $result == "teacher") {
 <html>
   <head>
     <title>SAMSi</title>
-    <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
     <link rel="stylesheef" href="/Includes/Css/main.css">
+    <link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
   </head>
   <body>
 	  <p>Hey <?p echo $_SESSION["username"]; ?>! Use this page to create a new classroom.</p><br>
