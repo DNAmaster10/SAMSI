@@ -15,19 +15,23 @@ font-family: "Lucida Handwriting";
 .secondary_background {
 	background-colour: #add8d9;
 }
-input {
+input[type=text] {
 	outline: none;
+	padding: 4px 10px;
 	border: 2px solid #6d9fa1;
-	transition: border 0.4s ease-in;
-	transition: padding 0.4s ease-in;
 	background-color: #9baaab;
 	color: #ffffff;
+  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-input[type=text]:focus {
-	border: 2px solid #5bb8ba;
-	padding: 8px 12px;
+input[type=text]:focus:not(hover) {
+	border: 2.4px solid #5bb8ba;
+	padding: 5px 18px;
 	outline: none;
+	color: #000000;
+	background-color: #ffffff;
 }
 
-input {
+input[type=text]:hover:not(:focus) {
+	color: #616161;
+	background-color: #adadad;
 }
