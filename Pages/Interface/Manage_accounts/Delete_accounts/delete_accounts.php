@@ -40,7 +40,7 @@ include $file_path."/Includes/Php/get_user_theme.php";
 		<br>
 		<br>
 		<form action="./delete_accounts_submit.php" method="POST">
-			Username: <input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" required>
+			Username: <input type="text" placeholder="username" onkeyup="getUsers()" id="username_input_box" autocomplete="off" required>
 			<input type="submit" value="Delete">
 		</form>
 		<br>
