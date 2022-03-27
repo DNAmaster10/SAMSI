@@ -59,13 +59,14 @@
 			<input tpye="submit" value="submit">
 		</form>
 		<p>Editing assignment: <?php echo "$title"; ?></p>
-		<form action="./edit_assignment_submit.php" method="post">
+		<form action="./edit_assignment_submit.php" method="post" id="usr_form">
 			<p> Title:</p><input type="text" value="<?php echo $title; ?>" name="title" required>
 			<p> Description:</p><input type="text" rows="4" cols="50" name="description" value="<?php echo $description; ?>" rows="4" cols="50" class="large_text_box" required>
-			<p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" required>
-			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id">
-			<input type="submit" value="Submit edits">
 		</form>
+            <p> Description:</p><textarea name="description" value="<?php echo $description; ?>" class="large_text_box" required>
+            <p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" id="usr_form" required>
+			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id" id="usr_form">
+			<input type="submit" value="Submit edits" form="usr_form">
 	</body>
 	<script>
         document.getElementById("date").defaultValue = "<?php echo $due_date; ?>";
