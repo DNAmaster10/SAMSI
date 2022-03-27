@@ -40,10 +40,10 @@
         <link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
+        <div class="header">
         <form action="../main_menu.php">
             <input type="submit" value="Back" class="block_button">
         </form>
-        <div class="header">
         <p>This class is <?php echo $_SESSION["current_class"]; ?>   <br>Join code: <?php echo $join_code; ?></p>
         </div>
         <?php if ($is_owner == true) {echo ' 
