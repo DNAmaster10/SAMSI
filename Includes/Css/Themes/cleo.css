@@ -81,12 +81,12 @@ input[type=date]:hover:not(:focus) {
     transition: border 0.2s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	width: 140px;
 	resize: none;
-	height: 20px;
+	height: 15px;
 	border-radius: 20px;
 }
 .large_text_box:focus:not(hover) {
 	border: 2.4px solid #5bb8ba;
-	width: 200px;
+	width: 100%px;
 	height: 50px;
 	outline: none;
 	color: #000000;
