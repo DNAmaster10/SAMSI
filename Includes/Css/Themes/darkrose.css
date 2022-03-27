@@ -10,14 +10,14 @@ body {
 	/*The colour of the line around the outside of the big buttons when the mouse is not hovering over*/
 	border: 2px solid #ffffff;
 	/*The colour of the text when the mouse is not hovering over*/
-	color: #000000;
+	color: #ffffff;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .block_button:hover {
 	/*The colour the background will change when the mouse is hovering*/
 	background-color: #ffcfee;
 	/*The colour the text will change when the mouse is hovering*/
-	color: #ffffff;
+	color: #000000;
 }
 .small_block_button {
 	/*the colour of the small buttons background when mouse not hover*/
