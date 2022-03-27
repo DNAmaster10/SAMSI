@@ -36,10 +36,10 @@
         	<div class="header">
 			<img src="/Includes/Images/logo_text.png" alt="Logo_text"></img>
 		</div>
-        	<form action="/Pages/Login/login.php" class="display_inline">
+        	<form action="/Pages/Login/login.php" class="inline_display">
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" class="block_button">
         	</form>
-        	<form action="/Pages/register.php" class="display_inline">
+        	<form action="/Pages/register.php" class="inline_display">
             		<input type="button" onclick="location.href='/Pages/Register/register.php';" value="Register an admin account" class="block_button">
         	</form>
 		<br>
