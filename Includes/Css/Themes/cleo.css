@@ -22,7 +22,7 @@ input {
 	transition: padding 0.4s;
 	transition: margin 0.4s;
 	background-color: #9baaab;
-	color: #f2ffff;
+	color: #ffffff;
 }
 input[type=text]:focus {
 	border: 2px solid #5bb8ba;
