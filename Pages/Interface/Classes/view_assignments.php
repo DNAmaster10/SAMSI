@@ -42,6 +42,12 @@
 		<title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
+		<style>
+			.homework_div {
+				border: 2px solid white;
+				mix-blend-mode: difference;
+			}
+		</style>
 	</head>
 	<body>
 		<form action="./class_home.php">
