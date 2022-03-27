@@ -52,3 +52,23 @@ input[type=text]:hover:not(:focus) {
 	padding: 0;
 	width: 100%;
 }
+input[type=date] {
+	outline: none;
+	padding: 4px 10px;
+	border: 2px solid #6d9fa1;
+	background-color: #9baaab;
+	color: #ffffff;
+  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+input[type=date]:focus:not(hover) {
+	border: 2.4px solid #5bb8ba;
+	padding: 5px 18px;
+	outline: none;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+input[type=date]:hover:not(:focus) {
+	color: #616161;
+	background-color: #adadad;
+}
