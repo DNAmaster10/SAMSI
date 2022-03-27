@@ -42,3 +42,9 @@ h3 {
 .inline_display {
   display: inline;
 }
+input {
+  padding: 6px 10px;
+  margin: 5px;
+  border: 2px;
+  border-radius: 8px;
+}

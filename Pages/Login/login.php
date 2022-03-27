@@ -40,7 +40,6 @@
 	 
     </style>
 	<link rel="stylesheet" href="/Includes/Css/main.css">
-    <link
   </head>
   <body>
     <div class="login_box">
