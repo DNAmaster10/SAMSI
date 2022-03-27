@@ -30,7 +30,7 @@ body {
 }
 .small_block_button:hover {
 	/*The colour of the background of the small button when mouse is hover*/
-	background-color: #f23ab2;
+	background-color: #ffcfee;
 	/*The colour of the text of small button when mouse is hover*/
 	color: #ffffff;
 }
