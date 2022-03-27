@@ -34,6 +34,7 @@
                 border-radius: 20px;
                 font-size: 16px;
                 display: inline;
+                resize: none;
             }
             .send_message_button {
                 padding: 35px 4%;
@@ -57,8 +58,10 @@
 		</form>
 		</div>
 		<br>
+		<div>
         <textarea id="message_entry" placeholder="Message" class="input_message"></textarea>
         <button type="button" onclick="sendMessage()" class="send_message_button">Send</button>
+        </div>
 		<br>
 		<p id="message_p"></p>
 		<button type="button" onclick="loadMore()">Load more messages</button>
