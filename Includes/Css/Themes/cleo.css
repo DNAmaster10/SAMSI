@@ -12,3 +12,13 @@ font-family: "Lucida Handwriting";
 	border: 2px solid #000000;
 	color: 000000;
 }
+.secondary_background {
+	background-colour: #add8d9;
+}
+input {
+	border: 2px solid #6d9fa1;
+	transition: border 0.4s
+}
+input[type=text]:focus {
+	border: 3px solid #5bb8ba;
+}
