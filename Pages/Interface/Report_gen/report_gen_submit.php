@@ -39,6 +39,21 @@
     else if ($grade == 4 or $grade == 5 and $report_num == 2) {
         $_SESSION["report"] = $name." has worked well all year, and so I was a little disappointed in their examination result, which, although solid, reflected a lack of detailed knowledge. Their answers were sound, but the lack of depth in their answers cost them the higher grades. Overall though, it's been a positive term, with much to build on next term.";
     }
+    else if ($grade == 3 and $report_num == 1) {
+        $_SESSION["report"] = "I was slightly disappointed that $name was unable to get a passing grade this term. Their work has been consistent, although it was below average for the class. I feel like $name could do with spending more time looking over the content we have been learning in class and participating more in lessons. If they put this into practice, I have no doubt that they will be able to pass $subject next term.";
+    }
+    else if ($grade == 3 and $report_num == 2) {
+        $_SESSION["report"] = "$name normally does well in $subject, so it was very disappointing that they didn’t get pass this term. Nevertheless, they have been participating more in lessons than previous terms, which is an obvious improvement. With a little bit of extra revision of the content, they will soon be able to regain the grades they deserve.";
+    }
+    else if ($grade == 2 or $grade== 1 and $report_num == 1) {
+        $_SESSION["report"] = "$name has been struggling to concentrate in $subject this term, resulting in the poor grade they have received. On top of that, they haven’t been handing in classwork and homework on time, or completing it to the best of their ability. Much needs to change for $name to receive a passing grade next term, but I have no doubt that if they put their minds to it, it will be possible.";
+    }
+    else if ($grade == 2 or $grade == 1 and $report_num == 2) {
+        $_SESSION["report"] = "I feel like $name hasn’t been trying their hardest this term in $subject. The lack of completed classwork and homework speaks for itself and $name’s attitude towards learning. $name seriously needs to consider whether they are going to start caring about $subject, or if they are going to continue to fail.";
+    }
+    else if ($grade == 1) {
+        $_SESSION["report"] = "It would seem that $name is not trying at all in $subject. They are struggling to hand in any classwork and prep, and that which is handed is uncompleted. A talk with parents may be necessary if this behaviour doesn’t change.";
+    }
     else {
         $_SESSION["report"] = "Please enter valid inputs";
     }
