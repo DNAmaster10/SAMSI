@@ -42,10 +42,13 @@
                 border-radius: 20px;
                 display: inline-block;
                 float: right;
-                margine: 5px;
+                margin: 5px;
             }
             .inside_header {
                 margin: 5px;
+            }
+            .settings_button {
+                float: right;
             }
         </style>
         <title>SAMSi</title>
@@ -61,7 +64,7 @@
 		<form action="./chat_settings.php" method="POST" class="inline_display">
             <input type="hidden" value="<?php $chat_id
             ; ?>" name="chat_id">
-            <input type="submit" value="Chat settings" class="block_button">
+            <input type="submit" value="Chat settings" class="block_button, settings_button">
 		</form>
         </div>
 		</div>
