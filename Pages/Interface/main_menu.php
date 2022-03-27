@@ -39,6 +39,8 @@
 		}
 	</style>
 	<body>
+		<div class="header">
+		</div>
 		<h1>Welcome back, <?php echo $username; ?>.</h1>
 		<?php 
 		if ($account_type == "admin") {
