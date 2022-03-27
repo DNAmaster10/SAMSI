@@ -43,10 +43,8 @@ x.addEventListener("webkitAnimationEnd", slideIn);
 x.addEventListener("animationend", slideIn());
 
 function slideIn() {
-    setTimeout(function() {
     document.getElementById("send_message_container").classList.remove("send_message_container_active");
     document.getElementById("send_message_container").classList.add("send_message_container");
-    }, 1100);
 }
 var i = 1;                 
 
