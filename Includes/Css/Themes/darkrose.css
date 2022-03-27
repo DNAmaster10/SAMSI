@@ -120,14 +120,14 @@ input[type=date]:hover:not(:focus) {
 }
 .large_text_box:focus:not(hover) {
 	/*The colour of the border of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #fc58c3;
 	width: 80%;
 	height: 50px;
 	outline: none;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
 	color: #074361;
 	/*The colour of the text of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	background-color: #fc58c3;
+	background-color: #fcd4ee;
 	resize: none;
 }
 
