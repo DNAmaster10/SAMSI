@@ -61,9 +61,10 @@
 		<p>Editing assignment: <?php echo "$title"; ?></p>
 		<form action="./edit_assignment_submit.php" method="post" id="usr_form">
 			<p> Title:</p><input type="text" value="<?php echo $title; ?>" name="title" required>
-            <p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" form="usr_form" required>
             <p> Description:</p><textarea name="description" class="large_text_box" form="usr_form" required><?php echo $description; ?></textarea>
+            <p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" form="usr_form" required>
 			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id">
+			<br>
 			<input type="submit" value="Submit edits" class="small_block_button">
 		</form>
 	</body>

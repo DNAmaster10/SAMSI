@@ -27,7 +27,7 @@
 	$new_due_date = $conn -> real_escape_string ($_POST["due_date"]);
 	$homework_id = $conn -> real_escape_string ($_POST["homework_id"]);
 	
-	$sql = "UPDATE homework_data SET title='$new_title',description='$new_description',due_date='$due_date' WHERE ID=$homework_id";
+	$sql = "UPDATE homework_data SET title='$new_title',description='$new_description',due_date='$new_due_date' WHERE ID=$homework_id";
 	mysqli_query ($conn, $sql);
 	
 	header ("location: ./view_assignments.php");
