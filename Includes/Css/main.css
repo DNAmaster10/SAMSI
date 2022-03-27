@@ -10,7 +10,7 @@
 input.input_menu { display: inline; }
 
 .block_button {
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
