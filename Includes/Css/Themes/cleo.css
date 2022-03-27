@@ -16,6 +16,7 @@ font-family: "Lucida Handwriting";
 	background-colour: #add8d9;
 }
 input {
+	outline: none;
 	border: 2px solid #6d9fa1;
 	transition: border 0.4s
 }
