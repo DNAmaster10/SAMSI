@@ -106,7 +106,7 @@ input[type=date]:hover:not(:focus) {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of the border of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ad9247;
 	/*The colour of the background of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
 	background-color: #9baaab;
 	/*The colour of the text of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
@@ -119,7 +119,7 @@ input[type=date]:hover:not(:focus) {
 }
 .large_text_box:focus:not(hover) {
 	/*The colour of the border of the big fat text box when clicked, NOT hovered. Make this the same as text box */
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #ad9247;
 	width: 80%;
 	height: 50px;
 	outline: none;
