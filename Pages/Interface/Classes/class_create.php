@@ -1,10 +1,11 @@
 <?php
-//start session
-session_start();
-
-//connect to database and check if user is logged in
-include "/var/www/html/Includes/Php/dbh.php";
-include "/var/www/html/Includes/Php/check_user_pass.php";
+    session_start();
+    $file_path = $_SERVER["DOCUMENT_ROOT"];
+    $username = $_SESSION["username"];
+    include $file_path."/Includes/Php/dbh.php";
+    include $file_path."/Includes/Php/check_user_pass.php";
+    include $file_path."/Includes/Php/get_account_type.php";
+    include $file_path."/Includes/Php/get_user_theme.php";
 
 //make sure account is of teacher or admin type
 $table_name = "users";
