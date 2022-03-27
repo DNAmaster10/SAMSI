@@ -118,7 +118,7 @@ h2 {
 	border: 2px solid #6d9fa1;
 	background-color: #9baaab;
 	color: #ffffff;
-  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 .input_message:focus:not(hover) {
 	border: 2.4px solid #5bb8ba;
