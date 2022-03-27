@@ -40,9 +40,6 @@
                 resize: none;
                 margin: 1%;
             }
-            .input_message {
-
-            }
             .send_message_button {
                 padding: 38px 4%;
                 border-radius: 20px;
@@ -114,7 +111,7 @@
         </div>
 		<br>
 		<p id="message_p"></p>
-		<button type="button" onclick="loadMore()">Load more messages</button>
+		<button type="button" onclick="loadMore()" class="small_block_button">Load more messages</button>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./Javascript/message_gui.js"></script>
