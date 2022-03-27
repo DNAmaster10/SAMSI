@@ -49,7 +49,7 @@
 	<body>
 		<div class="header">
 		<form action="./view_assignments.php">
-			<input type="submit" value="Back">
+			<input type="submit" value="Back" class="block_button">
 		</form>
 		</div>
 		<br>
