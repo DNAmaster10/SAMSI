@@ -10,6 +10,7 @@ function sendMessage() {
         data: {message:input_message},
         success: function(data) {
             console.log(data);
+            slideIn();
         }
     });
 }
@@ -35,20 +36,11 @@ function loadMore() {
         }
     });
 }
-var x = document.getElementById("send_message_container");
-// Code for Chrome, Safari and Opera
-x.addEventListener("webkitAnimationEnd", () => {
-    slideIn();
-});
-
-// Standard syntax
-x.addEventListener("animationend", () => {
-    slideIn();
-});
-
 function slideIn() {
+    setTimeout(function() {
     document.getElementById("send_message_container").classList.remove("send_message_container_active");
     document.getElementById("send_message_container").classList.add("send_message_container");
+    }, 1000);
 }
 var i = 1;                 
 
