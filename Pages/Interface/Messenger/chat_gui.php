@@ -22,22 +22,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
         <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
     </head>
     <body>
-		<form action="./messenger_hub.php">
-			<input type="submit" value="Back">
+        <div class="header">
+		<form action="./messenger_hub.php" class="inline_display">
+			<input type="submit" value="Back" class="block_button">
 		</form>
-		<p> </p>
-		<form action="./chat_settings.php" method="POST">
+		<form action="./chat_settings.php" method="POST" class="inline_display">
             <input type="hidden" value="<?php $chat_id
             ; ?>" name="chat_id">
-            <input type="submit" value="Chat settings">
+            <input type="submit" value="Chat settings" class="block_button">
 		</form>
+		</div>
 		<br>
-        <input type="text" id="message_entry">
+        <textarea id="message_entry" placeholder="Message"></textarea>
         <button type="button" onclick="sendMessage()">Send</button>
 		<br>
 		<p id="message_p"></p>
