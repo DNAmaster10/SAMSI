@@ -65,7 +65,7 @@
                 color: #ffffff;
             }
             .send_message_container {
-                animation-duration: 1s;
+                animation-duration: 0.3s;
                 animation-name: slidein;
             }
             @keyframes slidein {
@@ -77,7 +77,16 @@
                 }
             }
             .send_message_container_active {
-
+                animation-duration: 0.2s;
+                animation-name: slideout;
+            }
+            @keyframes slidein {
+                from {
+                    transform: translate(0%);
+                }
+                to {
+                    transform: translate(110%);
+                }
             }
         </style>
     </head>
