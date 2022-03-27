@@ -27,6 +27,13 @@
                 margin: 0;
                 padding: 0;
             }
+            .input_message {
+                width: 90%;
+                height: 70px;
+                padding: 12px 20px;
+                border-radius: 20px;
+                font-size: 16px;
+            }
         </style>
         <title>SAMSi</title>
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme; ?>.css">
@@ -44,7 +51,7 @@
 		</form>
 		</div>
 		<br>
-        <textarea id="message_entry" placeholder="Message"></textarea>
+        <textarea id="message_entry" placeholder="Message" class="input_message"></textarea>
         <button type="button" onclick="sendMessage()">Send</button>
 		<br>
 		<p id="message_p"></p>

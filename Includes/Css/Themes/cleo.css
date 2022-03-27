@@ -108,3 +108,7 @@ h3 {
 h2 {
 	color: #000000;
 }
+.input_box {
+	border: 2px solid #58b5b8;
+	background-color: #f8f8f8;
+}
