@@ -112,3 +112,23 @@ h2 {
 	border: 2px solid #58b5b8;
 	background-color: #f8f8f8;
 }
+.input_message {
+	outline: none;
+	padding: 4px 10px;
+	border: 2px solid #6d9fa1;
+	background-color: #9baaab;
+	color: #ffffff;
+  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.input_message:focus:not(hover) {
+	border: 2.4px solid #5bb8ba;
+	padding: 5px 18px;
+	outline: none;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.input_message:hover:not(:focus) {
+	color: #616161;
+	background-color: #adadad;
+}
