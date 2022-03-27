@@ -31,9 +31,9 @@
 		<form action="./class_select_menu.php">
 			<input type="submit" value="Back">
 		</form>
-		<form action="./set_homework_submit.php" method="POST">
+		<form action="./set_homework_submit.php" method="POST" id="usr_form">
 			<p>Title: </p><input type="text" name="title" required>
-			<p>Description: </p><input type="text" name="description" required>
+			<p>Description: </p><textarea name="description" class="large_text_box" form="usr_form" required>
 			<p>Due data: </p><input type="date" name="due_date" required>
 			<input type="hidden" name="date_set" id="submit_date">
 			<input type="submit" value="Set Homework">
