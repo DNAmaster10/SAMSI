@@ -1,5 +1,6 @@
 function sendMessage() {
-    document.getElementById("send_message_container").classList.toggle("send_message_container_active");
+    document.getElementById("send_message_container").classList.remove("send_message_container");
+    document.getElementById("send_message_container").classList.add("send_message_container_active");
 
     input_message = document.getElementById("message_entry").value;
     document.getElementById("message_entry").value = "";
@@ -9,7 +10,8 @@ function sendMessage() {
         data: {message:input_message},
         success: function(data) {
             console.log(data);
-            document.getElementById("send_message_container").classList.toggle("send_message_container");
+            document.getElementById("send_message_container").classList.add("send_message_container");
+            document.getElementById("send_message_container").classList.remove("send_message_container_active");
         }
     });
 }
