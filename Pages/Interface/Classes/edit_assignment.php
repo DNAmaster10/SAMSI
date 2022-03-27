@@ -54,28 +54,6 @@
 		<link rel="stylesheet" href="/Includes/Css/Themes/<?php echo $theme ?>.css">
 		<link rel="stylesheet" href="/Includes/Css/main.css">
 	</head>
-	<style>
-	.custom {
-	outline: none;
-	padding: 4px 10px;
-	border: 2px solid #6d9fa1;
-	background-color: #9baaab;
-	color: #ffffff;
-  transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-.custom:focus:not(hover) {
-	border: 2.4px solid #5bb8ba;
-	padding: 40px 180px;
-	outline: none;
-	color: #000000;
-	background-color: #ffffff;
-}
-
-.custom:hover:not(:focus) {
-	color: #616161;
-	background-color: #adadad;
-}
-	</style>
 	<body>
 		<form action="./view_assignments.php">
 			<input tpye="submit" value="submit">
@@ -83,7 +61,7 @@
 		<p>Editing assignment: <?php echo "$title"; ?></p>
 		<form action="./edit_assignment_submit.php" method="post">
 			<p> Title:</p><input type="text" value="<?php echo $title; ?>" name="title" required>
-			<p> Description:</p><input type="text" rows="4" cols="50" name="description" value="<?php echo $description; ?>" rows="4" cols="50" class="custom" required>
+			<p> Description:</p><input type="text" rows="4" cols="50" name="description" value="<?php echo $description; ?>" rows="4" cols="50" class="large_text_box" required>
 			<p> Due date:</p><input type="date" name="due_date" value="<?php echo $due_date; ?>" id="date" required>
 			<input type="hidden" value="<?php echo $homework_id; ?>" name="homework_id">
 			<input type="submit" value="Submit edits">
