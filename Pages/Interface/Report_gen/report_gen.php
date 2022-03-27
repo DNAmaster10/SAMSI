@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html>
     <style>
-    .input_message {
+    textarea {
         resize: none;
         width: 75%;
         height: 70%;
