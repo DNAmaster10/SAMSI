@@ -35,6 +35,7 @@
                 font-size: 16px;
                 display: inline-block;
                 resize: none;
+                margin: 5px;
             }
             .send_message_button {
                 padding: 35px 4%;
