@@ -1,5 +1,5 @@
 function sendMessage() {
-    $('.transform').toggleClass('send_message_button_active');
+    $('.send_message_button').toggleClass('send_message_button_active');
 
     input_message = document.getElementById("message_entry").value;
     document.getElementById("message_entry").value = "";
