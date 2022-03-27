@@ -23,7 +23,7 @@
         resize: none;
         width: 75%;
         height: 20%;
-        font-size: 20;
+        font-size: 20px;
         border-radius: 20px;
     }
     </style>
