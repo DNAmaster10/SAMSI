@@ -46,7 +46,7 @@ input[type=text]:not(.large_text_box) {
 	/*The colour of the background of normal text boxes when not hovered or selected*/
 	background-color: #315354;
 	/*The colour of the text of the text box when not hovered or selected*/
-	color: #343838;
+	color: #edfafa;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=text]:focus:not(hover):not(.large_text_box) {
@@ -57,7 +57,7 @@ input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
 	color: #e1eded;
 	/*The colour the background will change to when text box is clicked on*/
-	background-color: #2d3d3d;
+	background-color: #405959;
 }
 
 input[type=text]:hover:not(:focus):not(.large_text_box) {
