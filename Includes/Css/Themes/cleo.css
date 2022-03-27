@@ -1,6 +1,6 @@
 body {
-background-color: #dbfeff;
-font-family: "Lucida Handwriting";
+	background-color: #dbfeff;
+	font-family: "Lucida Handwriting";
 }
 .block_button {
 	background-color: #71a9ab;
@@ -25,7 +25,7 @@ font-family: "Lucida Handwriting";
 .secondary_background {
 	background-colour: #add8d9;
 }
-input[type=text]:not(large_text_box) {
+input[type=text]:not(.large_text_box) {
 	outline: none;
 	padding: 4px 10px;
 	border: 2px solid #6d9fa1;
@@ -33,7 +33,7 @@ input[type=text]:not(large_text_box) {
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-input[type=text]:focus:not(hover):not(large_text_box) {
+input[type=text]:focus:not(hover):not(.large_text_box) {
 	border: 2.4px solid #5bb8ba;
 	padding: 5px 18px;
 	outline: none;
@@ -41,7 +41,7 @@ input[type=text]:focus:not(hover):not(large_text_box) {
 	background-color: #ffffff;
 }
 
-input[type=text]:hover:not(:focus):not(large_text_box) {
+input[type=text]:hover:not(:focus):not(.large_text_box) {
 	color: #616161;
 	background-color: #adadad;
 }
