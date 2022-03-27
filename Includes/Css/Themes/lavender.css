@@ -41,16 +41,16 @@ input[type=text]:not(.large_text_box) {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of outline of normal sized text boxes when not hovered or selected*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ad9247;
 	/*The colour of the background of normal text boxes when not hovered or selected*/
-	background-color: #9baaab;
+	background-color: #d6c694;
 	/*The colour of the text of the text box when not hovered or selected*/
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 input[type=text]:focus:not(hover):not(.large_text_box) {
 	/*The colour the border will change when the text box is clicked on to type*/
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #f5d47a;
 	padding: 5px 18px;
 	outline: none;
 	/*The text will change when the text box is clicked on to type (Make sure this contransts the new background colour*/
@@ -108,7 +108,7 @@ input[type=date]:hover:not(:focus) {
 	/*The colour of the border of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box*/
 	border: 2px solid #ad9247;
 	/*The colour of the background of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
-	background-color: #9baaab;
+	background-color: #d6c694;
 	/*The colour of the text of the big fat text box, like the one used for writing descriptions for homework, when not clicked or hovered. Make same as text box.*/
 	color: #ffffff;
     transition: border 0.2s ease-in-out, height 0.5s ease-in-out, width 0.5s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -151,24 +151,25 @@ h2 {
 }
 .input_box {
 	/*The colour of the border around... idk actually. Just make this the same as the border of text boxes when not hovered*/
-	border: 2px solid #58b5b8;
+	border: 2px solid #ad9247;
+;
 	/*The colour of the background of... again idk, so just make it the same as the text boxes*/
-	background-color: #f8f8f8;
+	background-color: #d6c694;
 }
 .input_message {
 	outline: none;
 	padding: 4px 10px;
 	/*The colour of the big box in the message GUI. Make this the same as regular text boxes*/
-	border: 2px solid #6d9fa1;
+	border: 2px solid #ad9247;
 	/*The colour of the big box used in the message GUI. Make this the same as regular text boxes*/
-	background-color: #9baaab;
+	background-color: #d6c694;
 	/*The colour of the text in big box in message GUI. Make this the same as regulr text boxes*/
 	color: #ffffff;
   transition: border 0.2s ease-in-out, padding 0.3s ease-in-out, color 0.2s ease-in-out, background-color 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 .input_message:focus:not(hover) {
 	/*The colour of the border of big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
-	border: 2.4px solid #5bb8ba;
+	border: 2.4px solid #ad9247;
 	outline: none;
 	/*The colour of the text in big fat box in message GUI when CLICKED ON. Make this the same as the text boxes when clicked on*/
 	color: #000000;
