@@ -33,7 +33,7 @@
                 padding: 12px 20px;
                 border-radius: 20px;
                 font-size: 16px;
-                display: inline;
+                display: inline-block;
                 resize: none;
             }
             .send_message_button {
