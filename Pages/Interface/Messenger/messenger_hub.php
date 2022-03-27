@@ -36,7 +36,7 @@
         <form action="./join_chat.php" class="inline_display">
             <input type="submit" value="Join chat from code">
         </form>
-        <form action="./create_chat.php">
+        <form action="./create_chat.php" class='inline_display'>
             <input type="submit" value="Create chat" class="inline_display">
         </form>
         <br>
