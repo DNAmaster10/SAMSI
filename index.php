@@ -28,8 +28,9 @@
 	background-color: #84b5d1;
 	color: #000000;
 }
-		
-		
+.about_us {
+    margin: 5px;
+}
 </style>
 	</head>
     	<body>
@@ -40,7 +41,7 @@
            		<input type="button" onclick="location.href='/Pages/Login/login.php';" value="Login" class="block_button">
         	</form>
 		<br>
-		<p>SAMSi is an open-source school communication platform that manages and stores crucial data about students, teachers, and their classes. Our project is largely based off of Microsoft Teams, with influences from the school management system, iSAMS. Currently, we have developed a login and register system, as well as a dynamic account accountment system. We are currently working on a class management system, which we hope to fully incorporate into our franchise soon.</p>
+		<p class="about_us">SAMSi is an open-source school communication platform that manages and stores crucial data about students, teachers, and their classes. Our project is largely based off of Microsoft Teams, with influences from the school management system, iSAMS. Currently, we have developed a login and register system, as well as a dynamic account accountment system. We are currently working on a class management system, which we hope to fully incorporate into our franchise soon.</p>
 		<footer>
 		<div class="footer">
   			<p>Pre-alpha v 0.0.4 - All rights reserved  THE SAMSI CORPORATION</p>
