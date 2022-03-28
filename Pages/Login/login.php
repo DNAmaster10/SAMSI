@@ -56,8 +56,8 @@
 		<h3>Enter Your Login Credidentials Below</h3>
 		<br>
 		<form action="/Pages/Login/login_submit.php" method="POST" class="submit_forum">
-			<p>Username: </p><input type="text" id="username_text_box" name="username" required><br>
-			<p>Password: </p><input type="text" id="password_text_box" name="password" required><br>
+			<p>Username: </p><input type="text" id="username_text_box" name="username" placeholder="Username" required><br>
+			<p>Password: </p><input type="text" id="password_text_box" name="password" placeholder="Password" required><br>
 			<input type="submit" value="Login" class="small_block_button">
 			<br>
 		</form>
