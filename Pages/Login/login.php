@@ -2,6 +2,7 @@
 <html>
   <head>
   <link rel="stylesheet" href="/Includes/Css/main.css">
+  <link rel="stylesheet" href="/Includes/Css/Themes/default.css">
   <title>Login</title>
   <style>
     body, html{
